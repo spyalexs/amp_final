@@ -6,6 +6,8 @@ DynamicObject::DynamicObject(double Mass, std::vector<int> lockedStates, std::st
 
     gravity = Gravity;
 
+    state.setZero();
+
     //create a mask of which states are allowed to change dynamically
     //usefull for modelling a floor
     for(int i = 0; i < 12; i++){

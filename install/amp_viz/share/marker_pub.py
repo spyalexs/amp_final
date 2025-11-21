@@ -7,7 +7,13 @@ from rclpy.duration import Duration
 from std_msgs.msg import String
 from visualization_msgs.msg import MarkerArray, Marker
 
+from std_msgs.msg import Int32MultiArray
+
+BALL_SCALE  = 0.01
+
 class MarkerPub(Node):
+
+    ball_frames = []
 
     def __init__(self):
         super().__init__('marker_pub')
@@ -16,10 +22,20 @@ class MarkerPub(Node):
 
         self.dynamic_object_timer = self.create_timer(0.03, self.dynamic_object_cb)
 
+        self.create_subscription(Int32MultiArray, "valid_ball_frames", self.ball_frames_cb, 10)
+
+    def ball_frames_cb(self, msg: Int32MultiArray):
+        
+        #update the ball frames
+        self.ball_frames = []
+
+        for frame in msg.data:
+            self.ball_frames.append(f"ball_{frame}")
+
 
     def dynamic_object_cb(self):
 
-        frames = ["ball_1"]
+        frames = self.ball_frames
         marker_msg = MarkerArray()
 
         for frame in frames:
@@ -38,14 +54,16 @@ class MarkerPub(Node):
             msg.pose.orientation.z = 0.0
             msg.pose.orientation.w = 1.0
 
-            msg.scale.x = 1.0
-            msg.scale.y = 1.0
-            msg.scale.z = 1.0
+            msg.scale.x = BALL_SCALE
+            msg.scale.y = BALL_SCALE
+            msg.scale.z = BALL_SCALE
 
             msg.color.r = 0.0
             msg.color.g = 1.0
             msg.color.b = 0.0
             msg.color.a = 1.0
+
+            msg.id = int(frame.split("_")[1])
 
             msg.lifetime = Duration().to_msg()
 
