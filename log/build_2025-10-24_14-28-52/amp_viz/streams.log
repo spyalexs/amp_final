@@ -1,0 +1,80 @@
+[0.003s] Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': AMENT_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[0.014s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.068s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.069s] -- Found rviz_common: 11.2.20 (/opt/ros/humble/share/rviz_common/cmake)
+[0.086s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[0.089s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.090s] -- Found OGRE
+[0.090s] --   static     : OFF
+[0.090s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.090s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.090s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.090s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.090s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[0.090s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.090s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[0.090s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.090s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.090s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.090s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.092s] -- Could not find freeimage library
+[0.099s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[0.101s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[0.139s] -- Found X11: /usr/include   
+[0.142s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[0.182s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[0.183s] -- Looking for gethostbyname
+[0.214s] -- Looking for gethostbyname - found
+[0.215s] -- Looking for connect
+[0.251s] -- Looking for connect - found
+[0.251s] -- Looking for remove
+[0.286s] -- Looking for remove - found
+[0.286s] -- Looking for shmat
+[0.322s] -- Looking for shmat - found
+[0.322s] -- Looking for IceConnectionNumber in ICE
+[0.357s] -- Looking for IceConnectionNumber in ICE - found
+[0.395s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.417s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.419s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.422s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.433s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.476s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.477s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.487s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.512s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.513s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.519s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.520s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.524s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.528s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.531s] -- Looking for pthread.h
+[0.567s] -- Looking for pthread.h - found
+[0.567s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.602s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.603s] -- Found Threads: TRUE  
+[0.638s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.638s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.686s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.691s] [31mCMake Error at CMakeLists.txt:37 (install):
+[0.691s]   install does not recognize sub-command TARGET
+[0.691s] 
+[0.691s] [0m
+[0.691s] [31mCMake Error at CMakeLists.txt:46 (install):
+[0.691s]   install DIRECTORY given non-directory "rviz_common_plugins.xml" to install.
+[0.691s] 
+[0.691s] [0m
+[0.692s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.723s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.723s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/hollis/cu/5254_final/src/amp_viz/include>
+[0.723s] -- Configured cppcheck exclude dirs and/or files: 
+[0.723s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.723s] -- Added test 'lint_cmake' to check CMake code style
+[0.723s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.724s] -- Added test 'uncrustify' to check C / C++ code style
+[0.724s] -- Configured uncrustify additional arguments: 
+[0.724s] -- Added test 'xmllint' to check XML markup files
+[0.724s] -- Configuring incomplete, errors occurred!
+[0.724s] See also "/home/hollis/cu/5254_final/build/amp_viz/CMakeFiles/CMakeOutput.log".
+[0.730s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.732s] Invoked command in '/home/hollis/cu/5254_final/build/amp_viz' returned '2': AMENT_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24

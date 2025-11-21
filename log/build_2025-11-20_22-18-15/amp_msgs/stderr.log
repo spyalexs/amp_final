@@ -1,0 +1,11 @@
+[0m/home/hollis/cu/5254_final/src/amp_msgs[0m
+[0m/home/hollis/cu/5254_final/src/amp_msgs/msg/KBall.msg/home/hollis/cu/5254_final/src/amp_msgs/msg/LaunchBall.msg[0m
+[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:80 (message):
+  rosidl_generate_interfaces() the passed absolute file
+  '/home/hollis/cu/5254_final/src/amp_msgs/msg/KBall.msg' must be represented
+  as an absolute base path separated by a colon from the relative path to the
+  interface file
+Call Stack (most recent call first):
+  CMakeLists.txt:21 (rosidl_generate_interfaces)
+
+[0m

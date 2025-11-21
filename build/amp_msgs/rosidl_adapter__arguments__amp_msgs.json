@@ -1,0 +1,7 @@
+{
+  "package_name": "amp_msgs",
+  "non_idl_tuples": [
+    "/home/hollis/cu/5254_final/src/amp_msgs:msg/LaunchBall.msg",
+    "/home/hollis/cu/5254_final/src/amp_msgs:msg/SetPose.msg"
+  ]
+}

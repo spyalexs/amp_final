@@ -1,0 +1,22 @@
+[0.003s] Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': AMENT_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[0.022s] Invoked command in '/home/hollis/cu/5254_final/build/amp_viz' returned '0': AMENT_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[0.023s] Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': AMENT_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_viz
+[0.026s] -- Install configuration: ""
+[0.026s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/lib/amp_viz/marker_pub.py
+[0.026s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/marker_pub.py
+[0.026s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/package_run_dependencies/amp_viz
+[0.026s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/parent_prefix_path/amp_viz
+[0.026s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.sh
+[0.026s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.dsv
+[0.026s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.sh
+[0.027s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.dsv
+[0.027s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.bash
+[0.027s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.sh
+[0.027s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.zsh
+[0.027s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.dsv
+[0.027s] -- Installing: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.dsv
+[0.027s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/packages/amp_viz
+[0.027s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig.cmake
+[0.028s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig-version.cmake
+[0.028s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.xml
+[0.028s] Invoked command in '/home/hollis/cu/5254_final/build/amp_viz' returned '0': AMENT_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_viz

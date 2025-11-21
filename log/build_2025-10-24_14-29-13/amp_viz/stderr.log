@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:46 (install):
+  install DIRECTORY given non-directory "rviz_common_plugins.xml" to install.
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

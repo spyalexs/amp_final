@@ -1,0 +1,5 @@
+<library path="template_panel">
+  <class type="TemplatePanel" base_class_type="rviz_common::Panel">
+    <description></description>
+  </class>
+</library>

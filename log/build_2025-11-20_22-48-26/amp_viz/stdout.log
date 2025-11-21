@@ -1,0 +1,38 @@
+[ 16%] [34m[1mAutomatic MOC and UIC for target template_panel[0m
+[ 16%] Built target template_panel_autogen
+[ 33%] [34m[1mGenerating include/amp_viz/moc_template_panel.cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target template_panel[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_panel.dir/include/amp_viz/moc_template_panel.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/template_panel.dir/src/template_panel.cpp.o[0m
+[ 83%] [32m[1mLinking CXX shared library libtemplate_panel.so[0m
+[100%] Built target template_panel
+-- Install configuration: ""
+-- Installing: /home/hollis/cu/5254_final/install/amp_viz/lib/libtemplate_panel.so
+-- Set runtime path of "/home/hollis/cu/5254_final/install/amp_viz/lib/libtemplate_panel.so" to ""
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/include
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/include/amp_viz
+-- Installing: /home/hollis/cu/5254_final/install/amp_viz/include/amp_viz/template_panel.hpp
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/rviz_common_plugins.xml
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/rviz_common_plugins.xml
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/lib/amp_viz/marker_pub.py
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/marker_pub.py
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/package_run_dependencies/amp_viz
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/parent_prefix_path/amp_viz
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.bash
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.zsh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.dsv
+-- Installing: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/packages/amp_viz
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/rviz_common__pluginlib__plugin/amp_viz
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/export_template_panelExport.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/export_template_panelExport-noconfig.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig-version.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.xml

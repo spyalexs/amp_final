@@ -1,0 +1,1 @@
+Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_msgs -- -j24 -l24

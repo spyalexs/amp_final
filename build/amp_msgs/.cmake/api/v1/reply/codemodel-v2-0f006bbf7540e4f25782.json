@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e855b9236f445566e325.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "amp_msgs__py",
+					"jsonFile" : "directory-amp_msgs__py-a7c1ff712f0de8596331.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/hollis/cu/5254_final/build/amp_msgs/amp_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "amp_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_amp_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_amp_msgs_egg-e9e0e9cb94246c69a78a.json",
+					"name" : "ament_cmake_python_build_amp_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_amp_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_amp_msgs-1b9f497856d6f5fa3d4b.json",
+					"name" : "ament_cmake_python_copy_amp_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs-3790f4e099f90f50268e.json",
+					"name" : "amp_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__cpp-9c6c2f4ffc2f6a39d917.json",
+					"name" : "amp_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "amp_msgs__py::@73764a3c5d87b404ae70",
+					"jsonFile" : "target-amp_msgs__py-2076cf188a00f84f40d6.json",
+					"name" : "amp_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_generator_c-fabc01b89fc9c4fed4a3.json",
+					"name" : "amp_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_generator_py-7a8959ecd34f1cb735cf.json",
+					"name" : "amp_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_c-0e14f216b4a7f383a92f.json",
+					"name" : "amp_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_c__pyext-f5ca6be2ecf09b7d3c21.json",
+					"name" : "amp_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_cpp-cc47150497d3ae8ff76a.json",
+					"name" : "amp_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_fastrtps_c-bf578ed456d40f159579.json",
+					"name" : "amp_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_fastrtps_c__pyext-0ff4f1ac97c88c912cd2.json",
+					"name" : "amp_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_fastrtps_cpp-5bfe6f88ff437a8965e9.json",
+					"name" : "amp_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_introspection_c-7658d71cf70a5ddc6cd6.json",
+					"name" : "amp_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_introspection_c__pyext-0d8c53a330e4ee67e098.json",
+					"name" : "amp_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs__rosidl_typesupport_introspection_cpp-a34eaf9bf638f9df4e13.json",
+					"name" : "amp_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_msgs_uninstall-9ef352c214c40fab2375.json",
+					"name" : "amp_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-35ca88d36b6a2f335e40.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hollis/cu/5254_final/build/amp_msgs",
+		"source" : "/home/hollis/cu/5254_final/src/amp_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

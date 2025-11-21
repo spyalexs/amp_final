@@ -1,0 +1,23 @@
+[0.007s] Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs
+[0.013s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.097s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.098s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.098s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.115s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.132s] [31mCMake Error at CMakeLists.txt:15 (message):
+[0.132s]   message called with incorrect number of arguments
+[0.132s] 
+[0.132s] [0m
+[0.132s] [0m/home/hollis/cu/5254_final/src/amp_msgs/msg/KBall.msg/home/hollis/cu/5254_final/src/amp_msgs/msg/LaunchBall.msg[0m
+[0.133s] -- Configuring incomplete, errors occurred!
+[0.133s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:80 (message):
+[0.133s]   rosidl_generate_interfaces() the passed absolute file
+[0.133s]   '/home/hollis/cu/5254_final/src/amp_msgs/msg/KBall.msg' must be represented
+[0.133s]   as an absolute base path separated by a colon from the relative path to the
+[0.133s]   interface file
+[0.133s] Call Stack (most recent call first):
+[0.133s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[0.133s] 
+[0.133s] [0m
+[0.133s] See also "/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/CMakeOutput.log".
+[0.140s] Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "amp_msgs__py",
+		"source" : "/home/hollis/cu/5254_final/build/amp_msgs/amp_msgs__py"
+	}
+}

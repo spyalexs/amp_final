@@ -1,0 +1,89 @@
+[0.005s] Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs
+[0.011s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.101s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.101s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.103s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.123s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.135s] [0m/home/hollis/cu/5254_final/src/amp_msgs[0m
+[0.136s] [0mmsg/KBall.msgmsg/LaunchBall.msg[0m
+[0.302s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.436s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.623s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.649s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.649s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.664s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.664s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.664s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.664s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.682s] -- Found PythonExtra: .so  
+[0.702s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.714s] -- Added test 'lint_cmake' to check CMake code style
+[0.714s] -- Added test 'xmllint' to check XML markup files
+[0.716s] -- Configuring done
+[0.734s] -- Generating done
+[0.744s] -- Build files have been written to: /home/hollis/cu/5254_final/build/amp_msgs
+[0.748s] Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs
+[0.749s] Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_msgs -- -j24 -l24
+[0.777s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.783s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.795s] [  5%] Built target ament_cmake_python_copy_amp_msgs
+[0.978s] running egg_info
+[0.979s] creating amp_msgs.egg-info
+[0.979s] writing amp_msgs.egg-info/PKG-INFO
+[0.979s] writing dependency_links to amp_msgs.egg-info/dependency_links.txt
+[0.979s] writing top-level names to amp_msgs.egg-info/top_level.txt
+[0.980s] writing manifest file 'amp_msgs.egg-info/SOURCES.txt'
+[0.983s] reading manifest file 'amp_msgs.egg-info/SOURCES.txt'
+[0.985s] writing manifest file 'amp_msgs.egg-info/SOURCES.txt'
+[1.003s] [  5%] Built target amp_msgs__cpp
+[1.005s] [  5%] Built target ament_cmake_python_build_amp_msgs_egg
+[1.009s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.012s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.012s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.012s] [ 15%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/k_ball__functions.c.o[0m
+[1.013s] [ 17%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o[0m
+[1.055s] [ 20%] [32m[1mLinking C shared library libamp_msgs__rosidl_generator_c.so[0m
+[1.091s] [ 20%] Built target amp_msgs__rosidl_generator_c
+[1.099s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.099s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.099s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.191s] [ 30%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/k_ball__type_support.cpp.o[0m
+[1.193s] [ 33%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/launch_ball__type_support.cpp.o[0m
+[1.199s] [ 35%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/launch_ball__type_support.cpp.o[0m
+[1.199s] [ 38%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/k_ball__type_support.cpp.o[0m
+[1.230s] [ 41%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/k_ball__type_support.cpp.o[0m
+[1.230s] [ 43%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/launch_ball__type_support.cpp.o[0m
+[1.317s] [ 46%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amp_msgs/msg/k_ball__type_support.cpp.o[0m
+[1.321s] [ 48%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amp_msgs/msg/launch_ball__type_support.cpp.o[0m
+[1.334s] [ 51%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/k_ball__type_support_c.cpp.o[0m
+[1.334s] [ 53%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o[0m
+[1.345s] [ 56%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/k_ball__type_support.c.o[0m
+[1.350s] [ 58%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o[0m
+[1.363s] [ 61%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_c.so[0m
+[1.383s] [ 64%] [32m[1mLinking C shared library libamp_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.407s] [ 64%] Built target amp_msgs__rosidl_typesupport_c
+[1.417s] [ 64%] Built target amp_msgs__rosidl_typesupport_introspection_c
+[1.473s] [ 66%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_cpp.so[0m
+[1.506s] [ 66%] Built target amp_msgs__rosidl_typesupport_cpp
+[1.506s] [ 69%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.536s] [ 69%] Built target amp_msgs__rosidl_typesupport_introspection_cpp
+[1.539s] [ 71%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.579s] [ 74%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.591s] [ 74%] Built target amp_msgs__rosidl_typesupport_fastrtps_cpp
+[1.628s] [ 74%] Built target amp_msgs__rosidl_typesupport_fastrtps_c
+[1.642s] [ 74%] Built target amp_msgs
+[1.656s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.833s] [ 76%] Built target amp_msgs__py
+[1.850s] [ 79%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_py.dir/rosidl_generator_py/amp_msgs/msg/_launch_ball_s.c.o[0m
+[1.851s] [ 82%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_py.dir/rosidl_generator_py/amp_msgs/msg/_k_ball_s.c.o[0m
+[1.917s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so[0m
+[1.945s] [ 84%] Built target amp_msgs__rosidl_generator_py
+[1.960s] [ 87%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.960s] [ 89%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[1.960s] [ 92%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.014s] [100%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/amp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.015s] [100%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/amp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.015s] [100%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/amp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.033s] [100%] Built target amp_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.033s] [100%] Built target amp_msgs__rosidl_typesupport_c__pyext
+[2.033s] [100%] Built target amp_msgs__rosidl_typesupport_introspection_c__pyext

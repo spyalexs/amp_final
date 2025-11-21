@@ -1,0 +1,14 @@
+[ 16%] [34m[1mAutomatic MOC and UIC for target template_panel[0m
+[ 16%] Built target template_panel_autogen
+[35m[1mConsolidate compiler generated dependencies of target template_panel[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/template_panel.dir/src/template_panel.cpp.o[0m
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:[m[K In member function ‘[01m[Kvirtual void TemplatePanel::onInitialize()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:30:100:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   30 |     QObject::connect(ui->launch_button, &QPushButton::released, this, &TemplatePanel::launchBallCb)
+      |                                                                                                    [01;31m[K^[m[K
+      |                                                                                                    [32m[K;[m[K
+   31 | [32m[K}[m[K
+      | [32m[K~[m[K                                                                                                   
+gmake[2]: *** [CMakeFiles/template_panel.dir/build.make:94: CMakeFiles/template_panel.dir/src/template_panel.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/template_panel.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

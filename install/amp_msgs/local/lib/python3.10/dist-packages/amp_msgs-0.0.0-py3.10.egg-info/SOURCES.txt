@@ -1,0 +1,10 @@
+setup.py
+amp_msgs/__init__.py
+amp_msgs.egg-info/PKG-INFO
+amp_msgs.egg-info/SOURCES.txt
+amp_msgs.egg-info/dependency_links.txt
+amp_msgs.egg-info/top_level.txt
+amp_msgs/msg/__init__.py
+amp_msgs/msg/_k_ball.py
+amp_msgs/msg/_launch_ball.py
+amp_msgs/msg/_set_pose.py

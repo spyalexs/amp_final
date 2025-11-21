@@ -1,0 +1,23 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o"
+  "CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o.d"
+  "CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o"
+  "CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o.d"
+  "libamp_msgs__rosidl_generator_c.pdb"
+  "libamp_msgs__rosidl_generator_c.so"
+  "rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c"
+  "rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.h"
+  "rosidl_generator_c/amp_msgs/msg/detail/launch_ball__struct.h"
+  "rosidl_generator_c/amp_msgs/msg/detail/launch_ball__type_support.h"
+  "rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c"
+  "rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.h"
+  "rosidl_generator_c/amp_msgs/msg/detail/set_pose__struct.h"
+  "rosidl_generator_c/amp_msgs/msg/detail/set_pose__type_support.h"
+  "rosidl_generator_c/amp_msgs/msg/launch_ball.h"
+  "rosidl_generator_c/amp_msgs/msg/set_pose.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/amp_msgs__rosidl_generator_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

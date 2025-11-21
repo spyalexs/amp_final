@@ -1,0 +1,10 @@
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:[m[K In constructor ‘[01m[KTemplatePanel::TemplatePanel(QWidget*)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:5:8:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsetupUi[m[K’ in ‘[01m[K((TemplatePanel*)this)->TemplatePanel::ui[m[K’, which is of pointer type ‘[01m[KUi::Template_Panel*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+    5 |     ui.[01;31m[KsetupUi[m[K(Panel);
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:5:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+    5 |     ui.setupUi(Panel[01;31m[K)[m[K;
+      |                     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/template_panel.dir/build.make:94: CMakeFiles/template_panel.dir/src/template_panel.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/template_panel.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

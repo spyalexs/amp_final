@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:19 (rosdil_generate_interfaces):
+  Unknown CMake command "rosdil_generate_interfaces".
+
+[0m

@@ -1,0 +1,23 @@
+[ 16%] [34m[1mAutomatic MOC and UIC for target template_panel[0m
+[ 16%] Built target template_panel_autogen
+[ 33%] [34m[1mGenerating include/amp_viz/moc_template_panel.cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target template_panel[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_panel.dir/src/template_panel.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/template_panel.dir/include/amp_viz/moc_template_panel.cpp.o[0m
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:[m[K In member function ‘[01m[Kvirtual void TemplatePanel::onInitialize()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:16:36:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass rviz_common::DisplayContext[m[K’
+   16 |     node_ptr_ = getDisplayContext()[01;31m[K->[m[KgetRosNodeAbstraction().lock();
+      |                                    [01;31m[K^~[m[K
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_viz/include/amp_viz/template_panel.hpp:3[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rviz_common/rviz_common/panel.hpp:42:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass rviz_common::DisplayContext[m[K’
+   42 | class [01;36m[KDisplayContext[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:[m[K In member function ‘[01m[Krclcpp::Node::SharedPtr TemplatePanel::getRosNode()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:32:12:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   32 |     return [01;31m[Knode[m[K = node_ptr_->get_raw_node();
+      |            [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/template_panel.dir/build.make:94: CMakeFiles/template_panel.dir/src/template_panel.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/template_panel.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
