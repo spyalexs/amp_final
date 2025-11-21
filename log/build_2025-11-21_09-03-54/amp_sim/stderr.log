@@ -1,0 +1,46 @@
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In constructor ‘[01m[KDynamicObject::DynamicObject(double, std::vector<int>, std::string, bool)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:15:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   15 |     for(int i = 0; [01;35m[Ki < lockedStates.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicObject::getAMatrix(V12d)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:93:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   93 | M12d DynamicObject::getAMatrix([01;35m[KV12d current_state[m[K){
+      |                                [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicObject::getBMatrix(V12d)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:109:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  109 | M12d DynamicObject::getBMatrix([01;35m[KV12d current_state[m[K){
+      |                                [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In member function ‘[01m[Kbool DynamicObject::check_state_bounds()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp:14:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+   14 | #define STATE_X_BOUNDS [01;31m[K=[m[K {-100, 100}
+      |                        [01;31m[K^[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:121:19:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KSTATE_X_BOUNDS[m[K’
+  121 |     if(state[0] > [01;36m[KSTATE_X_BOUNDS[m[K || state[0] < -STATE_X_BOUNDS){
+      |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:121:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K||[m[K’ token
+  121 |     if[32m[K([m[Kstate[0] > STATE_X_BOUNDS [01;31m[K||[m[K state[0] < -STATE_X_BOUNDS){
+      |       [32m[K~[m[K                          [01;31m[K^~[m[K
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp:15:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+   15 | #define STATE_Y_BOUNDS [01;31m[K=[m[K {-100, 100}
+      |                        [01;31m[K^[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:125:19:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KSTATE_Y_BOUNDS[m[K’
+  125 |     if(state[1] > [01;36m[KSTATE_Y_BOUNDS[m[K || state[1] < -STATE_Y_BOUNDS){
+      |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:125:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K||[m[K’ token
+  125 |     if[32m[K([m[Kstate[1] > STATE_Y_BOUNDS [01;31m[K||[m[K state[1] < -STATE_Y_BOUNDS){
+      |       [32m[K~[m[K                          [01;31m[K^~[m[K
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp:16:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+   16 | #define STATE_Z_BOUNDS [01;31m[K=[m[K {-100, 100}
+      |                        [01;31m[K^[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:129:19:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KSTATE_Z_BOUNDS[m[K’
+  129 |     if(state[2] > [01;36m[KSTATE_Z_BOUNDS[m[K || state[2] < -STATE_Z_BOUNDS){
+      |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:129:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K||[m[K’ token
+  129 |     if[32m[K([m[Kstate[2] > STATE_Z_BOUNDS [01;31m[K||[m[K state[2] < -STATE_Z_BOUNDS){
+      |       [32m[K~[m[K                          [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/dynamic_object.dir/build.make:76: CMakeFiles/dynamic_object.dir/src/dynamic_object.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/dynamic_object.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,24 @@
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:[m[K In constructor ‘[01m[KSimNode::SimNode()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:38:92:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KDynamicBall::DynamicBall(V6d&, int, const char [7], <unresolved overloaded function type>)[m[K’
+   38 |             dynamic_objects.push_back(new DynamicBall(ball_damping, 1, "ball_1", std::empty[01;31m[K)[m[K);
+      |                                                                                            [01;31m[K^[m[K
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:3[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:11:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDynamicBall::DynamicBall(V6d, double, std::string, std::vector<int>, bool)[m[K’
+   11 |         [01;36m[KDynamicBall[m[K(V6d Damping, double Mass, std::string name, std::vector<int> lockedStates, bool gravity=true);
+      |         [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:11:82:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::vector<int>[m[K’
+   11 |         DynamicBall(V6d Damping, double Mass, std::string name, [01;36m[Kstd::vector<int> lockedStates[m[K, bool gravity=true);
+      |                                                                 [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:8:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDynamicBall::DynamicBall(const DynamicBall&)[m[K’
+    8 | class [01;36m[KDynamicBall[m[K : public DynamicObject{
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:8:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:8:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDynamicBall::DynamicBall(DynamicBall&&)[m[K’
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:8:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:[m[K In member function ‘[01m[Kvoid SimNode::launch_ball_cb(amp_msgs::msg::LaunchBall)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:76:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   76 |         void launch_ball_cb([01;35m[Kamp_msgs::msg::LaunchBall msg[m[K){
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/sim_node.dir/build.make:76: CMakeFiles/sim_node.dir/src/run_sim.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/sim_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

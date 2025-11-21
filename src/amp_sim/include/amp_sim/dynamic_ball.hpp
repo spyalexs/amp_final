@@ -14,5 +14,8 @@ class DynamicBall : public DynamicObject{
         M12d getBMatrix(V12d current_state) override;
 
         V6d damping;
+
+        ~DynamicBall(){}
+
     
 };

@@ -1,0 +1,4 @@
+[ 33%] Built target dynamic_object
+[ 66%] Built target dynamic_ball
+[35m[1mConsolidate compiler generated dependencies of target sim_node[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/sim_node.dir/src/run_sim.cpp.o[0m

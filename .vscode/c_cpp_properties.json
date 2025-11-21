@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "/usr/include/x86_64-linux-gnu/qt5",
                 "/opt/ros/humble/include/**",
-                "/opt/ros/humble/lib/**"
+                "/opt/ros/humble/lib/**",
+                "/usr/include/eigen3"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

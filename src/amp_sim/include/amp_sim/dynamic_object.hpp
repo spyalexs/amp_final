@@ -11,6 +11,9 @@ typedef Eigen::Matrix<double, 3, 1> V3d;
 typedef Eigen::Matrix<double, 12, 12> M12d;
 
 #define GRAVITATIONAL_CONSTANT -9.81
+#define STATE_X_BOUNDS 100
+#define STATE_Y_BOUNDS 100
+#define STATE_Z_BOUNDS 100
 
 class DynamicObject{
 
@@ -21,6 +24,8 @@ class DynamicObject{
 
         M12d virtual getAMatrix(V12d current_state);
         M12d virtual getBMatrix(V12d current_state);
+
+        bool check_state_bounds();
 
         bool gravity = false;
 
@@ -33,5 +38,7 @@ class DynamicObject{
         std::vector<bool> locked_states;
 
         std::string object_name;
+
+        virtual ~DynamicObject(){}
     
 };

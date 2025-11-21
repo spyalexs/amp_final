@@ -1,0 +1,37 @@
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:[m[K In member function ‘[01m[Kvoid SimNode::tic_cb()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:68:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::_List_iterator<DynamicObject*> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   68 |             for(int i = 0; [01;35m[Ki < to_erase.size()[m[K; i++){
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:[m[K In member function ‘[01m[Kvoid SimNode::launch_ball_cb(amp_msgs::msg::LaunchBall)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:95:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kball_damping[m[K’ was not declared in this scope
+   95 |             dynamic_objects.push_back(new DynamicBall([01;31m[Kball_damping[m[K, 1, "ball_1", empty));
+      |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:95:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kempty[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::empty[m[K’?
+   95 |             dynamic_objects.push_back(new DynamicBall(ball_damping, 1, "ball_1", [01;31m[Kempty[m[K));
+      |                                                                                  [01;31m[K^~~~~[m[K
+      |                                                                                  [32m[Kstd::empty[m[K
+In file included from [01m[K/usr/include/c++/11/string:54[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/istream:38[m[K,
+                 from [01m[K/usr/include/c++/11/sstream:38[m[K,
+                 from [01m[K/usr/include/c++/11/complex:45[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:3[m[K:
+[01m[K/usr/include/c++/11/bits/range_access.h:281:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::empty[m[K’ declared here
+  281 |     [01;36m[Kempty[m[K(initializer_list<_Tp> __il) noexcept
+      |     [01;36m[K^~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:96:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::__cxx11::list<DynamicObject*>[m[K’ has no member named ‘[01m[Kstate[m[K’
+   96 |             dynamic_objects.[01;31m[Kstate[m[K[7] = launch_vector(0);
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:97:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::__cxx11::list<DynamicObject*>[m[K’ has no member named ‘[01m[Kstate[m[K’
+   97 |             dynamic_objects.[01;31m[Kstate[m[K[8] = launch_vector(1);
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:98:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::__cxx11::list<DynamicObject*>[m[K’ has no member named ‘[01m[Kstate[m[K’
+   98 |             dynamic_objects.[01;31m[Kstate[m[K[9] = launch_vector(2);
+      |                             [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/sim_node.dir/build.make:76: CMakeFiles/sim_node.dir/src/run_sim.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/sim_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

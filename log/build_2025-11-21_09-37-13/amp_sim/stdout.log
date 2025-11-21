@@ -1,0 +1,4 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/dynamic_object.dir/src/dynamic_object.cpp.o[0m
+[ 33%] [32m[1mLinking CXX static library libdynamic_object.a[0m
+[ 33%] Built target dynamic_object
+[ 50%] [32mBuilding CXX object CMakeFiles/dynamic_ball.dir/src/dynamic_ball.cpp.o[0m

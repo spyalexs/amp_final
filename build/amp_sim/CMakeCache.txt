@@ -275,7 +275,7 @@ SITE:STRING=blizzard
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -366,6 +366,9 @@ ament_uncrustify_BIN:FILEPATH=/opt/ros/humble/bin/ament_uncrustify
 
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
+
+//The directory containing a CMake configuration file for amp_msgs.
+amp_msgs_DIR:PATH=/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake
 
 //Value Computed by CMake
 amp_sim_BINARY_DIR:STATIC=/home/hollis/cu/5254_final/build/amp_sim

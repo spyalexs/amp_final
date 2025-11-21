@@ -12,6 +12,7 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(amp_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -31,7 +32,7 @@ target_link_libraries(dynamic_ball PUBLIC dynamic_object)
 
 #create the executable 
 add_executable(sim_node src/run_sim.cpp)
-ament_target_dependencies(sim_node PUBLIC rclcpp geometry_msgs tf2 tf2_ros)
+ament_target_dependencies(sim_node PUBLIC rclcpp geometry_msgs tf2 tf2_ros amp_msgs)
 target_link_libraries(sim_node PUBLIC dynamic_ball)
 
 install(TARGETS sim_node

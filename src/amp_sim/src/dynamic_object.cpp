@@ -114,3 +114,21 @@ M12d DynamicObject::getBMatrix(V12d current_state){
 
     return b_mat;
 }
+
+bool DynamicObject::check_state_bounds(){
+    //returns false if the object is out of the state bounds
+
+    if(state[0] > STATE_X_BOUNDS || state[0] < -STATE_X_BOUNDS){
+        return false;
+    }
+
+    if(state[1] > STATE_Y_BOUNDS || state[1] < -STATE_Y_BOUNDS){
+        return false;
+    }
+
+    if(state[2] > STATE_Z_BOUNDS || state[2] < -STATE_Z_BOUNDS){
+        return false;
+    }
+
+    return true;
+}

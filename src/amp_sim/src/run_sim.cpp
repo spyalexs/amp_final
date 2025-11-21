@@ -1,12 +1,16 @@
 //utilized plenty of info / code from https://docs.ros.org
 
+#include <Eigen/Dense>
+
 #include "dynamic_ball.hpp"
 #include "dynamic_object.hpp"
 
 #include <rclcpp/rclcpp.hpp>
-#include "geometry_msgs/msg/transform_stamped.hpp"
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_ros/transform_broadcaster.h"
+
+#include "amp_msgs/msg/launch_ball.hpp"
+#include "geometry_msgs/msg/transform_stamped.hpp"
 
 
 #include <string>
@@ -24,12 +28,14 @@ class SimNode : public rclcpp::Node
             // Initialize the transform broadcaster
             tf_broadcaster = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
 
-            std::vector<int> empty;
-            V6d ball_damping;
-            ball_damping << 2.0, 2.0, 5.0, 2.0, 2.0, 2.0;
-            ball = new DynamicBall(ball_damping, 1, "ball_1", empty);
 
-            dynamic_objects.push_back(ball);
+            //initialize subs
+            launch_sub = create_subscription<amp_msgs::msg::LaunchBall>("/launch_ball", 10, std::bind(&SimNode::launch_ball_cb, this, std::placeholders::_1));
+
+            //initialize the ball damping
+            ball_damping << 2.0, 2.0, 5.0, 2.0, 2.0, 2.0;
+
+            dynamic_objects.push_back(new DynamicBall(ball_damping, 1, "ball_1", empty));
 
             tic_timer = this->create_wall_timer(1ms, std::bind(&SimNode::tic_cb, this));
         }
@@ -43,20 +49,51 @@ class SimNode : public rclcpp::Node
             //RCLCPP_INFO(this->get_logger(), ("Current time is: " + std::to_string(get_current_time())).c_str());
             double current_time = get_current_time();
 
-            for(int i = 0; i < dynamic_objects.size(); i++){
+            std::vector<std::list<DynamicObject*>::iterator> to_erase;
+
+            for(auto it = dynamic_objects.begin(); it != dynamic_objects.end(); ++it){
                 V12d control;
                 control.setZero();
 
-                dynamic_objects.at(i)->tic(control, current_time);
+                (**it).tic(control, current_time);
+
+                //remove out of bounds objects
+                if(!((**it).check_state_bounds())){
+                    to_erase.push_back(it);
+                }
+            }
+
+            for(int i = 0; i < to_erase.size(); i++){
+                delete *(to_erase.at(i));
+
+                dynamic_objects.erase(to_erase.at(i));
             }
 
             if(previous_tf_update_time + TF_UPDATE_PERIOD < current_time){
-                for(int i = 0; i < dynamic_objects.size(); i++){
-                    publish_tf_pose(dynamic_objects.at(i)->state, dynamic_objects.at(i)->object_name);
+                for(auto it = dynamic_objects.begin(); it != dynamic_objects.end(); ++it){
+                    publish_tf_pose((**it).state, (**it).object_name);
                 }
 
                 previous_tf_update_time = current_time;
             }
+
+
+        }
+
+        void launch_ball_cb(amp_msgs::msg::LaunchBall msg){
+
+            //calculate the launch velocity
+            V3d launch_vector(msg.ball_velocity, 0.0, 0.0);
+            launch_vector = 
+                Eigen::AngleAxisd(msg.ball_launch_heading, V3d::UnitZ()) * 
+                Eigen::AngleAxisd(msg.ball_launch_angle, V3d::UnitY()) * 
+                launch_vector;
+
+
+            dynamic_objects.push_back(new DynamicBall(ball_damping, 1, "ball_2", empty));
+            dynamic_objects.back()->state[7] = launch_vector(0);
+            dynamic_objects.back()->state[8] = launch_vector(1);
+            dynamic_objects.back()->state[9] = launch_vector(2);
 
         }
 
@@ -89,13 +126,17 @@ class SimNode : public rclcpp::Node
         //rclcpp::Publisher<geometry_msgs::msg::pose>::SharedPtr pose_pub;
 
         std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster;
-        std::vector<DynamicBall*> dynamic_objects;
+        std::list<DynamicObject*> dynamic_objects;
+
+        rclcpp::Subscription<amp_msgs::msg::LaunchBall>::SharedPtr launch_sub;
 
         rclcpp::TimerBase::SharedPtr tic_timer;
 
         double previous_tf_update_time = 0;
 
-        DynamicBall *ball; 
+        V6d ball_damping;
+        std::vector<int> empty;
+
 
 };
 
