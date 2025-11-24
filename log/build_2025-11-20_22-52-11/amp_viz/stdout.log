@@ -1,4 +1,0 @@
-[ 16%] [34m[1mAutomatic MOC and UIC for target template_panel[0m
-[ 16%] Built target template_panel_autogen
-[ 33%] [32mBuilding CXX object CMakeFiles/template_panel.dir/src/template_panel.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/template_panel.dir/include/amp_viz/moc_template_panel.cpp.o[0m

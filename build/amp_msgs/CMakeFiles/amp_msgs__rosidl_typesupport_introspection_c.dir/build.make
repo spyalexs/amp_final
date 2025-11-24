@@ -69,32 +69,53 @@ include CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/progress.mak
 # Include the compile flags for this target's objects.
 include CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: rosidl_adapter/amp_msgs/msg/SetPose.idl
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/amp_msgs/msg/AgentControl.idl
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h: rosidl_adapter/amp_msgs/msg/SetPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_introspection_c__arguments.json
 
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_c.h
 
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c
+
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c
 
-rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c
+
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o -MF CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o.d -o CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c
+
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c > CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.i
+
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c -o CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.s
 
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o -MF CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o.d -o CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c
 
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.i: cmake_force
@@ -108,7 +129,7 @@ CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o -MF CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o.d -o CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c
 
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.i: cmake_force
@@ -121,12 +142,14 @@ CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
 
 # Object files for target amp_msgs__rosidl_typesupport_introspection_c
 amp_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
+"CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o" \
 "CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o" \
 "CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o"
 
 # External object files for target amp_msgs__rosidl_typesupport_introspection_c
 amp_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
+libamp_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o
 libamp_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o
 libamp_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o
 libamp_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make
@@ -135,7 +158,7 @@ libamp_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosid
 libamp_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libamp_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libamp_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libamp_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libamp_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +169,8 @@ CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean
 
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c
 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_c.h

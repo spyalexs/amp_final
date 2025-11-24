@@ -1,0 +1,2 @@
+/usr/bin/ar qc libomni_agent.a CMakeFiles/omni_agent.dir/src/omni_agent.cpp.o
+/usr/bin/ranlib libomni_agent.a

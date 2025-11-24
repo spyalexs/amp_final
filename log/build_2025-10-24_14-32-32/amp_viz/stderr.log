@@ -1,8 +1,0 @@
-[01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kinclude/template_panel.hpp: No such file or directory
-    1 | #include [01;31m[K"include/template_panel.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/template_panel.dir/build.make:90: CMakeFiles/template_panel.dir/src/template_panel.cpp.o] Error 1
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/template_panel.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

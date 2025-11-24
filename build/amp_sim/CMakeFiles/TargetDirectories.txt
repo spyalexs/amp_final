@@ -2,6 +2,7 @@
 /home/hollis/cu/5254_final/build/amp_sim/CMakeFiles/amp_sim_uninstall.dir
 /home/hollis/cu/5254_final/build/amp_sim/CMakeFiles/dynamic_object.dir
 /home/hollis/cu/5254_final/build/amp_sim/CMakeFiles/dynamic_ball.dir
+/home/hollis/cu/5254_final/build/amp_sim/CMakeFiles/omni_agent.dir
 /home/hollis/cu/5254_final/build/amp_sim/CMakeFiles/sim_node.dir
 /home/hollis/cu/5254_final/build/amp_sim/CMakeFiles/test.dir
 /home/hollis/cu/5254_final/build/amp_sim/CMakeFiles/edit_cache.dir

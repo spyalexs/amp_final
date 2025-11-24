@@ -454,6 +454,7 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp \
+  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -932,6 +933,16 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
   /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__traits.hpp \
   /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.hpp \
   /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/set_pose.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__struct.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__builder.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__traits.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/agent_control.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__struct.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__builder.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__traits.hpp \
+  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp \
@@ -951,6 +962,14 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__builder.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp:
+
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__traits.hpp:
+
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__struct.hpp:
+
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__builder.hpp:
+
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__struct.hpp:
 
 /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1566,6 +1585,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/c++/11/stdexcept:
 
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.hpp:
+
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/utility:
@@ -1676,6 +1697,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/agent_control.hpp:
+
 /usr/include/ctype.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
@@ -1685,6 +1708,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
 
 /usr/include/c++/11/unordered_map:
+
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/set_pose.hpp:
 
 /usr/include/c++/11/cctype:
 
@@ -2042,6 +2067,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__builder.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/eigen3/Eigen/src/Core/IO.h:
@@ -2161,6 +2188,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/c++/11/bits/stl_algobase.h:
+
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
@@ -2315,8 +2344,6 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
 
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
-
-/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
 
 /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
 
@@ -2630,6 +2657,10 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
+
+/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
@@ -2767,6 +2798,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/macros.h:
+
+/home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 

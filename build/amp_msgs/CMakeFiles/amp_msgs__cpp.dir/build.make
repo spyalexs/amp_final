@@ -66,6 +66,11 @@ include CMakeFiles/amp_msgs__cpp.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/amp_msgs__cpp.dir/progress.make
 
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__builder.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__struct.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp
@@ -78,54 +83,75 @@ CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__tra
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__type_support.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__builder.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__struct.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__traits.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
-rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: rosidl_adapter/amp_msgs/msg/SetPose.idl
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__builder.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__struct.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/action__traits.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/AgentControl.idl
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/SetPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_cpp__arguments.json
 
-rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__builder.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__builder.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__struct.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__struct.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__traits.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__traits.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__traits.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__type_support.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/set_pose.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/set_pose.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/set_pose.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__builder.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__builder.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__builder.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__struct.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__struct.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__struct.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__traits.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__traits.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__traits.hpp
 
-rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
+rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__type_support.hpp
 
 amp_msgs__cpp: CMakeFiles/amp_msgs__cpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__builder.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__struct.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__traits.hpp

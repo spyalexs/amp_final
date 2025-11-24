@@ -455,6 +455,7 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp
  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp
+ /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h
@@ -933,6 +934,16 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o
  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__traits.hpp
  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.hpp
  /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/set_pose.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__struct.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__builder.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__traits.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/agent_control.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__struct.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__builder.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__traits.hpp
+ /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp

@@ -1,3 +1,0 @@
-float32 ball_velocity
-float32 ball_launch_angle
-float32 ball_launch_heading

@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/amp_msgs__cpp"
+  "rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp"
+  "rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__builder.hpp"
+  "rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__struct.hpp"
+  "rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp"
+  "rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp"
   "rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp"
   "rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp"
   "rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__traits.hpp"

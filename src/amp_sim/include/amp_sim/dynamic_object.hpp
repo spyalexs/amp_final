@@ -15,6 +15,9 @@ typedef Eigen::Matrix<double, 12, 12> M12d;
 #define STATE_Y_BOUNDS 100
 #define STATE_Z_BOUNDS 100
 
+#define ROTATIONAL_INTERIA_SCALE 0.1
+
+
 class DynamicObject{
 
     public:

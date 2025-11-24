@@ -3,6 +3,7 @@
   "output_dir": "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_py/amp_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/AgentControl.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/LaunchBall.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/SetPose.idl"
   ],
@@ -20,6 +21,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/AgentControl.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/LaunchBall.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/SetPose.idl"
   ]

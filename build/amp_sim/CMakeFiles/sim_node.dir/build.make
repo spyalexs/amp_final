@@ -100,6 +100,7 @@ sim_node: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_ty
 sim_node: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_cpp.so
 sim_node: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_generator_py.so
 sim_node: libdynamic_ball.a
+sim_node: libomni_agent.a
 sim_node: /opt/ros/humble/lib/libtf2_ros.so
 sim_node: /opt/ros/humble/lib/libtf2.so
 sim_node: /opt/ros/humble/lib/libmessage_filters.so

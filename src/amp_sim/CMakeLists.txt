@@ -30,10 +30,13 @@ add_library(dynamic_object src/dynamic_object.cpp)
 add_library(dynamic_ball src/dynamic_ball.cpp)
 target_link_libraries(dynamic_ball PUBLIC dynamic_object)
 
+add_library(omni_agent src/omni_agent.cpp)
+target_link_libraries(omni_agent PUBLIC dynamic_object)
+
 #create the executable 
 add_executable(sim_node src/run_sim.cpp)
 ament_target_dependencies(sim_node PUBLIC rclcpp geometry_msgs tf2 tf2_ros amp_msgs)
-target_link_libraries(sim_node PUBLIC dynamic_ball)
+target_link_libraries(sim_node PUBLIC dynamic_ball omni_agent)
 
 install(TARGETS sim_node
   DESTINATION lib/${PROJECT_NAME}

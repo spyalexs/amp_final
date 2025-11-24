@@ -1,0 +1,4 @@
+source;share/amp_agents/local_setup.bash
+source;share/amp_agents/local_setup.dsv
+source;share/amp_agents/local_setup.sh
+source;share/amp_agents/local_setup.zsh

@@ -242,8 +242,11 @@ CMakeFiles/amp_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/amp_msg
   /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
-  rosidl_generator_c/amp_msgs/msg/detail/launch_ball__type_support.h \
+  rosidl_generator_c/amp_msgs/msg/detail/agent_control__type_support.h \
   rosidl_generator_c/amp_msgs/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/amp_msgs/msg/detail/agent_control__struct.h \
+  rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.h \
+  rosidl_generator_c/amp_msgs/msg/detail/launch_ball__type_support.h \
   rosidl_generator_c/amp_msgs/msg/detail/launch_ball__struct.h \
   rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.h \
   rosidl_generator_c/amp_msgs/msg/detail/set_pose__type_support.h \
@@ -255,9 +258,13 @@ rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.h:
 
 rosidl_generator_c/amp_msgs/msg/detail/launch_ball__struct.h:
 
+rosidl_generator_c/amp_msgs/msg/detail/launch_ball__type_support.h:
+
 rosidl_generator_c/amp_msgs/msg/rosidl_generator_c__visibility_control.h:
 
-rosidl_generator_c/amp_msgs/msg/detail/launch_ball__type_support.h:
+rosidl_generator_c/amp_msgs/msg/detail/agent_control__type_support.h:
+
+rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.h:
 
 /usr/include/python3.10/fileutils.h:
 
@@ -424,6 +431,8 @@ rosidl_generator_c/amp_msgs/msg/detail/launch_ball__type_support.h:
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+rosidl_generator_c/amp_msgs/msg/detail/agent_control__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 

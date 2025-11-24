@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/amp_msgs/msg/__init__.py"
+  "../rosidl_generator_py/amp_msgs/msg/_agent_control.py"
+  "../rosidl_generator_py/amp_msgs/msg/_agent_control_s.c"
   "../rosidl_generator_py/amp_msgs/msg/_launch_ball.py"
   "../rosidl_generator_py/amp_msgs/msg/_launch_ball_s.c"
   "../rosidl_generator_py/amp_msgs/msg/_set_pose.py"

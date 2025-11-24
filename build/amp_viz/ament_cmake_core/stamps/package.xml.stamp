@@ -11,7 +11,7 @@
   <depend>amp_sim</depend>
   <depend>pluginlib</depend>
   <depend>rviz_common</depend>
-  
+  <depend>ros2launch</depend>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

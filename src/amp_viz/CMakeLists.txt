@@ -43,9 +43,11 @@ install(TARGETS template_panel
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
 )
+
 install(DIRECTORY include/
   DESTINATION include
 )
+
 install(FILES rviz_common_plugins.xml
   DESTINATION share/${PROJECT_NAME}
 )
@@ -62,6 +64,11 @@ install(PROGRAMS ${python_exec}
 
 install(PROGRAMS ${python_exec}
   DESTINATION share/${PROGECT_NAME})
+
+file(GLOB launch RELATIVE ${PROJECT_SOURCE_DIR} launch/*.py)
+
+#install the launch files
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}/)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

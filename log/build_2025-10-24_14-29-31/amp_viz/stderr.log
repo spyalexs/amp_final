@@ -1,3 +1,0 @@
-gmake[2]: *** No rule to make target '/home/hollis/cu/5254_final/src/amp_viz/include/amp_viz/template_panel.hpp', needed by 'include/amp_viz/moc_template_panel.cpp'.  Stop.
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/template_panel.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

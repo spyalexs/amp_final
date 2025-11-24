@@ -224,6 +224,19 @@ dynamic_ball/fast:
 .PHONY : dynamic_ball/fast
 
 #=============================================================================
+# Target rules for targets named omni_agent
+
+# Build rule for target.
+omni_agent: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omni_agent
+.PHONY : omni_agent
+
+# fast build rule for target.
+omni_agent/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_agent.dir/build.make CMakeFiles/omni_agent.dir/build
+.PHONY : omni_agent/fast
+
+#=============================================================================
 # Target rules for targets named sim_node
 
 # Build rule for target.
@@ -284,6 +297,30 @@ src/dynamic_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_object.dir/build.make CMakeFiles/dynamic_object.dir/src/dynamic_object.cpp.s
 .PHONY : src/dynamic_object.cpp.s
 
+src/omni_agent.o: src/omni_agent.cpp.o
+.PHONY : src/omni_agent.o
+
+# target to build an object file
+src/omni_agent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_agent.dir/build.make CMakeFiles/omni_agent.dir/src/omni_agent.cpp.o
+.PHONY : src/omni_agent.cpp.o
+
+src/omni_agent.i: src/omni_agent.cpp.i
+.PHONY : src/omni_agent.i
+
+# target to preprocess a source file
+src/omni_agent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_agent.dir/build.make CMakeFiles/omni_agent.dir/src/omni_agent.cpp.i
+.PHONY : src/omni_agent.cpp.i
+
+src/omni_agent.s: src/omni_agent.cpp.s
+.PHONY : src/omni_agent.s
+
+# target to generate assembly for a file
+src/omni_agent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_agent.dir/build.make CMakeFiles/omni_agent.dir/src/omni_agent.cpp.s
+.PHONY : src/omni_agent.cpp.s
+
 src/run_sim.o: src/run_sim.cpp.o
 .PHONY : src/run_sim.o
 
@@ -325,6 +362,7 @@ help:
 	@echo "... uninstall"
 	@echo "... dynamic_ball"
 	@echo "... dynamic_object"
+	@echo "... omni_agent"
 	@echo "... sim_node"
 	@echo "... src/dynamic_ball.o"
 	@echo "... src/dynamic_ball.i"
@@ -332,6 +370,9 @@ help:
 	@echo "... src/dynamic_object.o"
 	@echo "... src/dynamic_object.i"
 	@echo "... src/dynamic_object.s"
+	@echo "... src/omni_agent.o"
+	@echo "... src/omni_agent.i"
+	@echo "... src/omni_agent.s"
 	@echo "... src/run_sim.o"
 	@echo "... src/run_sim.i"
 	@echo "... src/run_sim.s"

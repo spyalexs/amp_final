@@ -66,6 +66,7 @@ include CMakeFiles/amp_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/amp_msgs.dir/progress.make
 
+CMakeFiles/amp_msgs: /home/hollis/cu/5254_final/src/amp_msgs/msg/AgentControl.msg
 CMakeFiles/amp_msgs: /home/hollis/cu/5254_final/src/amp_msgs/msg/LaunchBall.msg
 CMakeFiles/amp_msgs: /home/hollis/cu/5254_final/src/amp_msgs/msg/SetPose.msg
 

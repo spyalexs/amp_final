@@ -3,6 +3,7 @@
   "output_dir": "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_c/amp_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/AgentControl.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/LaunchBall.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/SetPose.idl"
   ],
@@ -13,6 +14,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/AgentControl.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/LaunchBall.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/SetPose.idl"
   ]

@@ -1,5 +1,0 @@
-[ 33%] Built target dynamic_object
-[ 66%] Built target dynamic_ball
-[ 83%] [32mBuilding CXX object CMakeFiles/sim_node.dir/src/run_sim.cpp.o[0m
-[100%] [32m[1mLinking CXX executable sim_node[0m
-[100%] Built target sim_node
