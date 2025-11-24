@@ -1,0 +1,13 @@
+[0.017s] Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[0.071s] [ 16%] [34m[1mAutomatic MOC and UIC for target template_panel[0m
+[0.092s] [ 16%] Built target template_panel_autogen
+[0.108s] [35m[1mConsolidate compiler generated dependencies of target template_panel[0m
+[0.133s] [ 33%] [32mBuilding CXX object CMakeFiles/template_panel.dir/src/template_panel.cpp.o[0m
+[3.796s] [01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:[m[K In member function ‘[01m[Kvoid TemplatePanel::updateCannonPose()[m[K’:
+[3.796s] [01m[K/home/hollis/cu/5254_final/src/amp_viz/src/template_panel.cpp:70:31:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+[3.796s]    70 |         cannon_update_timer = [01;31m[Knode[m[K->create_wall_timer(2.0s, std::bind(&TemplatePanel::updateCannonPose, this));
+[3.796s]       |                               [01;31m[K^~~~[m[K
+[5.153s] gmake[2]: *** [CMakeFiles/template_panel.dir/build.make:94: CMakeFiles/template_panel.dir/src/template_panel.cpp.o] Error 1
+[5.153s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/template_panel.dir/all] Error 2
+[5.154s] gmake: *** [Makefile:146: all] Error 2
+[5.157s] Invoked command in '/home/hollis/cu/5254_final/build/amp_viz' returned '2': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24

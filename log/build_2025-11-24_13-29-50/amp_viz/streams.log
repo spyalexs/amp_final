@@ -1,0 +1,97 @@
+[0.007s] Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[0.034s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.136s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.136s] -- Found rviz_common: 11.2.20 (/opt/ros/humble/share/rviz_common/cmake)
+[0.149s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[0.152s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.152s] -- Found OGRE
+[0.153s] --   static     : OFF
+[0.153s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.153s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.153s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.153s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.153s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[0.153s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.153s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[0.153s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.153s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.153s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.153s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.156s] -- Could not find freeimage library
+[0.208s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.225s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.227s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.231s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.248s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.308s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.309s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.324s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.333s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.344s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.351s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.360s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.412s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.480s] -- Found amp_msgs: 0.0.0 (/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake)
+[0.486s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.491s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.550s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.550s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/hollis/cu/5254_final/src/amp_viz/include>
+[0.550s] -- Configured cppcheck exclude dirs and/or files: 
+[0.550s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.550s] -- Added test 'lint_cmake' to check CMake code style
+[0.551s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.551s] -- Added test 'uncrustify' to check C / C++ code style
+[0.551s] -- Configured uncrustify additional arguments: 
+[0.552s] -- Added test 'xmllint' to check XML markup files
+[0.553s] -- Configuring done
+[0.584s] -- Generating done
+[0.588s] -- Build files have been written to: /home/hollis/cu/5254_final/build/amp_viz
+[0.626s] [ 16%] [34m[1mAutomatic MOC and UIC for target template_panel[0m
+[0.657s] [ 16%] Built target template_panel_autogen
+[0.668s] [ 33%] [34m[1mGenerating include/amp_viz/moc_template_panel.cpp[0m
+[0.790s] [35m[1mConsolidate compiler generated dependencies of target template_panel[0m
+[0.809s] [ 50%] [32mBuilding CXX object CMakeFiles/template_panel.dir/template_panel_autogen/mocs_compilation.cpp.o[0m
+[0.809s] [ 66%] [32mBuilding CXX object CMakeFiles/template_panel.dir/src/template_panel.cpp.o[0m
+[0.811s] [ 83%] [32mBuilding CXX object CMakeFiles/template_panel.dir/include/amp_viz/moc_template_panel.cpp.o[0m
+[7.119s] [100%] [32m[1mLinking CXX shared library libtemplate_panel.so[0m
+[8.050s] [100%] Built target template_panel
+[8.061s] Invoked command in '/home/hollis/cu/5254_final/build/amp_viz' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[8.063s] Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_viz
+[8.069s] -- Install configuration: ""
+[8.069s] -- Installing: /home/hollis/cu/5254_final/install/amp_viz/lib/libtemplate_panel.so
+[8.072s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_viz/lib/libtemplate_panel.so" to ""
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/include
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/include/amp_viz
+[8.072s] -- Installing: /home/hollis/cu/5254_final/install/amp_viz/include/amp_viz/template_panel.hpp
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/rviz_common_plugins.xml
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/rviz_common_plugins.xml
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/lib/amp_viz/marker_pub.py
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/marker_pub.py
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//launch
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//launch/amp_viz.launch.py
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes/cannon_barrel
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes/cannon_barrel/mesh.dae
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes/cannon_barrel/model.dae
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/package_run_dependencies/amp_viz
+[8.072s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/parent_prefix_path/amp_viz
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.sh
+[8.073s] -- Installing: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.dsv
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.sh
+[8.073s] -- Installing: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.dsv
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.bash
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.sh
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.zsh
+[8.073s] -- Installing: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.dsv
+[8.073s] -- Installing: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.dsv
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/packages/amp_viz
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/rviz_common__pluginlib__plugin/amp_viz
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/export_template_panelExport.cmake
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/export_template_panelExport-noconfig.cmake
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/ament_cmake_export_targets-extras.cmake
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig.cmake
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig-version.cmake
+[8.073s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.xml
+[8.075s] Invoked command in '/home/hollis/cu/5254_final/build/amp_viz' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_viz

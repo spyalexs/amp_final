@@ -1,0 +1,113 @@
+[0.012s] Invoking command in '/home/hollis/cu/5254_final/build/amp_sim': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_sim -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_sim
+[0.071s] -- The C compiler identification is GNU 11.4.0
+[0.132s] -- The CXX compiler identification is GNU 11.4.0
+[0.143s] -- Detecting C compiler ABI info
+[0.218s] -- Detecting C compiler ABI info - done
+[0.222s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.222s] -- Detecting C compile features
+[0.223s] -- Detecting C compile features - done
+[0.225s] -- Detecting CXX compiler ABI info
+[0.315s] -- Detecting CXX compiler ABI info - done
+[0.318s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.318s] -- Detecting CXX compile features
+[0.318s] -- Detecting CXX compile features - done
+[0.320s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.462s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.546s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.580s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.581s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.590s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.596s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.608s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.641s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.642s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.735s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.764s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.801s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.807s] -- Looking for pthread.h
+[0.889s] -- Looking for pthread.h - found
+[0.889s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.976s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.976s] -- Found Threads: TRUE  
+[1.015s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.030s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[1.038s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.112s] -- Found amp_msgs: 0.0.0 (/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake)
+[1.121s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.193s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.193s] -- Configured cppcheck include dirs: /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim
+[1.193s] -- Configured cppcheck exclude dirs and/or files: 
+[1.194s] -- Added test 'lint_cmake' to check CMake code style
+[1.194s] -- Added test 'uncrustify' to check C / C++ code style
+[1.194s] -- Configured uncrustify additional arguments: 
+[1.195s] -- Added test 'xmllint' to check XML markup files
+[1.198s] -- Configuring done
+[1.209s] -- Generating done
+[1.213s] -- Build files have been written to: /home/hollis/cu/5254_final/build/amp_sim
+[1.227s] Invoked command in '/home/hollis/cu/5254_final/build/amp_sim' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_sim -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_sim
+[1.230s] Invoking command in '/home/hollis/cu/5254_final/build/amp_sim': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_sim -- -j24 -l24
+[1.287s] [ 12%] [32mBuilding CXX object CMakeFiles/dynamic_object.dir/src/dynamic_object.cpp.o[0m
+[2.042s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In constructor ‘[01m[KDynamicObject::DynamicObject(double, std::vector<int>, std::string, bool)[m[K’:
+[2.043s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:18:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.044s]    18 |     for(int i = 0; [01;35m[Ki < lockedStates.size()[m[K; i++){
+[2.044s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.253s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicObject::getAMatrix(V12d)[m[K’:
+[2.253s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:100:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.253s]   100 | M12d DynamicObject::getAMatrix([01;35m[KV12d current_state[m[K){
+[2.254s]       |                                [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[2.256s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicObject::getBMatrix(V12d)[m[K’:
+[2.256s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:116:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.256s]   116 | M12d DynamicObject::getBMatrix([01;35m[KV12d current_state[m[K){
+[2.256s]       |                                [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[3.425s] [ 25%] [32m[1mLinking CXX static library libdynamic_object.a[0m
+[3.487s] [ 25%] Built target dynamic_object
+[3.515s] [ 37%] [32mBuilding CXX object CMakeFiles/dynamic_ball.dir/src/dynamic_ball.cpp.o[0m
+[3.515s] [ 50%] [32mBuilding CXX object CMakeFiles/omni_agent.dir/src/omni_agent.cpp.o[0m
+[4.335s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/omni_agent.cpp:[m[K In member function ‘[01m[Kvirtual M12d OmniAgent::getAMatrix(V12d)[m[K’:
+[4.335s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/omni_agent.cpp:8:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.335s]     8 | M12d OmniAgent::getAMatrix([01;35m[KV12d current_state[m[K) {
+[4.335s]       |                            [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[4.335s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/omni_agent.cpp:[m[K In member function ‘[01m[Kvirtual M12d OmniAgent::getBMatrix(V12d)[m[K’:
+[4.335s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/omni_agent.cpp:31:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.336s]    31 | M12d OmniAgent::getBMatrix([01;35m[KV12d current_state[m[K) {
+[4.336s]       |                            [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[4.356s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_ball.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicBall::getAMatrix(V12d)[m[K’:
+[4.356s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_ball.cpp:8:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.356s]     8 | M12d DynamicBall::getAMatrix([01;35m[KV12d current_state[m[K) {
+[4.356s]       |                              [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[4.356s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_ball.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicBall::getBMatrix(V12d)[m[K’:
+[4.356s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_ball.cpp:31:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.356s]    31 | M12d DynamicBall::getBMatrix([01;35m[KV12d current_state[m[K) {
+[4.356s]       |                              [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[4.536s] [ 62%] [32m[1mLinking CXX static library libomni_agent.a[0m
+[4.563s] [ 75%] [32m[1mLinking CXX static library libdynamic_ball.a[0m
+[4.572s] [ 75%] Built target omni_agent
+[4.600s] [ 75%] Built target dynamic_ball
+[4.624s] [ 87%] [32mBuilding CXX object CMakeFiles/sim_node.dir/src/run_sim.cpp.o[0m
+[7.847s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:[m[K In member function ‘[01m[Kvoid SimNode::tic_cb()[m[K’:
+[7.847s] [01m[K/home/hollis/cu/5254_final/src/amp_sim/src/run_sim.cpp:86:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::_List_iterator<DynamicObject*> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[7.847s]    86 |             for(int i = 0; [01;35m[Ki < to_erase.size()[m[K; i++){
+[7.847s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[18.960s] [100%] [32m[1mLinking CXX executable sim_node[0m
+[19.766s] [100%] Built target sim_node
+[19.778s] Invoked command in '/home/hollis/cu/5254_final/build/amp_sim' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_sim -- -j24 -l24
+[19.780s] Invoking command in '/home/hollis/cu/5254_final/build/amp_sim': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_sim
+[19.792s] -- Install configuration: ""
+[19.792s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/lib/amp_sim/sim_node
+[19.798s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_sim/lib/amp_sim/sim_node" to ""
+[19.798s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/package_run_dependencies/amp_sim
+[19.798s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/parent_prefix_path/amp_sim
+[19.798s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/ament_prefix_path.sh
+[19.799s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/ament_prefix_path.dsv
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/path.sh
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/path.dsv
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.bash
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.sh
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.zsh
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.dsv
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.dsv
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/packages/amp_sim
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig.cmake
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig-version.cmake
+[19.800s] -- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.xml
+[19.802s] Invoked command in '/home/hollis/cu/5254_final/build/amp_sim' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_sim

@@ -12,9 +12,14 @@ find_package(rviz_common REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(amp_msgs REQUIRED)
 find_package(ament_cmake_ros REQUIRED)
+find_package(Eigen3 REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+#include Eigen
+include_directories(${EIGEN3_INCLUDE_DIRS})
+
 
 #compile QT macros
 set(CMAKE_AUTOMOC ON)
@@ -69,6 +74,11 @@ file(GLOB launch RELATIVE ${PROJECT_SOURCE_DIR} launch/*.py)
 
 #install the launch files
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}/)
+
+#install the meshes
+file(GLOB meshes RELATIVE ${PROJECT_SOURCE_DIR} meshes/*.stl)
+
+install(DIRECTORY meshes DESTINATION share/${PROJECT_NAME}/)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

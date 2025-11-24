@@ -24,16 +24,21 @@ void TemplatePanel::onInitialize()
     launch_ball_pub = node->create_publisher<amp_msgs::msg::LaunchBall>("/launch_ball", 10);
     set_position_pub = node->create_publisher<amp_msgs::msg::SetPose>("/set_agent_pose", 10);
 
-    //create tf listener
+    //create tf listener & broadcaster
     tf_buffer = std::make_unique<tf2_ros::Buffer>(node->get_clock());
     tf_listener = std::make_shared<tf2_ros::TransformListener>(*tf_buffer);
+    tf_broadcaster = std::make_unique<tf2_ros::TransformBroadcaster>(node);
 
     //create cb timer to update the agent pose
     pose_update_timer = node->create_wall_timer(0.03s, std::bind(&TemplatePanel::update_pose_display, this));
+    cannon_update_timer = node->create_wall_timer(2.0s, std::bind(&TemplatePanel::updateCannonPose, this));
+    cannon_update_timer->cancel();
 
     //link the launch ball button
     QObject::connect(ui->launch_button, &QPushButton::released, this, &TemplatePanel::launchBallCb);
     QObject::connect(ui->set_position_button, &QPushButton::released, this, &TemplatePanel::setPositionCb);
+    QObject::connect(ui->launch_heading_input, &QLineEdit::textChanged, this, &TemplatePanel::updateCannonPose);
+    
 }
 
 rclcpp::Node::SharedPtr TemplatePanel::getRosNode(){
@@ -58,16 +63,46 @@ void TemplatePanel::update_pose_display(){
         RCLCPP_WARN(getRosNode()->get_logger(), "Could not transform %s to %s: %s", WORLD_FRAME_NAME, AGENT_NAME, ex.what());
         return;
     }
+}
 
+void TemplatePanel::updateCannonPose(){
+    if(cannon_update_timer->is_canceled()){
+        cannon_update_timer = getRosNode()->create_wall_timer(2.0s, std::bind(&TemplatePanel::updateCannonPose, this));
 
+    }
+
+    geometry_msgs::msg::TransformStamped t;
+
+    //form header
+    t.header.stamp = getRosNode()->get_clock()->now();
+    t.header.frame_id = CANNON_FRAME_NAME;
+    t.child_frame_id = "world";
+
+    //input information from the state vector
+    t.transform.translation.x = 0;
+    t.transform.translation.y = 0;
+    t.transform.translation.z = 0;
+
+    Eigen::Quaterniond barrel_rotation;
+    barrel_rotation = Eigen::AngleAxisd(ui->launch_angle_input->text().toFloat() / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitX()) * Eigen::AngleAxisd(ui->launch_heading_input->text().toFloat() / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitZ());
+
+    t.transform.rotation.w = barrel_rotation.w();
+    t.transform.rotation.x = barrel_rotation.x();
+    t.transform.rotation.y = barrel_rotation.y();
+    t.transform.rotation.z = barrel_rotation.z();
+
+    RCLCPP_INFO(getRosNode()->get_logger(), "Here!");
+
+    //send to broadcaster
+    tf_broadcaster->sendTransform(t);
 }
 
 void TemplatePanel::launchBallCb(){
     amp_msgs::msg::LaunchBall msg;
 
     msg.ball_velocity = ui->launch_velocity_input->text().toFloat();
-    msg.ball_launch_angle = ui->launch_angle_input->text().toFloat();
-    msg.ball_launch_heading = ui->launch_heading_input->text().toFloat();
+    msg.ball_launch_angle = ui->launch_angle_input->text().toFloat()  / 180 * M_PI;
+    msg.ball_launch_heading = ui->launch_heading_input->text().toFloat()  / 180 * M_PI;
 
     launch_ball_pub->publish(msg);
 }
@@ -85,7 +120,8 @@ void TemplatePanel::setPositionCb(){
 
 
 
-TemplatePanel::~TemplatePanel() = default;
+TemplatePanel::~TemplatePanel(){
+};
 
 #include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS(TemplatePanel, rviz_common::Panel)

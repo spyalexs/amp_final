@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Eigen/Dense>
+
 #include <rclcpp/rclcpp.hpp>
 
 #include <rviz_common/panel.hpp>
@@ -9,6 +11,7 @@
 #include "tf2_ros/transform_listener.h"
 #include "tf2_ros/buffer.h"
 #include "tf2/exceptions.h"
+#include "tf2_ros/transform_broadcaster.h"
 
 #include "ui/ui_template_panel.h"
 #include "amp_msgs/msg/launch_ball.hpp"
@@ -17,6 +20,7 @@
 
 #define AGENT_NAME "omni_agent"
 #define WORLD_FRAME_NAME "world"
+#define CANNON_FRAME_NAME "cannon_barrel"
 
 class TemplatePanel : public rviz_common::Panel{
     Q_OBJECT
@@ -41,10 +45,14 @@ class TemplatePanel : public rviz_common::Panel{
 
         std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
         std::unique_ptr<tf2_ros::Buffer> tf_buffer;
+        std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster;
 
         rclcpp::TimerBase::SharedPtr pose_update_timer{nullptr};
+        rclcpp::TimerBase::SharedPtr cannon_update_timer{nullptr};
 
         void update_pose_display();
+        void updateCannonPose();
+
 
     private Q_SLOTS:
         void launchBallCb();

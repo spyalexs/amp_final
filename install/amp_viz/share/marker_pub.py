@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
 
+from os.path import join
+
 import rclpy
 from rclpy.node import Node
 from rclpy.duration import Duration
 
-from std_msgs.msg import String
 from visualization_msgs.msg import MarkerArray, Marker
-
 from std_msgs.msg import Int32MultiArray
 
+from ament_index_python import get_package_share_directory 
+
+
 BALL_SCALE  = 0.05
+CANNON_SCALE  = 0.02
 AGENT_SCALE = 0.6
+CANNON_FRAME_NAME = "cannon_barrel"
 
 class MarkerPub(Node):
 
@@ -21,10 +26,14 @@ class MarkerPub(Node):
         super().__init__('marker_pub')
 
         self.marker_arrary_pub = self.create_publisher(MarkerArray, "/dynamic_objects", 10)
+        self.cannon_barrel_pub = self.create_publisher(Marker, "/cannon_barrel", 10)
 
         self.dynamic_object_timer = self.create_timer(0.03, self.dynamic_object_cb)
+        self.cannon_barrel_timer = self.create_timer(0.03, self.cannon_barrel_cb)
 
         self.create_subscription(Int32MultiArray, "/valid_ball_frames", self.ball_frames_cb, 10)
+
+        self.cannon_barrel_mesh_path =  "file://" + join(get_package_share_directory("amp_viz"), "meshes/cannon_barrel/mesh.dae")
 
     def ball_frames_cb(self, msg: Int32MultiArray):
         
@@ -34,6 +43,40 @@ class MarkerPub(Node):
         for frame in msg.data:
             self.ball_frames.append(f"ball_{frame}")
 
+    def cannon_barrel_cb(self):
+
+        # update the marker for the cannon barrel
+        msg = Marker()
+
+        msg.header.frame_id = CANNON_FRAME_NAME
+        msg.header.stamp = self.get_clock().now().to_msg()
+
+        msg.type = 10
+        msg.action = 0
+        msg.pose.position.x = 0.0
+        msg.pose.position.y = 0.0
+        msg.pose.position.z = 0.0
+        msg.pose.orientation.x = -0.7071
+        msg.pose.orientation.y = 0.0
+        msg.pose.orientation.z = 0.0
+        msg.pose.orientation.w = 0.7071
+
+        msg.scale.x = CANNON_SCALE
+        msg.scale.y = CANNON_SCALE
+        msg.scale.z = CANNON_SCALE
+
+        msg.color.r = 0.3
+        msg.color.g = 0.3
+        msg.color.b = 0.3
+        msg.color.a = 1.0
+
+        msg.mesh_resource = self.cannon_barrel_mesh_path
+
+        msg.id = 6
+
+        msg.lifetime = Duration().to_msg()
+
+        self.cannon_barrel_pub.publish(msg)
 
     def dynamic_object_cb(self):
 

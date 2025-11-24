@@ -1,3 +1,4 @@
+-I/usr/include/eigen3
 -DROS_PACKAGE_NAME="amp_viz"
 -o
 /home/hollis/cu/5254_final/build/amp_viz/include/amp_viz/moc_template_panel.cpp
