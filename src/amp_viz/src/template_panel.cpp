@@ -38,6 +38,10 @@ void TemplatePanel::onInitialize()
     QObject::connect(ui->launch_button, &QPushButton::released, this, &TemplatePanel::launchBallCb);
     QObject::connect(ui->set_position_button, &QPushButton::released, this, &TemplatePanel::setPositionCb);
     QObject::connect(ui->launch_heading_input, &QLineEdit::textChanged, this, &TemplatePanel::updateCannonPose);
+    QObject::connect(ui->launch_angle_input, &QLineEdit::textChanged, this, &TemplatePanel::updateCannonPose);
+    QObject::connect(ui->launch_x, &QLineEdit::textChanged, this, &TemplatePanel::updateCannonPose);
+    QObject::connect(ui->launch_y, &QLineEdit::textChanged, this, &TemplatePanel::updateCannonPose);
+    QObject::connect(ui->launch_z, &QLineEdit::textChanged, this, &TemplatePanel::updateCannonPose);
     
 }
 
@@ -79,12 +83,12 @@ void TemplatePanel::updateCannonPose(){
     t.child_frame_id = "world";
 
     //input information from the state vector
-    t.transform.translation.x = 0;
-    t.transform.translation.y = 0;
-    t.transform.translation.z = 0;
+    t.transform.translation.x = ui->launch_x->text().toFloat();;
+    t.transform.translation.y = ui->launch_y->text().toFloat();;
+    t.transform.translation.z = ui->launch_z->text().toFloat();;
 
     Eigen::Quaterniond barrel_rotation;
-    barrel_rotation = Eigen::AngleAxisd(ui->launch_angle_input->text().toFloat() / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitX()) * Eigen::AngleAxisd(ui->launch_heading_input->text().toFloat() / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitZ());
+    barrel_rotation = Eigen::AngleAxisd(ui->launch_angle_input->text().toFloat() / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitX()) * Eigen::AngleAxisd((ui->launch_heading_input->text().toFloat() +180)/ 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitZ());
 
     t.transform.rotation.w = barrel_rotation.w();
     t.transform.rotation.x = barrel_rotation.x();
@@ -101,8 +105,12 @@ void TemplatePanel::launchBallCb(){
     amp_msgs::msg::LaunchBall msg;
 
     msg.ball_velocity = ui->launch_velocity_input->text().toFloat();
-    msg.ball_launch_angle = ui->launch_angle_input->text().toFloat()  / 180 * M_PI;
-    msg.ball_launch_heading = ui->launch_heading_input->text().toFloat()  / 180 * M_PI;
+    msg.ball_launch_angle = ui->launch_angle_input->text().toFloat() / 180 * M_PI;
+    msg.ball_launch_heading = (ui->launch_heading_input->text().toFloat()) / 180 * M_PI;
+
+    msg.ball_pos_x = ui->launch_x->text().toFloat();
+    msg.ball_pos_y = ui->launch_y->text().toFloat();
+    msg.ball_pos_z = ui->launch_z->text().toFloat();
 
     launch_ball_pub->publish(msg);
 }

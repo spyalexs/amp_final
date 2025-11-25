@@ -23,6 +23,9 @@ typedef struct amp_msgs__msg__LaunchBall
   float ball_velocity;
   float ball_launch_angle;
   float ball_launch_heading;
+  float ball_pos_x;
+  float ball_pos_y;
+  float ball_pos_z;
 } amp_msgs__msg__LaunchBall;
 
 // Struct for a sequence of amp_msgs__msg__LaunchBall.

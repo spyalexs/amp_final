@@ -20,6 +20,9 @@ amp_msgs__msg__LaunchBall__init(amp_msgs__msg__LaunchBall * msg)
   // ball_velocity
   // ball_launch_angle
   // ball_launch_heading
+  // ball_pos_x
+  // ball_pos_y
+  // ball_pos_z
   return true;
 }
 
@@ -32,6 +35,9 @@ amp_msgs__msg__LaunchBall__fini(amp_msgs__msg__LaunchBall * msg)
   // ball_velocity
   // ball_launch_angle
   // ball_launch_heading
+  // ball_pos_x
+  // ball_pos_y
+  // ball_pos_z
 }
 
 bool
@@ -52,6 +58,18 @@ amp_msgs__msg__LaunchBall__are_equal(const amp_msgs__msg__LaunchBall * lhs, cons
   if (lhs->ball_launch_heading != rhs->ball_launch_heading) {
     return false;
   }
+  // ball_pos_x
+  if (lhs->ball_pos_x != rhs->ball_pos_x) {
+    return false;
+  }
+  // ball_pos_y
+  if (lhs->ball_pos_y != rhs->ball_pos_y) {
+    return false;
+  }
+  // ball_pos_z
+  if (lhs->ball_pos_z != rhs->ball_pos_z) {
+    return false;
+  }
   return true;
 }
 
@@ -69,6 +87,12 @@ amp_msgs__msg__LaunchBall__copy(
   output->ball_launch_angle = input->ball_launch_angle;
   // ball_launch_heading
   output->ball_launch_heading = input->ball_launch_heading;
+  // ball_pos_x
+  output->ball_pos_x = input->ball_pos_x;
+  // ball_pos_y
+  output->ball_pos_y = input->ball_pos_y;
+  // ball_pos_z
+  output->ball_pos_z = input->ball_pos_z;
   return true;
 }
 

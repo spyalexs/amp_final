@@ -64,6 +64,21 @@ static bool _LaunchBall__cdr_serialize(
     cdr << ros_message->ball_launch_heading;
   }
 
+  // Field name: ball_pos_x
+  {
+    cdr << ros_message->ball_pos_x;
+  }
+
+  // Field name: ball_pos_y
+  {
+    cdr << ros_message->ball_pos_y;
+  }
+
+  // Field name: ball_pos_z
+  {
+    cdr << ros_message->ball_pos_z;
+  }
+
   return true;
 }
 
@@ -89,6 +104,21 @@ static bool _LaunchBall__cdr_deserialize(
   // Field name: ball_launch_heading
   {
     cdr >> ros_message->ball_launch_heading;
+  }
+
+  // Field name: ball_pos_x
+  {
+    cdr >> ros_message->ball_pos_x;
+  }
+
+  // Field name: ball_pos_y
+  {
+    cdr >> ros_message->ball_pos_y;
+  }
+
+  // Field name: ball_pos_z
+  {
+    cdr >> ros_message->ball_pos_z;
   }
 
   return true;
@@ -123,6 +153,24 @@ size_t get_serialized_size_amp_msgs__msg__LaunchBall(
   // field.name ball_launch_heading
   {
     size_t item_size = sizeof(ros_message->ball_launch_heading);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name ball_pos_x
+  {
+    size_t item_size = sizeof(ros_message->ball_pos_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name ball_pos_y
+  {
+    size_t item_size = sizeof(ros_message->ball_pos_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name ball_pos_z
+  {
+    size_t item_size = sizeof(ros_message->ball_pos_z);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -179,6 +227,30 @@ size_t max_serialized_size_amp_msgs__msg__LaunchBall(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: ball_pos_x
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: ball_pos_y
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: ball_pos_z
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -188,7 +260,7 @@ size_t max_serialized_size_amp_msgs__msg__LaunchBall(
     using DataType = amp_msgs__msg__LaunchBall;
     is_plain =
       (
-      offsetof(DataType, ball_launch_heading) +
+      offsetof(DataType, ball_pos_z) +
       last_member_size
       ) == ret_val;
   }

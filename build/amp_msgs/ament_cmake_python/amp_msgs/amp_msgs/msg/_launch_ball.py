@@ -60,15 +60,24 @@ class LaunchBall(metaclass=Metaclass_LaunchBall):
         '_ball_velocity',
         '_ball_launch_angle',
         '_ball_launch_heading',
+        '_ball_pos_x',
+        '_ball_pos_y',
+        '_ball_pos_z',
     ]
 
     _fields_and_field_types = {
         'ball_velocity': 'float',
         'ball_launch_angle': 'float',
         'ball_launch_heading': 'float',
+        'ball_pos_x': 'float',
+        'ball_pos_y': 'float',
+        'ball_pos_z': 'float',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -81,6 +90,9 @@ class LaunchBall(metaclass=Metaclass_LaunchBall):
         self.ball_velocity = kwargs.get('ball_velocity', float())
         self.ball_launch_angle = kwargs.get('ball_launch_angle', float())
         self.ball_launch_heading = kwargs.get('ball_launch_heading', float())
+        self.ball_pos_x = kwargs.get('ball_pos_x', float())
+        self.ball_pos_y = kwargs.get('ball_pos_y', float())
+        self.ball_pos_z = kwargs.get('ball_pos_z', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -116,6 +128,12 @@ class LaunchBall(metaclass=Metaclass_LaunchBall):
         if self.ball_launch_angle != other.ball_launch_angle:
             return False
         if self.ball_launch_heading != other.ball_launch_heading:
+            return False
+        if self.ball_pos_x != other.ball_pos_x:
+            return False
+        if self.ball_pos_y != other.ball_pos_y:
+            return False
+        if self.ball_pos_z != other.ball_pos_z:
             return False
         return True
 
@@ -168,3 +186,48 @@ class LaunchBall(metaclass=Metaclass_LaunchBall):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'ball_launch_heading' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._ball_launch_heading = value
+
+    @builtins.property
+    def ball_pos_x(self):
+        """Message field 'ball_pos_x'."""
+        return self._ball_pos_x
+
+    @ball_pos_x.setter
+    def ball_pos_x(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ball_pos_x' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'ball_pos_x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._ball_pos_x = value
+
+    @builtins.property
+    def ball_pos_y(self):
+        """Message field 'ball_pos_y'."""
+        return self._ball_pos_y
+
+    @ball_pos_y.setter
+    def ball_pos_y(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ball_pos_y' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'ball_pos_y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._ball_pos_y = value
+
+    @builtins.property
+    def ball_pos_z(self):
+        """Message field 'ball_pos_z'."""
+        return self._ball_pos_z
+
+    @ball_pos_z.setter
+    def ball_pos_z(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ball_pos_z' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'ball_pos_z' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._ball_pos_z = value

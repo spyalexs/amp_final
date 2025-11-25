@@ -27,12 +27,18 @@ public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_3;
     QVBoxLayout *verticalLayout_2;
+    QLabel *label_7;
+    QLineEdit *launch_x;
     QLabel *label;
     QLineEdit *launch_angle_input;
     QVBoxLayout *verticalLayout_4;
+    QLabel *label_8;
+    QLineEdit *launch_y;
     QLabel *label_2;
     QLineEdit *launch_velocity_input;
     QVBoxLayout *verticalLayout_3;
+    QLabel *label_9;
+    QLineEdit *launch_z;
     QLabel *label_3;
     QLineEdit *launch_heading_input;
     QPushButton *launch_button;
@@ -73,6 +79,16 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        label_7 = new QLabel(verticalLayoutWidget);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        verticalLayout_2->addWidget(label_7);
+
+        launch_x = new QLineEdit(verticalLayoutWidget);
+        launch_x->setObjectName(QString::fromUtf8("launch_x"));
+
+        verticalLayout_2->addWidget(launch_x);
+
         label = new QLabel(verticalLayoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
@@ -88,6 +104,16 @@ public:
 
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        label_8 = new QLabel(verticalLayoutWidget);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+
+        verticalLayout_4->addWidget(label_8);
+
+        launch_y = new QLineEdit(verticalLayoutWidget);
+        launch_y->setObjectName(QString::fromUtf8("launch_y"));
+
+        verticalLayout_4->addWidget(launch_y);
+
         label_2 = new QLabel(verticalLayoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
@@ -103,6 +129,16 @@ public:
 
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        label_9 = new QLabel(verticalLayoutWidget);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        verticalLayout_3->addWidget(label_9);
+
+        launch_z = new QLineEdit(verticalLayoutWidget);
+        launch_z->setObjectName(QString::fromUtf8("launch_z"));
+
+        verticalLayout_3->addWidget(launch_z);
+
         label_3 = new QLabel(verticalLayoutWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
@@ -211,8 +247,11 @@ public:
     void retranslateUi(QWidget *Template_Panel)
     {
         Template_Panel->setWindowTitle(QCoreApplication::translate("Template_Panel", "Dialog", nullptr));
+        label_7->setText(QCoreApplication::translate("Template_Panel", "Launch X", nullptr));
         label->setText(QCoreApplication::translate("Template_Panel", "Launch Angle", nullptr));
+        label_8->setText(QCoreApplication::translate("Template_Panel", "Launch Y", nullptr));
         label_2->setText(QCoreApplication::translate("Template_Panel", "Launch Velocity", nullptr));
+        label_9->setText(QCoreApplication::translate("Template_Panel", "Launch Z", nullptr));
         label_3->setText(QCoreApplication::translate("Template_Panel", "Launch Heading", nullptr));
         launch_button->setText(QCoreApplication::translate("Template_Panel", "Launch!", nullptr));
         label_4->setText(QCoreApplication::translate("Template_Panel", "Robot X Position", nullptr));

@@ -31,7 +31,7 @@ void amp_msgs__msg__LaunchBall__rosidl_typesupport_introspection_c__LaunchBall_f
   amp_msgs__msg__LaunchBall__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember amp_msgs__msg__LaunchBall__rosidl_typesupport_introspection_c__LaunchBall_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember amp_msgs__msg__LaunchBall__rosidl_typesupport_introspection_c__LaunchBall_message_member_array[6] = {
   {
     "ball_velocity",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -82,13 +82,64 @@ static rosidl_typesupport_introspection_c__MessageMember amp_msgs__msg__LaunchBa
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "ball_pos_x",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(amp_msgs__msg__LaunchBall, ball_pos_x),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "ball_pos_y",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(amp_msgs__msg__LaunchBall, ball_pos_y),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "ball_pos_z",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(amp_msgs__msg__LaunchBall, ball_pos_z),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers amp_msgs__msg__LaunchBall__rosidl_typesupport_introspection_c__LaunchBall_message_members = {
   "amp_msgs__msg",  // message namespace
   "LaunchBall",  // message name
-  3,  // number of fields
+  6,  // number of fields
   sizeof(amp_msgs__msg__LaunchBall),
   amp_msgs__msg__LaunchBall__rosidl_typesupport_introspection_c__LaunchBall_message_member_array,  // message members
   amp_msgs__msg__LaunchBall__rosidl_typesupport_introspection_c__LaunchBall_init_function,  // function to initialize message memory (memory has to be allocated)

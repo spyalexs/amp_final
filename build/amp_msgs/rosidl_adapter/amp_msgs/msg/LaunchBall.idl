@@ -11,6 +11,12 @@ module amp_msgs {
       float ball_launch_angle;
 
       float ball_launch_heading;
+
+      float ball_pos_x;
+
+      float ball_pos_y;
+
+      float ball_pos_z;
     };
   };
 };

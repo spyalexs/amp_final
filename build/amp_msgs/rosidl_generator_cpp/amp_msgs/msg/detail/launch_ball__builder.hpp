@@ -21,16 +21,64 @@ namespace msg
 namespace builder
 {
 
+class Init_LaunchBall_ball_pos_z
+{
+public:
+  explicit Init_LaunchBall_ball_pos_z(::amp_msgs::msg::LaunchBall & msg)
+  : msg_(msg)
+  {}
+  ::amp_msgs::msg::LaunchBall ball_pos_z(::amp_msgs::msg::LaunchBall::_ball_pos_z_type arg)
+  {
+    msg_.ball_pos_z = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::amp_msgs::msg::LaunchBall msg_;
+};
+
+class Init_LaunchBall_ball_pos_y
+{
+public:
+  explicit Init_LaunchBall_ball_pos_y(::amp_msgs::msg::LaunchBall & msg)
+  : msg_(msg)
+  {}
+  Init_LaunchBall_ball_pos_z ball_pos_y(::amp_msgs::msg::LaunchBall::_ball_pos_y_type arg)
+  {
+    msg_.ball_pos_y = std::move(arg);
+    return Init_LaunchBall_ball_pos_z(msg_);
+  }
+
+private:
+  ::amp_msgs::msg::LaunchBall msg_;
+};
+
+class Init_LaunchBall_ball_pos_x
+{
+public:
+  explicit Init_LaunchBall_ball_pos_x(::amp_msgs::msg::LaunchBall & msg)
+  : msg_(msg)
+  {}
+  Init_LaunchBall_ball_pos_y ball_pos_x(::amp_msgs::msg::LaunchBall::_ball_pos_x_type arg)
+  {
+    msg_.ball_pos_x = std::move(arg);
+    return Init_LaunchBall_ball_pos_y(msg_);
+  }
+
+private:
+  ::amp_msgs::msg::LaunchBall msg_;
+};
+
 class Init_LaunchBall_ball_launch_heading
 {
 public:
   explicit Init_LaunchBall_ball_launch_heading(::amp_msgs::msg::LaunchBall & msg)
   : msg_(msg)
   {}
-  ::amp_msgs::msg::LaunchBall ball_launch_heading(::amp_msgs::msg::LaunchBall::_ball_launch_heading_type arg)
+  Init_LaunchBall_ball_pos_x ball_launch_heading(::amp_msgs::msg::LaunchBall::_ball_launch_heading_type arg)
   {
     msg_.ball_launch_heading = std::move(arg);
-    return std::move(msg_);
+    return Init_LaunchBall_ball_pos_x(msg_);
   }
 
 private:

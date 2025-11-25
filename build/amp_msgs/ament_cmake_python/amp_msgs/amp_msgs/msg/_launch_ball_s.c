@@ -77,6 +77,33 @@ bool amp_msgs__msg__launch_ball__convert_from_py(PyObject * _pymsg, void * _ros_
     ros_message->ball_launch_heading = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // ball_pos_x
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ball_pos_x");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ball_pos_x = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // ball_pos_y
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ball_pos_y");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ball_pos_y = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // ball_pos_z
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ball_pos_z");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ball_pos_z = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -126,6 +153,39 @@ PyObject * amp_msgs__msg__launch_ball__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->ball_launch_heading);
     {
       int rc = PyObject_SetAttrString(_pymessage, "ball_launch_heading", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ball_pos_x
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ball_pos_x);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ball_pos_x", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ball_pos_y
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ball_pos_y);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ball_pos_y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ball_pos_z
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ball_pos_z);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ball_pos_z", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

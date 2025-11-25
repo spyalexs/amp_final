@@ -127,14 +127,21 @@ class SimNode : public rclcpp::Node
             V3d launch_vector(msg.ball_velocity, 0.0, 0.0);
             launch_vector = 
                 Eigen::AngleAxisd(msg.ball_launch_heading, V3d::UnitZ()) * 
-                Eigen::AngleAxisd(msg.ball_launch_angle, V3d::UnitY()) * 
+                Eigen::AngleAxisd(-msg.ball_launch_angle, V3d::UnitY()) * 
                 launch_vector;
 
+
+            RCLCPP_INFO(get_logger(), "Launch Info: %f %f %f", launch_vector(0), launch_vector(1), launch_vector(2));
 
             dynamic_objects.push_back(new DynamicBall(ball_damping, 1, "ball_" + std::to_string(ball_index), empty));
             dynamic_objects.back()->state[7] = launch_vector(0);
             dynamic_objects.back()->state[8] = launch_vector(1);
             dynamic_objects.back()->state[9] = launch_vector(2);
+
+            //set the initial ball postion
+            dynamic_objects.back()->state[0] = msg.ball_pos_x;
+            dynamic_objects.back()->state[1] = msg.ball_pos_y;
+            dynamic_objects.back()->state[2] = msg.ball_pos_z;
 
             publish_ball_frames();
 

@@ -41,6 +41,9 @@ struct LaunchBall_
       this->ball_velocity = 0.0f;
       this->ball_launch_angle = 0.0f;
       this->ball_launch_heading = 0.0f;
+      this->ball_pos_x = 0.0f;
+      this->ball_pos_y = 0.0f;
+      this->ball_pos_z = 0.0f;
     }
   }
 
@@ -53,6 +56,9 @@ struct LaunchBall_
       this->ball_velocity = 0.0f;
       this->ball_launch_angle = 0.0f;
       this->ball_launch_heading = 0.0f;
+      this->ball_pos_x = 0.0f;
+      this->ball_pos_y = 0.0f;
+      this->ball_pos_z = 0.0f;
     }
   }
 
@@ -66,6 +72,15 @@ struct LaunchBall_
   using _ball_launch_heading_type =
     float;
   _ball_launch_heading_type ball_launch_heading;
+  using _ball_pos_x_type =
+    float;
+  _ball_pos_x_type ball_pos_x;
+  using _ball_pos_y_type =
+    float;
+  _ball_pos_y_type ball_pos_y;
+  using _ball_pos_z_type =
+    float;
+  _ball_pos_z_type ball_pos_z;
 
   // setters for named parameter idiom
   Type & set__ball_velocity(
@@ -84,6 +99,24 @@ struct LaunchBall_
     const float & _arg)
   {
     this->ball_launch_heading = _arg;
+    return *this;
+  }
+  Type & set__ball_pos_x(
+    const float & _arg)
+  {
+    this->ball_pos_x = _arg;
+    return *this;
+  }
+  Type & set__ball_pos_y(
+    const float & _arg)
+  {
+    this->ball_pos_y = _arg;
+    return *this;
+  }
+  Type & set__ball_pos_z(
+    const float & _arg)
+  {
+    this->ball_pos_z = _arg;
     return *this;
   }
 
@@ -136,6 +169,15 @@ struct LaunchBall_
       return false;
     }
     if (this->ball_launch_heading != other.ball_launch_heading) {
+      return false;
+    }
+    if (this->ball_pos_x != other.ball_pos_x) {
+      return false;
+    }
+    if (this->ball_pos_y != other.ball_pos_y) {
+      return false;
+    }
+    if (this->ball_pos_z != other.ball_pos_z) {
       return false;
     }
     return true;

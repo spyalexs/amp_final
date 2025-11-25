@@ -56,10 +56,10 @@ class MarkerPub(Node):
         msg.pose.position.x = 0.0
         msg.pose.position.y = 0.0
         msg.pose.position.z = 0.0
-        msg.pose.orientation.x = -0.7071
-        msg.pose.orientation.y = 0.0
-        msg.pose.orientation.z = 0.0
-        msg.pose.orientation.w = 0.7071
+        msg.pose.orientation.x = -0.0
+        msg.pose.orientation.y = 0.7071
+        msg.pose.orientation.z = 0.7071
+        msg.pose.orientation.w = 0.0
 
         msg.scale.x = CANNON_SCALE
         msg.scale.y = CANNON_SCALE
