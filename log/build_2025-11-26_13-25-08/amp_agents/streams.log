@@ -1,0 +1,42 @@
+[0.013s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target sst_tree[0m
+[0.051s] [ 16%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[0.057s] [ 50%] Built target backend
+[0.084s] [ 83%] Built target run
+[0.672s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV13d SstTree::generate_random_sample()[m[K’:
+[0.672s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:48:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[0.672s]    48 | [01;35m[K}[m[K
+[0.672s]       | [01;35m[K^[m[K
+[0.690s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[0.690s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:123:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.690s]   123 |     for(int i = 0; [01;35m[Ki < env.control_limits.size()[m[K; i++){
+[0.690s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.743s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+[0.743s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.743s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:3[m[K,
+[0.743s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+[0.743s] /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h: In instantiation of ‘[01m[KEigen::PlainObjectBase<Derived>::PlainObjectBase(const Scalar&, const Scalar&, const Scalar&, const Scalar&, const ArgTypes& ...) [with ArgTypes = {double, double, double, int, double, double, int, int, int, double}; Derived = Eigen::Matrix<double, 13, 1>; Eigen::PlainObjectBase<Derived>::Scalar = double][m[K’:
+[0.743s] [01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:297:37:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&, const ArgTypes& ...) [with ArgTypes = {double, double, double, int, double, double, int, int, int, double}; _Scalar = double; int _Rows = 13; int _Cols = 1; int _Options = 0; int _MaxRows = 13; int _MaxCols = 1; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double][m[K’
+[0.743s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:41:78:[m[K   required from here
+[0.743s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:158:77:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: THIS_METHOD_IS_ONLY_FOR_VECTORS_OF_A_SPECIFIC_SIZE
+[0.743s]   158 | _ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \
+[0.743s] 
+[0.743s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[0.743s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[0.743s]       |                                                      [01;36m[K^[m[K
+[0.743s] [01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:538:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K’
+[0.743s]   538 |       [01;36m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K(PlainObjectBase, sizeof...(args) + 4);
+[0.743s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.743s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:158:77:[m[K [01;36m[Knote: [m[K‘[01m[K(((long unsigned int)((int)Eigen::DenseBase<Eigen::Matrix<double, 13, 1> >::SizeAtCompileTime)) == (10 + 4))[m[K’ evaluates to false
+[0.743s]   158 | _ASSERT(TYPE::IsVectorAtCompileTime && TYPE::SizeAtCompileTime==SIZE, \
+[0.743s] 
+[0.743s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+[0.743s]    33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+[0.743s]       |                                                      [01;36m[K^[m[K
+[0.743s] [01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:538:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K’
+[0.743s]   538 |       [01;36m[KEIGEN_STATIC_ASSERT_VECTOR_SPECIFIC_SIZE[m[K(PlainObjectBase, sizeof...(args) + 4);
+[0.743s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.849s] gmake[2]: *** [CMakeFiles/sst_tree.dir/build.make:76: CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o] Error 1
+[0.849s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/sst_tree.dir/all] Error 2
+[0.849s] gmake: *** [Makefile:146: all] Error 2
+[0.852s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '2': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24

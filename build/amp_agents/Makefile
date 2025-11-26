@@ -198,6 +198,19 @@ amp_agents_uninstall/fast:
 .PHONY : amp_agents_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named sst_tree
+
+# Build rule for target.
+sst_tree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sst_tree
+.PHONY : sst_tree
+
+# fast build rule for target.
+sst_tree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sst_tree.dir/build.make CMakeFiles/sst_tree.dir/build
+.PHONY : sst_tree/fast
+
+#=============================================================================
 # Target rules for targets named backend
 
 # Build rule for target.
@@ -247,6 +260,30 @@ src/agent_backend.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/src/agent_backend.cpp.s
 .PHONY : src/agent_backend.cpp.s
 
+src/propagate_sst.o: src/propagate_sst.cpp.o
+.PHONY : src/propagate_sst.o
+
+# target to build an object file
+src/propagate_sst.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sst_tree.dir/build.make CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o
+.PHONY : src/propagate_sst.cpp.o
+
+src/propagate_sst.i: src/propagate_sst.cpp.i
+.PHONY : src/propagate_sst.i
+
+# target to preprocess a source file
+src/propagate_sst.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sst_tree.dir/build.make CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.i
+.PHONY : src/propagate_sst.cpp.i
+
+src/propagate_sst.s: src/propagate_sst.cpp.s
+.PHONY : src/propagate_sst.s
+
+# target to generate assembly for a file
+src/propagate_sst.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sst_tree.dir/build.make CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.s
+.PHONY : src/propagate_sst.cpp.s
+
 src/run_agent.o: src/run_agent.cpp.o
 .PHONY : src/run_agent.o
 
@@ -288,9 +325,13 @@ help:
 	@echo "... uninstall"
 	@echo "... backend"
 	@echo "... run"
+	@echo "... sst_tree"
 	@echo "... src/agent_backend.o"
 	@echo "... src/agent_backend.i"
 	@echo "... src/agent_backend.s"
+	@echo "... src/propagate_sst.o"
+	@echo "... src/propagate_sst.i"
+	@echo "... src/propagate_sst.s"
 	@echo "... src/run_agent.o"
 	@echo "... src/run_agent.i"
 	@echo "... src/run_agent.s"

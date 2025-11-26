@@ -1,0 +1,50 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/dynamic_object.dir/src/dynamic_object.cpp.o[0m
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In constructor ‘[01m[KDynamicObject::DynamicObject(double, std::vector<int>, std::string, bool)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:18:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   18 |     for(int i = 0; [01;35m[Ki < lockedStates.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicObject::getAMatrix(V12d)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:98:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 | M12d DynamicObject::getAMatrix([01;35m[KV12d current_state[m[K){
+      |                                [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:[m[K In member function ‘[01m[Kvirtual M12d DynamicObject::getBMatrix(V12d)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_sim/src/dynamic_object.cpp:114:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  114 | M12d DynamicObject::getBMatrix([01;35m[KV12d current_state[m[K){
+      |                                [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[ 25%] [32m[1mLinking CXX static library libdynamic_object.a[0m
+[ 25%] Built target dynamic_object
+[ 50%] Built target omni_agent
+[ 75%] Built target dynamic_ball
+[ 87%] [32m[1mLinking CXX executable sim_node[0m
+[100%] Built target sim_node
+-- Install configuration: ""
+-- Installing: /home/hollis/cu/5254_final/install/amp_sim/lib/amp_sim/sim_node
+-- Set runtime path of "/home/hollis/cu/5254_final/install/amp_sim/lib/amp_sim/sim_node" to ""
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/library_path.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/library_path.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/dynamic_ball.hpp
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/dynamic_object.hpp
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/omni_agent.hpp
+-- Installing: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_object.a
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/lib/libomni_agent.a
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/package_run_dependencies/amp_sim
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/parent_prefix_path/amp_sim
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/path.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/path.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.bash
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.zsh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/packages/amp_sim
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/dynamic_objectTargetsExport.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/dynamic_objectTargetsExport-noconfig.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/omni_agentTargetsExport.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/omni_agentTargetsExport-noconfig.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig-version.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.xml

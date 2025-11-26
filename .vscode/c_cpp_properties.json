@@ -8,7 +8,8 @@
                 "/opt/ros/humble/include/**",
                 "/opt/ros/humble/lib/**",
                 "/usr/include/eigen3",
-                "${workspaceFolder}/src/amp_agents/include/amp_agents"
+                "${workspaceFolder}/src/amp_agents/include/amp_agents",
+                "${workspaceFolder}/src/amp_sim/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

@@ -13,6 +13,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(amp_msgs REQUIRED)
+find_package(amp_sim REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -22,6 +23,10 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/amp_agents)
 
 #include eigen
 include_directories(${EIGEN3_INCLUDE_DIRS})
+
+#declare the sst t as a library
+add_library(sst_tree src/propagate_sst)
+ament_target_dependencies(sst_tree PUBLIC amp_sim)
 
 #declare the backend as a library
 add_library(backend src/agent_backend.cpp)

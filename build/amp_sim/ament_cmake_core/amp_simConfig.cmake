@@ -36,7 +36,7 @@ endif()
 set(amp_sim_FOUND_AMENT_PACKAGE TRUE)
 
 # include all config extra files
-set(_extras "")
+set(_extras "ament_cmake_export_targets-extras.cmake")
 foreach(_extra ${_extras})
   include("${amp_sim_DIR}/${_extra}")
 endforeach()

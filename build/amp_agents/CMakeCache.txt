@@ -379,6 +379,9 @@ amp_agents_SOURCE_DIR:STATIC=/home/hollis/cu/5254_final/src/amp_agents
 //The directory containing a CMake configuration file for amp_msgs.
 amp_msgs_DIR:PATH=/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake
 
+//The directory containing a CMake configuration file for amp_sim.
+amp_sim_DIR:PATH=/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake
+
 //Dependencies for the target
 backend_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;general;geometry_msgs::geometry_msgs__rosidl_generator_py;general;tf2_ros::tf2_ros;general;tf2_ros::static_transform_broadcaster_node;general;amp_msgs::amp_msgs__rosidl_generator_c;general;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_c;general;amp_msgs::amp_msgs__rosidl_typesupport_introspection_c;general;amp_msgs::amp_msgs__rosidl_typesupport_c;general;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_cpp;general;amp_msgs::amp_msgs__rosidl_typesupport_introspection_cpp;general;amp_msgs::amp_msgs__rosidl_typesupport_cpp;general;amp_msgs::amp_msgs__rosidl_generator_py;
 
@@ -528,6 +531,9 @@ spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
 
 //The directory containing a CMake configuration file for spdlog_vendor.
 spdlog_vendor_DIR:PATH=/opt/ros/humble/share/spdlog_vendor/cmake
+
+//Dependencies for the target
+sst_tree_LIB_DEPENDS:STATIC=general;amp_sim::dynamic_object;general;amp_sim::omni_agent;
 
 //The directory containing a CMake configuration file for statistics_msgs.
 statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake

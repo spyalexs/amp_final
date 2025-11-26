@@ -1,4 +1,11 @@
 /home/hollis/cu/5254_final/install/amp_sim/lib/amp_sim/sim_node
+/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/library_path.sh
+/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/library_path.dsv
+/home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/dynamic_ball.hpp
+/home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/dynamic_object.hpp
+/home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/omni_agent.hpp
+/home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_object.a
+/home/hollis/cu/5254_final/install/amp_sim/lib/libomni_agent.a
 /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/package_run_dependencies/amp_sim
 /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/parent_prefix_path/amp_sim
 /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/ament_prefix_path.sh
@@ -11,6 +18,11 @@
 /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.dsv
 /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.dsv
 /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/packages/amp_sim
+/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/dynamic_objectTargetsExport.cmake
+/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/dynamic_objectTargetsExport-noconfig.cmake
+/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/omni_agentTargetsExport.cmake
+/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/omni_agentTargetsExport-noconfig.cmake
+/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/ament_cmake_export_targets-extras.cmake
 /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig.cmake
 /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig-version.cmake
 /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.xml
