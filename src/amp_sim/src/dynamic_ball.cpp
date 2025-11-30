@@ -1,4 +1,4 @@
-#include "dynamic_ball.hpp"
+#include "amp_sim/dynamic_ball.hpp"
 
 DynamicBall::DynamicBall(V6d Damping, double Mass, std::string name, std::vector<int> lockedStates, bool gravity) : DynamicObject(Mass, lockedStates, name, gravity){
     damping = Damping;

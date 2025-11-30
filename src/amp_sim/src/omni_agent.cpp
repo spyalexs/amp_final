@@ -1,4 +1,4 @@
-#include "omni_agent.hpp"
+#include "amp_sim/omni_agent.hpp"
 
 OmniAgent::OmniAgent(V6d Damping, double Mass, std::string name, std::vector<int> lockedStates, bool gravity) : DynamicObject(Mass, lockedStates, name, gravity){
     damping = Damping;
@@ -57,3 +57,8 @@ M12d OmniAgent::getBMatrix(V12d current_state) {
 
     return b_mat;
 }
+
+V12d OmniAgent::invert_control(V12d control){   
+
+    return -control;
+};

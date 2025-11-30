@@ -4,9 +4,9 @@
 #include <string>
 #include <cctype>
 
-#include "dynamic_ball.hpp"
-#include "dynamic_object.hpp"
-#include "omni_agent.hpp"
+#include "amp_sim/dynamic_ball.hpp"
+#include "amp_sim/dynamic_object.hpp"
+#include "amp_sim/omni_agent.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 #include "tf2/LinearMath/Quaternion.h"

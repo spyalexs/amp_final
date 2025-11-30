@@ -1,0 +1,8 @@
+/usr/bin/ld: libbackend.a(agent_backend.cpp.o): in function `getYawQuat(double)':
+agent_backend.cpp:(.text+0x69): multiple definition of `getYawQuat(double)'; CMakeFiles/run.dir/src/run_agent.cpp.o:run_agent.cpp:(.text+0x0): first defined here
+/usr/bin/ld: libbackend.a(agent_backend.cpp.o): in function `AgentBackend::AgentBackend()':
+agent_backend.cpp:(.text+0x273): undefined reference to `SstTree::SstTree(DynamicObject*, BallCatchEnvironment)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/run.dir/build.make:206: run] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/run.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/hollis/cu/5254_final/src/amp_sim/include
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic
 

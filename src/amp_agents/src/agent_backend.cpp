@@ -1,6 +1,6 @@
-#include "agent_backend.hpp"
+#include "amp_agents/agent_backend.hpp"
 
-AgentBackend::AgentBackend() : Node("sim_node"){
+AgentBackend::AgentBackend() : Node("sim_node"), agent_tree(agent, BallCatchEnvironment()){
 
     //create tf listener
     tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
@@ -8,12 +8,13 @@ AgentBackend::AgentBackend() : Node("sim_node"){
 
     //init pubs
     control_pub = create_publisher<amp_msgs::msg::AgentControl>("/agent_control", 10);
+    agent_status_pub = create_publisher<std_msgs::msg::Int16>("/agent_status", 10);
 
     //init subs
     valid_balls_sub = create_subscription<std_msgs::msg::Int32MultiArray>("/valid_ball_frames", 10, std::bind(&AgentBackend::valid_ball_frames_cb, this, std::placeholders::_1));
 
     TargetInformation target = determine_ball_landing_location(V3d(0,0,2), V3d(1,1,0), V3d(1,1,1), 1, 0);
-
+    
     RCLCPP_INFO(get_logger(), "The ball will land in %f seconds, at (%f, %f, %f)", target.time, target.location(0), target.location(1), target.location(2));
 }
 
@@ -135,4 +136,22 @@ TargetInformation AgentBackend::determine_ball_landing_location(V3d current_posi
 
     return TargetInformation(V3d(x_final, y_final, landing_hieght), t);
 }
+
+void AgentBackend::update_agent_status(int status){
+    std_msgs::msg::Int16 msg;
+    msg.data = status;
+    agent_status_pub->publish(msg);
+
+    //update the agent status member
+    agent_status = status;
+}
+
+int AgentBackend::get_agent_status(){
+    return agent_status;
+}
+
+void AgentBackend::generate_tree(int number_of_nodes, BallCatchEnvironment env){
+    RCLCPP_WARN(get_logger(), "This shouldn't be called...");
+}
+
 

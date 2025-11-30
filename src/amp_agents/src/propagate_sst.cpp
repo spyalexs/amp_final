@@ -1,4 +1,4 @@
-#include "propagate_sst.hpp"
+#include "amp_agents/propagate_sst.hpp"
 
 SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment environment){
     agent = Agent;
@@ -130,12 +130,11 @@ double SstTree::generate_random_duration(){
     return rand() * (env.duration_limits.second - env.duration_limits.first) / RAND_MAX + env.duration_limits.first;
 }
 
-bool SstTree::propagate_agent(V12d controls, double duration){
+bool SstTree::propagate_agent(V12d controls, double duration, std::vector<std::pair<double, V13d>>* substates){
 
     int ticks = std::floor(duration / SAMPLING_INTERVAL);
     double remainder =  duration - SAMPLING_INTERVAL * ticks;
     double tic_duration = SAMPLING_INTERVAL;
-
 
     agent->previous_tic = 0;
 
@@ -161,6 +160,10 @@ bool SstTree::propagate_agent(V12d controls, double duration){
                 return false;
             }
 
+            if(SAVE_SUBSTATES){
+                substates->push_back({agent->previous_tic, agent->state});
+            }
+
         }
 
     }
@@ -181,6 +184,7 @@ SstNode SstTree::generateNewNode(){
     double duration;
 
     SstNode lowestCostNode(V13d(), 0, base_node);
+    std::vector<std::pair<double, V13d>> substates;
     double lowest_distance = -1;
 
     for(int i = 0; i < NUM_PROPAGATIONS; i++){
@@ -189,11 +193,14 @@ SstNode SstTree::generateNewNode(){
         duration = generate_random_duration();
         control = generate_random_controls();
 
+        //clear the substates
+        substates.clear();
+
         //configure the current state of the agent
         agent->state = base_node->state;
         
         //propagate the agent according to the controls
-        if(!propagate_agent(control, duration)){
+        if(!propagate_agent(control, duration, &(substates))){
             i--;
             continue;
         }
@@ -206,6 +213,7 @@ SstNode SstTree::generateNewNode(){
             lowestCostNode.state = agent->state;
             lowestCostNode.control_vector = control;
             lowestCostNode.duration = duration;
+            lowestCostNode.sub_states = substates;
         }
     }
 
@@ -215,7 +223,9 @@ SstNode SstTree::generateNewNode(){
     return lowestCostNode;
 }
 
-void SstTree::processNewNode(){
+bool SstTree::processNewNode(){
+    //returns true if the node count is increased
+
     //handle generating a new node
     SstNode node = generateNewNode();
 
@@ -228,7 +238,7 @@ void SstTree::processNewNode(){
                 tree.push_back(&node_pile.back());
             }
 
-            return;
+            return false;
         }
 
     }
@@ -237,7 +247,67 @@ void SstTree::processNewNode(){
     node_pile.push_back(node);
     tree.push_back(&node_pile.back());
     neighborhoods.push_back(SstNeighborhood(&node));
+
+    return true;
 }
+
+
+SstPath::SstPath(SstNode leaf){
+    create_forward_path(leaf);
+}
+
+SstPath::SstPath(SstNode leaf, DynamicObject* agent, bool invert){
+
+    create_forward_path(leaf);
+
+    //no need to invert here
+    if(invert == false){
+        return;
+    }
+    
+    //full duration
+    double path_duration = states.back().first;
+
+    //reverse the order of the durations and the states
+    std::reverse(durations.begin(), durations.end());
+    std::reverse(states.begin(), states.end());
+    std::reverse(controls.begin(), controls.end());
+
+    for(int i = 0; i < states.size(); i++){
+        
+        // the timestamp for each state needs reversed
+        states.at(i).first = path_duration - states.at(i).first;
+    }
+
+    for(int i = 0; i < controls.size(); i++){
+
+        // invert the control... this isn't nessicarily as simple 
+        controls.at(i) = agent->invert_control(controls.at(i));
+    }
+}
+
+void SstPath::create_forward_path(SstNode leaf){
+
+    SstNode* current = &leaf;
+
+    bool tracing = true;
+    while(tracing){
+
+        controls.push_back(current->control_vector);
+        durations.push_back(current->duration);
+
+        for(int i = 0; i < current->sub_states.size(); i++){
+            states.push_back(current->sub_states.at(i));
+        }
+
+        current = current->parent;
+
+        if(current->parent != nullptr){
+            tracing = false;
+        }
+    }
+}
+
 
 
 

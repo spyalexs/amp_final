@@ -6,8 +6,9 @@
 #include <cstdlib>
 #include <cmath>
 
-#include "amp_sim/omni_agent.hpp"
-#include "amp_sim/dynamic_object.hpp"
+//this is scuffed...
+#include "../../amp_sim/include/amp_sim/dynamic_object.hpp"
+#include "../../amp_sim/include/amp_sim/omni_agent.hpp"
 #include "collision_checker.hpp"
 
 #define NUM_PROPAGATIONS 5
@@ -15,6 +16,8 @@
 #define COLLISION_CHECK_INTERVAL 0.1
 #define SEARCHING_RANGE 0.4
 #define NEIGHBORHOOD_RANGE 0.15
+
+#define SAVE_SUBSTATES true
 
 typedef Eigen::Matrix<double, 12, 1> V12d;
 typedef Eigen::Matrix<double, 13, 1> V13d;
@@ -43,6 +46,8 @@ class SstNode{
 
         V13d state;
 
+        std::vector<std::pair<double, V13d>> sub_states;
+
         SstNode* parent;
 
         double cost_from_source;  
@@ -55,8 +60,6 @@ class BallCatchEnvironment{
 
     public:
         std::vector<RectPrism> obstalces;
-
-        bool check_for_env_collision(RectPrism prism);
 
         V12d state_minimums;
         V12d state_maximums;
@@ -104,7 +107,7 @@ class SstTree{
         std::list<SstNeighborhood> neighborhoods;
 
         SstNode generateNewNode();
-        void processNewNode();
+        bool processNewNode();
         
         V13d generate_random_sample();
         V12d generate_random_controls();
@@ -125,9 +128,17 @@ class SstTree{
 
         SstNode* getLowestCostNodeWithinRange(V13d reference);
 
-        bool propagate_agent(V12d controls, double duration);
+        bool propagate_agent(V12d controls, double duration, std::vector<std::pair<double, V13d>>* substates);  
+};
 
-    
-    
+class SstPath{
 
+    SstPath(SstNode leaf);
+    SstPath(SstNode leaf, DynamicObject* agent, bool invert);
+
+    void create_forward_path(SstNode leaf);
+
+    std::vector<std::pair<double, V13d>> states;
+    std::vector<V12d> controls;
+    std::vector<double> durations;
 };

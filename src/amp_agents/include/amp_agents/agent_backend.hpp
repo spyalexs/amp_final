@@ -15,6 +15,9 @@
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "amp_msgs/msg/agent_control.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
+#include "std_msgs/msg/int16.hpp"
+
+#include "propagate_sst.hpp"
 
 #define INVALID_TF_HEADER "invalid"
 #define AGENT_NAME "omni_agent"
@@ -43,14 +46,22 @@ class AgentBackend : public rclcpp::Node{
 
     protected:
 
+        DynamicObject* agent;
+        SstTree agent_tree;
+        BallCatchEnvironment env;
+
         std::shared_ptr<tf2_ros::TransformListener> tf_listener{nullptr};
         std::unique_ptr<tf2_ros::Buffer> tf_buffer;
 
         rclcpp::Publisher<amp_msgs::msg::AgentControl>::SharedPtr control_pub;
+        rclcpp::Publisher<std_msgs::msg::Int16>::SharedPtr agent_status_pub;
 
         rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr valid_balls_sub;
 
         void publish_control(std::vector<double> control);
+
+        void update_agent_status(int status);
+        int get_agent_status();
 
         geometry_msgs::msg::TransformStamped getAgentTransform();
         geometry_msgs::msg::TransformStamped getTransform(std::string to_frame, std::string from_frame);
@@ -60,7 +71,11 @@ class AgentBackend : public rclcpp::Node{
 
         TargetInformation determine_ball_landing_location(V3d current_position, V3d current_velocities, V3d current_damping, double mass, double landing_hieght);
 
+        virtual void generate_tree(int number_of_nodes, BallCatchEnvironment env);
+
     private:
 
         void valid_ball_frames_cb(std_msgs::msg::Int32MultiArray msg);
-};
+
+        int agent_status;
+};  

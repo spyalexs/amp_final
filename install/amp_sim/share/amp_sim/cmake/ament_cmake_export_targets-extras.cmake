@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_targets/cmake/ament_cmake_export_targets-extras.cmake.in
 
-set(_exported_targets "dynamic_objectTargets;omni_agentTargets")
+set(_exported_targets "export_amp_sim")
 
 # include all exported targets
 if(NOT _exported_targets STREQUAL "")

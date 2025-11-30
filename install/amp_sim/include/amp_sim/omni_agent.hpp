@@ -15,6 +15,8 @@ class OmniAgent : public DynamicObject{
         M12d getAMatrix(V12d current_state) override;
         M12d getBMatrix(V12d current_state) override;
 
+        V12d invert_control(V12d control) override;  
+
         V6d damping;
 
         ~OmniAgent(){}

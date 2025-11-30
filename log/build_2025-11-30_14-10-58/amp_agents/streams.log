@@ -1,0 +1,44 @@
+[0.010s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.053s] [ 12%] [32mBuilding CXX object CMakeFiles/backend.dir/src/agent_backend.cpp.o[0m
+[0.053s] [ 25%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[0.053s] [ 37%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
+[0.238s] In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/visualize_tree.hpp:7[m[K,
+[0.238s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:1[m[K:
+[0.238s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Kamp_sim/omni_agent.hpp: No such file or directory
+[0.238s]    10 | #include [01;31m[K"amp_sim/omni_agent.hpp"[m[K
+[0.238s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.238s] compilation terminated.
+[0.242s] gmake[2]: *** [CMakeFiles/tree_visualizer.dir/build.make:76: CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o] Error 1
+[0.243s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/tree_visualizer.dir/all] Error 2
+[0.243s] gmake[1]: *** Waiting for unfinished jobs....
+[0.616s] In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:20[m[K,
+[0.616s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1[m[K:
+[0.616s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Kamp_sim/omni_agent.hpp: No such file or directory
+[0.616s]    10 | #include [01;31m[K"amp_sim/omni_agent.hpp"[m[K
+[0.616s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.616s] compilation terminated.
+[0.623s] gmake[2]: *** [CMakeFiles/backend.dir/build.make:76: CMakeFiles/backend.dir/src/agent_backend.cpp.o] Error 1
+[0.623s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/backend.dir/all] Error 2
+[0.695s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV13d SstTree::generate_random_sample()[m[K’:
+[0.695s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:47:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[0.695s]    47 | [01;35m[K}[m[K
+[0.695s]       | [01;35m[K^[m[K
+[0.717s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[0.717s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:122:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.717s]   122 |     for(int i = 0; [01;35m[Ki < env.control_limits.size()[m[K; i++){
+[0.717s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.722s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstPath::SstPath(SstNode, DynamicObject*, bool)[m[K’:
+[0.722s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:276:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.722s]   276 |     for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+[0.722s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[0.722s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:282:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.722s]   282 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+[0.722s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[0.722s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::create_forward_path(SstNode)[m[K’:
+[0.722s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:299:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.722s]   299 |         for(int i = 0; [01;35m[Ki < current->sub_states.size()[m[K; i++){
+[0.722s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.214s] [ 50%] [32m[1mLinking CXX static library libsst_tree.a[0m
+[1.245s] [ 50%] Built target sst_tree
+[1.246s] gmake: *** [Makefile:146: all] Error 2
+[1.249s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '2': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24

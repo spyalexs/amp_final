@@ -1,4 +1,4 @@
-#include "dynamic_object.hpp"
+#include "amp_sim/dynamic_object.hpp"
 
 
 DynamicObject::DynamicObject(double Mass, std::vector<int> lockedStates, std::string name, bool Gravity){
@@ -137,3 +137,10 @@ bool DynamicObject::check_state_bounds(){
 
     return true;
 }
+
+V12d DynamicObject::invert_control(V12d control){   
+    //this shouldn't be called...
+
+    return V12d();
+};
+

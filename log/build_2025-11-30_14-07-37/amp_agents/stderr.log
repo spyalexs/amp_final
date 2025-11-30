@@ -1,0 +1,18 @@
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/visualize_tree.hpp:7[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kamp_sim/dynamic_object.hpp: No such file or directory
+    9 | #include [01;31m[K"amp_sim/dynamic_object.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tree_visualizer.dir/build.make:76: CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/tree_visualizer.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:20[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kamp_sim/dynamic_object.hpp: No such file or directory
+    9 | #include [01;31m[K"amp_sim/dynamic_object.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/backend.dir/build.make:76: CMakeFiles/backend.dir/src/agent_backend.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/backend.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -21,10 +21,14 @@ find_package(amp_msgs REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIRS})
 
 #include the headers
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/amp_sim)
+# include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/amp_sim)
 
 #create the libraries
 add_library(dynamic_object src/dynamic_object.cpp)
+target_include_directories(dynamic_object PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
 
 add_library(dynamic_ball src/dynamic_ball.cpp)
 target_link_libraries(dynamic_ball PUBLIC dynamic_object)
@@ -41,30 +45,19 @@ install(TARGETS sim_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
-ament_export_targets(dynamic_objectTargets HAS_LIBRARY_TARGET)
-ament_export_targets(omni_agentTargets HAS_LIBRARY_TARGET)
+ament_export_targets(export_amp_sim HAS_LIBRARY_TARGET)
+ament_export_dependencies()
+ament_export_include_directories(include)
 
 install(
-  DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/amp_sim
+  DIRECTORY include/
   DESTINATION include
 )
 
 install(
-  TARGETS dynamic_object
-  EXPORT dynamic_objectTargets
-  LIBRARY DESTINATION lib
-  ARCHIVE DESTINATION lib
-  RUNTIME DESTINATION bin
-  INCLUDES DESTINATION include
-)
-
-install(
-  TARGETS omni_agent
-  EXPORT omni_agentTargets
-  LIBRARY DESTINATION lib
-  ARCHIVE DESTINATION lib
-  RUNTIME DESTINATION bin
-  INCLUDES DESTINATION include
+  TARGETS dynamic_object omni_agent dynamic_ball
+  EXPORT export_amp_sim
+  DESTINATION lib
 )
 
 if(BUILD_TESTING)

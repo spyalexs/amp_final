@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directories-extras.cmake.in
 
-set(_exported_include_dirs "/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim")
+set(_exported_include_dirs "${amp_sim_DIR}/../../../include")
 
 # append include directories to amp_sim_INCLUDE_DIRS
 # warn about not existing paths

@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:52 (install):
-  install TARGETS given unknown argument "LIBRARY_DESTINATION".
-
-[0m
-gmake: *** [Makefile:390: cmake_check_build_system] Error 1

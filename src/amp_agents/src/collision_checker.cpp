@@ -1,4 +1,4 @@
-#include "collision_checker.hpp"
+#include "amp_agents/collision_checker.hpp"
 
 Plane::Plane(std::vector<v3d> Points){
 

@@ -1,0 +1,9 @@
+[0.006s] Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[0.035s] [ 16%] [34m[1mAutomatic MOC and UIC for target template_panel[0m
+[0.058s] [ 16%] Built target template_panel_autogen
+[0.065s] [ 33%] [34m[1mGenerating include/amp_viz/moc_template_panel.cpp[0m
+[0.141s] [ 83%] [32mBuilding CXX object CMakeFiles/template_panel.dir/src/template_panel.cpp.o[0m
+[0.141s] [ 83%] [32mBuilding CXX object CMakeFiles/template_panel.dir/template_panel_autogen/mocs_compilation.cpp.o[0m
+[0.141s] [ 83%] [32mBuilding CXX object CMakeFiles/template_panel.dir/include/amp_viz/moc_template_panel.cpp.o[0m
+[3.912s] [100%] [32m[1mLinking CXX shared library libtemplate_panel.so[0m
+[4.449s] [100%] Built target template_panel

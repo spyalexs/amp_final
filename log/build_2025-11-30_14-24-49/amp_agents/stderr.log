@@ -1,0 +1,8 @@
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/run_agent.cpp:3[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:16:10:[m[K [01;31m[Kfatal error: [m[Kamp_msgs/msg/agent_control.hpp: No such file or directory
+   16 | #include [01;31m[K"amp_msgs/msg/agent_control.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/run.dir/build.make:76: CMakeFiles/run.dir/src/run_agent.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/run.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

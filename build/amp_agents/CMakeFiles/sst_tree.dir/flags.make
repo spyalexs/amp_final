@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents -I/usr/include/eigen3 -isystem /home/hollis/cu/5254_final/install/amp_sim/include
+CXX_INCLUDES = -I/usr/include/eigen3 -I/usr/include/opencv4 -I/home/hollis/cu/5254_final/src/amp_agents/include -isystem /home/hollis/cu/5254_final/install/amp_sim/include
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic
 

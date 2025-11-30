@@ -1,0 +1,30 @@
+[0.010s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.056s] [ 12%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
+[0.056s] [ 25%] [32mBuilding CXX object CMakeFiles/backend.dir/src/agent_backend.cpp.o[0m
+[0.057s] [ 37%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[0.196s] In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+[0.196s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kdynamic_object.hpp: No such file or directory
+[0.196s]     9 | #include [01;31m[K"dynamic_object.hpp"[m[K
+[0.196s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.196s] compilation terminated.
+[0.200s] gmake[2]: *** [CMakeFiles/sst_tree.dir/build.make:76: CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o] Error 1
+[0.201s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/sst_tree.dir/all] Error 2
+[0.201s] gmake[1]: *** Waiting for unfinished jobs....
+[0.232s] In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/visualize_tree.hpp:7[m[K,
+[0.232s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:1[m[K:
+[0.232s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kdynamic_object.hpp: No such file or directory
+[0.232s]     9 | #include [01;31m[K"dynamic_object.hpp"[m[K
+[0.232s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.232s] compilation terminated.
+[0.236s] gmake[2]: *** [CMakeFiles/tree_visualizer.dir/build.make:76: CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o] Error 1
+[0.236s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/tree_visualizer.dir/all] Error 2
+[0.653s] In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:20[m[K,
+[0.653s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1[m[K:
+[0.653s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kdynamic_object.hpp: No such file or directory
+[0.653s]     9 | #include [01;31m[K"dynamic_object.hpp"[m[K
+[0.653s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.653s] compilation terminated.
+[0.663s] gmake[2]: *** [CMakeFiles/backend.dir/build.make:76: CMakeFiles/backend.dir/src/agent_backend.cpp.o] Error 1
+[0.663s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/backend.dir/all] Error 2
+[0.664s] gmake: *** [Makefile:146: all] Error 2
+[0.666s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '2': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24

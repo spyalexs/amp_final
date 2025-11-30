@@ -1,0 +1,39 @@
+#----------------------------------------------------------------
+# Generated CMake target import file.
+#----------------------------------------------------------------
+
+# Commands may need to know the format version.
+set(CMAKE_IMPORT_FILE_VERSION 1)
+
+# Import target "amp_sim::dynamic_object" for configuration ""
+set_property(TARGET amp_sim::dynamic_object APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+set_target_properties(amp_sim::dynamic_object PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libdynamic_object.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS amp_sim::dynamic_object )
+list(APPEND _IMPORT_CHECK_FILES_FOR_amp_sim::dynamic_object "${_IMPORT_PREFIX}/lib/libdynamic_object.a" )
+
+# Import target "amp_sim::omni_agent" for configuration ""
+set_property(TARGET amp_sim::omni_agent APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+set_target_properties(amp_sim::omni_agent PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libomni_agent.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS amp_sim::omni_agent )
+list(APPEND _IMPORT_CHECK_FILES_FOR_amp_sim::omni_agent "${_IMPORT_PREFIX}/lib/libomni_agent.a" )
+
+# Import target "amp_sim::dynamic_ball" for configuration ""
+set_property(TARGET amp_sim::dynamic_ball APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+set_target_properties(amp_sim::dynamic_ball PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libdynamic_ball.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS amp_sim::dynamic_ball )
+list(APPEND _IMPORT_CHECK_FILES_FOR_amp_sim::dynamic_ball "${_IMPORT_PREFIX}/lib/libdynamic_ball.a" )
+
+# Commands beyond this point should not need to know the version.
+set(CMAKE_IMPORT_FILE_VERSION)

@@ -1,0 +1,87 @@
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV13d SstTree::generate_random_sample()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:47:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   47 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:122:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  122 |     for(int i = 0; [01;35m[Ki < env.control_limits.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstPath::SstPath(SstNode, DynamicObject*, bool)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:276:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  276 |     for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:282:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  282 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::create_forward_path(SstNode)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:299:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  299 |         for(int i = 0; [01;35m[Ki < current->sub_states.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:[m[K In member function ‘[01m[Kvoid TreeVisualizer::displayTree(std::__cxx11::list<SstNode*>)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:10:49:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K(((void)std::operator!=(it, tree.std::__cxx11::list<SstNode*>::end())), it.std::_List_iterator<SstNode*>::operator++())[m[K’ from ‘[01m[Kstd::_List_iterator<SstNode*>::_Self[m[K’ to ‘[01m[Kbool[m[K’
+   10 |     for(auto it = tree.begin(); [01;31m[Kit != tree.end(), ++it[m[K){
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~^~~~~~[m[K
+      |                                                 [01;31m[K|[m[K
+      |                                                 [01;31m[Kstd::_List_iterator<SstNode*>::_Self[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:10:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+   10 |     for(auto it = tree.begin(); it != tree.end(), ++it[01;31m[K)[m[K{
+      |                                                       [01;31m[K^[m[K
+      |                                                       [32m[K;[m[K
+gmake[2]: *** [CMakeFiles/tree_visualizer.dir/build.make:76: CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/tree_visualizer.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::TransformStamped AgentBackend::getBallTransform(int)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:77:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   77 |         for(int i = 0; [01;35m[Ki < valid_ball_frames.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:9[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::TransformStamped AgentBackend::getTransform(std::string, std::string)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:106:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  106 |         RCLCPP_WARN(get_logger(), [01;35m[K"Could not transform %s to %s: %s"[m[K, to_frame, from_frame, ex.what());
+      |                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:106:57:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  106 |         RCLCPP_WARN(get_logger(), "Could not transform [01;36m[K%s[m[K to %s: %s", to_frame, from_frame, ex.what());
+      |                                                        [01;36m[K~^[m[K
+      |                                                         [01;36m[K|[m[K
+      |                                                         [01;36m[Kchar*[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:9[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:106:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 6 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  106 |         RCLCPP_WARN(get_logger(), [01;35m[K"Could not transform %s to %s: %s"[m[K, to_frame, from_frame, ex.what());
+      |                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:106:63:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  106 |         RCLCPP_WARN(get_logger(), "Could not transform %s to [01;36m[K%s[m[K: %s", to_frame, from_frame, ex.what());
+      |                                                              [01;36m[K~^[m[K
+      |                                                               [01;36m[K|[m[K
+      |                                                               [01;36m[Kchar*[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:[m[K In member function ‘[01m[Kvirtual void AgentBackend::generate_tree(int, BallCatchEnvironment)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:153:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knumber_of_nodes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  153 | void AgentBackend::generate_tree([01;35m[Kint number_of_nodes[m[K, BallCatchEnvironment env){
+      |                                  [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:153:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  153 | void AgentBackend::generate_tree(int number_of_nodes, [01;35m[KBallCatchEnvironment env[m[K){
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake: *** [Makefile:146: all] Error 2

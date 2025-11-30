@@ -24,6 +24,7 @@ class DynamicObject{
         DynamicObject(double Mass, std::vector<int> lockedStates, std::string name, bool Gravity=false);
 
         void tic(V12d control, double current_time);
+        virtual V12d invert_control(V12d control);
 
         M12d virtual getAMatrix(V12d current_state);
         M12d virtual getBMatrix(V12d current_state);

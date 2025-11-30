@@ -14,27 +14,49 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(amp_msgs REQUIRED)
 find_package(amp_sim REQUIRED)
+find_package(OpenCV REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-#include headers
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/amp_agents)
-
 #include eigen
 include_directories(${EIGEN3_INCLUDE_DIRS})
 
+#include opencv
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+
 #declare the sst t as a library
-add_library(sst_tree src/propagate_sst)
+add_library(sst_tree src/propagate_sst.cpp)
 ament_target_dependencies(sst_tree PUBLIC amp_sim)
+target_link_libraries(sst_tree PUBLIC dynamic_object omni_agent)
+target_include_directories(sst_tree PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
 
 #declare the backend as a library
 add_library(backend src/agent_backend.cpp)
-ament_target_dependencies(backend PUBLIC rclcpp geometry_msgs tf2_ros amp_msgs)
+ament_target_dependencies(backend PUBLIC rclcpp geometry_msgs tf2_ros amp_msgs amp_sim)
+target_link_libraries(backend PUBLIC sst_tree dynamic_object omni_agent)
+target_include_directories(backend PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+#build the tree visualizer
+add_library(tree_visualizer src/visualize_tree.cpp)
+ament_target_dependencies(tree_visualizer PUBLIC OpenCV)
+target_include_directories(tree_visualizer PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
 
 add_executable(run src/run_agent.cpp)
-ament_target_dependencies(run PUBLIC rclcpp)
-target_link_libraries(run PUBLIC backend)
+ament_target_dependencies(run PUBLIC rclcpp amp_sim tf2_ros amp_msgs)
+target_include_directories(run PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
 
 install(TARGETS run
   DESTINATION lib/${PROJECT_NAME}

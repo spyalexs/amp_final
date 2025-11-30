@@ -1,9 +1,0 @@
-[31mCMake Error at /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/ament_cmake_export_libraries-extras.cmake:48 (message):
-  Package 'amp_sim' exports the library 'dynamic_object' which couldn't be
-  found
-Call Stack (most recent call first):
-  /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig.cmake:41 (include)
-  CMakeLists.txt:16 (find_package)
-
-[0m
-gmake: *** [Makefile:308: cmake_check_build_system] Error 1

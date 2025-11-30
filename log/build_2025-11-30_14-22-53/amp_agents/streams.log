@@ -1,0 +1,13 @@
+[0.009s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.071s] [ 25%] Built target sst_tree
+[0.071s] [ 50%] Built target tree_visualizer
+[0.089s] [ 75%] Built target backend
+[0.115s] [ 87%] [32mBuilding CXX object CMakeFiles/run.dir/src/run_agent.cpp.o[0m
+[2.788s] [100%] [32m[1mLinking CXX executable run[0m
+[2.806s] /usr/bin/ld: cannot find -ldynamic_object: No such file or directory
+[2.806s] /usr/bin/ld: cannot find -lomni_agent: No such file or directory
+[2.839s] collect2: error: ld returned 1 exit status
+[2.840s] gmake[2]: *** [CMakeFiles/run.dir/build.make:213: run] Error 1
+[2.840s] gmake[1]: *** [CMakeFiles/Makefile2:222: CMakeFiles/run.dir/all] Error 2
+[2.841s] gmake: *** [Makefile:146: all] Error 2
+[2.843s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '2': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24

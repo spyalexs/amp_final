@@ -224,6 +224,19 @@ backend/fast:
 .PHONY : backend/fast
 
 #=============================================================================
+# Target rules for targets named tree_visualizer
+
+# Build rule for target.
+tree_visualizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_visualizer
+.PHONY : tree_visualizer
+
+# fast build rule for target.
+tree_visualizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/build
+.PHONY : tree_visualizer/fast
+
+#=============================================================================
 # Target rules for targets named run
 
 # Build rule for target.
@@ -308,6 +321,30 @@ src/run_agent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/run_agent.cpp.s
 .PHONY : src/run_agent.cpp.s
 
+src/visualize_tree.o: src/visualize_tree.cpp.o
+.PHONY : src/visualize_tree.o
+
+# target to build an object file
+src/visualize_tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o
+.PHONY : src/visualize_tree.cpp.o
+
+src/visualize_tree.i: src/visualize_tree.cpp.i
+.PHONY : src/visualize_tree.i
+
+# target to preprocess a source file
+src/visualize_tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.i
+.PHONY : src/visualize_tree.cpp.i
+
+src/visualize_tree.s: src/visualize_tree.cpp.s
+.PHONY : src/visualize_tree.s
+
+# target to generate assembly for a file
+src/visualize_tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.s
+.PHONY : src/visualize_tree.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... backend"
 	@echo "... run"
 	@echo "... sst_tree"
+	@echo "... tree_visualizer"
 	@echo "... src/agent_backend.o"
 	@echo "... src/agent_backend.i"
 	@echo "... src/agent_backend.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/run_agent.o"
 	@echo "... src/run_agent.i"
 	@echo "... src/run_agent.s"
+	@echo "... src/visualize_tree.o"
+	@echo "... src/visualize_tree.i"
+	@echo "... src/visualize_tree.s"
 .PHONY : help
 
 
