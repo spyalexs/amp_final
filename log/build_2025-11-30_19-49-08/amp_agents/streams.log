@@ -1,0 +1,76 @@
+[0.006s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.042s] [ 16%] Built target collision_checker
+[0.048s] [ 33%] Built target tree_visualizer
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target sst_tree[0m
+[0.064s] [ 41%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[1.647s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV13d SstTree::generate_random_sample()[m[K’:
+[1.647s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:48:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.647s]    48 | [01;35m[K}[m[K
+[1.647s]       | [01;35m[K^[m[K
+[1.660s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[1.660s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:127:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.660s]   127 |     for(int i = 0; [01;35m[Ki < env->control_limits.size()[m[K; i++){
+[1.660s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.662s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.662s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9[m[K,
+[1.662s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+[1.662s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kbool SstTree::processNewNode()[m[K’:
+[1.662s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:253:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::__cxx11::list<SstNode*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.662s]   253 |     RCLCPP_INFO(node_ptr->get_logger(), [01;35m[K"increasing node count %d"[m[K, [32m[Ktree.size()[m[K);
+[1.662s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~[m[K
+[1.662s]       |                                                                              [32m[K|[m[K
+[1.662s]       |                                                                              [32m[Kstd::__cxx11::list<SstNode*>::size_type {aka long unsigned int}[m[K
+[1.662s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:253:65:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.662s]   253 |     RCLCPP_INFO(node_ptr->get_logger(), "increasing node count [01;36m[K%d[m[K", tree.size());
+[1.662s]       |                                                                [01;36m[K~^[m[K
+[1.662s]       |                                                                 [01;36m[K|[m[K
+[1.662s]       |                                                                 [01;36m[Kint[m[K
+[1.662s]       |                                                                [32m[K%ld[m[K
+[1.666s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstPath::SstPath(SstNode, DynamicObject*, bool)[m[K’:
+[1.666s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:285:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.666s]   285 |     for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+[1.666s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[1.666s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:291:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.666s]   291 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+[1.666s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[1.666s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::create_forward_path(SstNode)[m[K’:
+[1.666s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:308:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.666s]   308 |         for(int i = 0; [01;35m[Ki < current->sub_states.size()[m[K; i++){
+[1.666s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.567s] [ 50%] [32m[1mLinking CXX static library libsst_tree.a[0m
+[2.597s] [ 50%] Built target sst_tree
+[2.617s] [ 66%] Built target backend
+[2.637s] [ 83%] Built target omni_actor
+[2.658s] [ 91%] [32m[1mLinking CXX executable run[0m
+[3.022s] [100%] Built target run
+[3.033s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[3.033s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_agents
+[3.039s] -- Install configuration: ""
+[3.039s] -- Installing: /home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run
+[3.044s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run" to ""
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/package_run_dependencies/amp_agents
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/parent_prefix_path/amp_agents
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.sh
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.dsv
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.sh
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.dsv
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.bash
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.sh
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.zsh
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.dsv
+[3.044s] -- Installing: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.dsv
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/packages/amp_agents
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig.cmake
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig-version.cmake
+[3.044s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.xml
+[3.049s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_agents

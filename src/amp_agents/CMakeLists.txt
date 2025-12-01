@@ -25,10 +25,17 @@ include_directories(${EIGEN3_INCLUDE_DIRS})
 #include opencv
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
+#declare the collision checker as a library
+add_library(collision_checker src/collision_checker.cpp)
+target_include_directories(collision_checker PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
 #declare the sst t as a library
 add_library(sst_tree src/propagate_sst.cpp)
-ament_target_dependencies(sst_tree PUBLIC amp_sim)
-target_link_libraries(sst_tree PUBLIC dynamic_object omni_agent)
+ament_target_dependencies(sst_tree PUBLIC rclcpp amp_sim)
+target_link_libraries(sst_tree PUBLIC amp_sim::dynamic_object amp_sim::omni_agent collision_checker)
 target_include_directories(sst_tree PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -37,15 +44,23 @@ target_include_directories(sst_tree PUBLIC
 #declare the backend as a library
 add_library(backend src/agent_backend.cpp)
 ament_target_dependencies(backend PUBLIC rclcpp geometry_msgs tf2_ros amp_msgs amp_sim)
-target_link_libraries(backend PUBLIC sst_tree dynamic_object omni_agent)
+target_link_libraries(backend PUBLIC sst_tree amp_sim::dynamic_object amp_sim::omni_agent collision_checker)
 target_include_directories(backend PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+add_library(omni_actor src/omni_agent_actor.cpp)
+ament_target_dependencies(omni_actor PUBLIC rclcpp geometry_msgs tf2_ros amp_msgs amp_sim)
+target_link_libraries(omni_actor PUBLIC backend sst_tree amp_sim::dynamic_object amp_sim::omni_agent collision_checker)
+target_include_directories(omni_actor PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
 )
 
 #build the tree visualizer
 add_library(tree_visualizer src/visualize_tree.cpp)
-ament_target_dependencies(tree_visualizer PUBLIC OpenCV)
+ament_target_dependencies(tree_visualizer PUBLIC rclcpp OpenCV)
 target_include_directories(tree_visualizer PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -53,6 +68,7 @@ target_include_directories(tree_visualizer PUBLIC
 
 add_executable(run src/run_agent.cpp)
 ament_target_dependencies(run PUBLIC rclcpp amp_sim tf2_ros amp_msgs)
+target_link_libraries(run PUBLIC backend sst_tree amp_sim::dynamic_object amp_sim::omni_agent collision_checker omni_actor)
 target_include_directories(run PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>

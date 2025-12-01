@@ -7,6 +7,7 @@
 #include "amp_sim/dynamic_ball.hpp"
 #include "amp_sim/dynamic_object.hpp"
 #include "amp_sim/omni_agent.hpp"
+#include "amp_sim/agent_properties.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 #include "tf2/LinearMath/Quaternion.h"
@@ -50,7 +51,7 @@ class SimNode : public rclcpp::Node
             lock_z.push_back(4);
 
             //for the time being - agent is assumed to be at position one of the dynamic objects
-            dynamic_objects.push_back(new OmniAgent(ball_damping, 1, "omni_agent", lock_z));
+            dynamic_objects.push_back(new OmniAgent(OMNI_AGENT_PROPERTIES));
 
             tic_timer = this->create_wall_timer(1ms, std::bind(&SimNode::tic_cb, this));
         }

@@ -1,0 +1,285 @@
+[0.005s] Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs
+[0.045s] -- The C compiler identification is GNU 11.4.0
+[0.082s] -- The CXX compiler identification is GNU 11.4.0
+[0.086s] -- Detecting C compiler ABI info
+[0.130s] -- Detecting C compiler ABI info - done
+[0.136s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.136s] -- Detecting C compile features
+[0.136s] -- Detecting C compile features - done
+[0.138s] -- Detecting CXX compiler ABI info
+[0.191s] -- Detecting CXX compiler ABI info - done
+[0.195s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.195s] -- Detecting CXX compile features
+[0.195s] -- Detecting CXX compile features - done
+[0.197s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.283s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.332s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.335s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.336s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.358s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.531s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.649s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.780s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.792s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.792s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.806s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.806s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.806s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.806s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.817s] -- Found PythonExtra: .so  
+[0.834s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.842s] -- Added test 'lint_cmake' to check CMake code style
+[0.842s] -- Added test 'xmllint' to check XML markup files
+[0.843s] -- Configuring done
+[0.859s] -- Generating done
+[0.863s] -- Build files have been written to: /home/hollis/cu/5254_final/build/amp_msgs
+[0.867s] Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs
+[0.870s] Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_msgs -- -j24 -l24
+[0.894s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.901s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.909s] [  4%] Built target ament_cmake_python_copy_amp_msgs
+[1.047s] running egg_info
+[1.047s] creating amp_msgs.egg-info
+[1.047s] writing amp_msgs.egg-info/PKG-INFO
+[1.047s] writing dependency_links to amp_msgs.egg-info/dependency_links.txt
+[1.048s] writing top-level names to amp_msgs.egg-info/top_level.txt
+[1.048s] writing manifest file 'amp_msgs.egg-info/SOURCES.txt'
+[1.048s] reading manifest file 'amp_msgs.egg-info/SOURCES.txt'
+[1.049s] writing manifest file 'amp_msgs.egg-info/SOURCES.txt'
+[1.073s] [  4%] Built target ament_cmake_python_build_amp_msgs_egg
+[1.105s] [  6%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o[0m
+[1.105s] [ 10%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c.o[0m
+[1.105s] [ 10%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o[0m
+[1.119s] [ 10%] Built target amp_msgs__cpp
+[1.128s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.128s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.129s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.141s] [ 19%] [32m[1mLinking C shared library libamp_msgs__rosidl_generator_c.so[0m
+[1.169s] [ 19%] Built target amp_msgs__rosidl_generator_c
+[1.177s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.177s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.177s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.355s] [ 27%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/agent_control__type_support.cpp.o[0m
+[1.356s] [ 29%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/launch_ball__type_support.cpp.o[0m
+[1.357s] [ 31%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/set_pose__type_support.cpp.o[0m
+[1.361s] [ 34%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__type_support.cpp.o[0m
+[1.362s] [ 36%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/set_pose__type_support.cpp.o[0m
+[1.362s] [ 38%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/launch_ball__type_support.cpp.o[0m
+[1.371s] [ 40%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/launch_ball__type_support.cpp.o[0m
+[1.373s] [ 42%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/agent_control__type_support.cpp.o[0m
+[1.373s] [ 44%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/set_pose__type_support.cpp.o[0m
+[1.434s] [ 46%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/agent_control__type_support.c.o[0m
+[1.435s] [ 48%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/set_pose__type_support.c.o[0m
+[1.437s] [ 51%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amp_msgs/msg/detail/launch_ball__type_support.c.o[0m
+[1.446s] [ 53%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amp_msgs/msg/agent_control__type_support.cpp.o[0m
+[1.446s] [ 55%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amp_msgs/msg/set_pose__type_support.cpp.o[0m
+[1.453s] [ 59%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o[0m
+[1.453s] [ 59%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amp_msgs/msg/launch_ball__type_support.cpp.o[0m
+[1.454s] [ 61%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp.o[0m
+[1.454s] [ 63%] [32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o[0m
+[1.489s] [ 65%] [32m[1mLinking C shared library libamp_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.500s] [ 68%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_c.so[0m
+[1.554s] [ 68%] Built target amp_msgs__rosidl_typesupport_c
+[1.558s] [ 68%] Built target amp_msgs__rosidl_typesupport_introspection_c
+[1.688s] [ 70%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_cpp.so[0m
+[1.703s] [ 72%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.723s] [ 72%] Built target amp_msgs__rosidl_typesupport_cpp
+[1.735s] [ 72%] Built target amp_msgs__rosidl_typesupport_introspection_cpp
+[1.788s] [ 74%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.796s] [ 76%] [32m[1mLinking CXX shared library libamp_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.840s] [ 76%] Built target amp_msgs__rosidl_typesupport_fastrtps_c
+[1.852s] [ 76%] Built target amp_msgs__rosidl_typesupport_fastrtps_cpp
+[1.865s] [ 76%] Built target amp_msgs
+[1.879s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.118s] [ 78%] Built target amp_msgs__py
+[2.133s] [ 85%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_py.dir/rosidl_generator_py/amp_msgs/msg/_set_pose_s.c.o[0m
+[2.133s] [ 85%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_py.dir/rosidl_generator_py/amp_msgs/msg/_agent_control_s.c.o[0m
+[2.133s] [ 85%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_py.dir/rosidl_generator_py/amp_msgs/msg/_launch_ball_s.c.o[0m
+[2.205s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so[0m
+[2.234s] [ 87%] Built target amp_msgs__rosidl_generator_py
+[2.250s] [ 91%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.250s] [ 91%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.252s] [ 93%] [32mBuilding C object CMakeFiles/amp_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.326s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/amp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.331s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/amp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.334s] [100%] [32m[1mLinking C shared library rosidl_generator_py/amp_msgs/amp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.352s] [100%] Built target amp_msgs__rosidl_typesupport_introspection_c__pyext
+[2.359s] [100%] Built target amp_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.359s] [100%] Built target amp_msgs__rosidl_typesupport_c__pyext
+[2.368s] Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_msgs -- -j24 -l24
+[2.375s] Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_msgs
+[2.380s] -- Install configuration: ""
+[2.380s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/rosidl_interfaces/amp_msgs
+[2.380s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs
+[2.380s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg
+[2.380s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/agent_control.h
+[2.381s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.381s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail
+[2.381s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__functions.h
+[2.381s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__struct.h
+[2.381s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__functions.c
+[2.381s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__struct.h
+[2.381s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__struct.h
+[2.382s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.h
+[2.382s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__functions.c
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__functions.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__functions.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__functions.c
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/set_pose.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/launch_ball.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/library_path.sh
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/library_path.dsv
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_generator_c.so
+[2.383s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_generator_c.so" to ""
+[2.383s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs
+[2.383s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.383s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_fastrtps_c.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_fastrtps_c.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_c.so
+[2.383s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.383s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs
+[2.383s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg
+[2.383s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_c.h
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.c
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.c
+[2.383s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.c
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_introspection_c.so
+[2.384s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_c.so
+[2.384s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_c.so" to ""
+[2.384s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs
+[2.384s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/agent_control.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/set_pose.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/launch_ball.hpp
+[2.384s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__struct.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__builder.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__traits.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__struct.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__traits.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__traits.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__struct.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__builder.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__builder.hpp
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.hpp
+[2.384s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs
+[2.384s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg
+[2.384s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.384s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/dds_fastrtps
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.388s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.388s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs
+[2.388s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg
+[2.388s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_cpp.hpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.cpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.cpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_cpp.hpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.cpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_cpp.hpp
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_introspection_cpp.so
+[2.388s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_cpp.so
+[2.388s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_cpp.so" to ""
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/pythonpath.sh
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/pythonpath.dsv
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_c.c
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/__init__.py
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/libamp_msgs__rosidl_generator_py.so
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_agent_control_s.c
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_launch_ball_s.c
+[2.388s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_set_pose_s.c
+[2.389s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/__init__.py
+[2.389s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_launch_ball.py
+[2.389s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_set_pose.py
+[2.389s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_agent_control.py
+[2.389s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.410s] Listing '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs'...
+[2.410s] Compiling '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/__init__.py'...
+[2.410s] Listing '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg'...
+[2.410s] Compiling '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/__init__.py'...
+[2.410s] Compiling '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_agent_control.py'...
+[2.410s] Compiling '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_launch_ball.py'...
+[2.410s] Compiling '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_set_pose.py'...
+[2.414s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.414s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.414s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.414s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.414s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.415s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.415s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_generator_py.so
+[2.415s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_generator_py.so" to ""
+[2.415s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/AgentControl.idl
+[2.415s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/LaunchBall.idl
+[2.415s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/SetPose.idl
+[2.415s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/AgentControl.msg
+[2.415s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/LaunchBall.msg
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/SetPose.msg
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/package_run_dependencies/amp_msgs
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/parent_prefix_path/amp_msgs
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/ament_prefix_path.sh
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/ament_prefix_path.dsv
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/path.sh
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/path.dsv
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.bash
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.sh
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.zsh
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.dsv
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.dsv
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/packages/amp_msgs
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_cExport.cmake
+[2.416s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.417s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.417s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.417s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.417s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.417s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cExport.cmake
+[2.417s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_cppExport.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cppExport.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.420s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_pyExport.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/rosidl_cmake-extras.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgsConfig.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgsConfig-version.cmake
+[2.421s] -- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.xml
+[2.421s] Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_msgs

@@ -1539,8 +1539,12 @@ CMakeFiles/run.dir/src/run_agent.cpp.o: /home/hollis/cu/5254_final/src/amp_agent
   /home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp \
-  /home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/collision_checker.hpp
+  /home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/collision_checker.hpp \
+  /home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/omni_agent_actor.hpp \
+  /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/agent_statuses.hpp
 
+
+/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/omni_agent_actor.hpp:
 
 /home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:
 
@@ -2135,6 +2139,8 @@ CMakeFiles/run.dir/src/run_agent.cpp.o: /home/hollis/cu/5254_final/src/amp_agent
 /usr/include/boost/preprocessor/logical/bitand.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
+
+/home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/agent_statuses.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
 

@@ -1,5 +1,0 @@
-[ 12%] [32mBuilding CXX object CMakeFiles/backend.dir/src/agent_backend.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
-[ 37%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
-[ 50%] [32m[1mLinking CXX static library libsst_tree.a[0m
-[ 50%] Built target sst_tree

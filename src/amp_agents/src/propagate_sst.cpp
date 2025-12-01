@@ -1,6 +1,6 @@
 #include "amp_agents/propagate_sst.hpp"
 
-SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment environment){
+SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment* environment){
     agent = Agent;
     env = environment;
 
@@ -10,7 +10,8 @@ SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment environment){
         samples_before_collision_check = 1;
     }
 
-    node_pile.push_back(SstNode(env.root_state));
+
+    node_pile.push_back(SstNode(env->root_state));
     tree.push_back(&node_pile.back());
 }
 
@@ -40,9 +41,9 @@ V13d SstTree::generate_random_sample(){
             rand() * (sample_d_maximums[11] / RAND_MAX) + sample_minimums[11]);
 
         //validate the sample
-        RectPrism prism(env.agent_dim, v3d(sampled[0], sampled[1], sampled[2]), yaw, 0);
+        RectPrism prism(env->agent_dim, v3d(sampled[0], sampled[1], sampled[2]), yaw, 0);
         
-        searching = prism.checkPrismsCollision(env.obstalces);
+        searching = prism.checkPrismsCollision(env->obstalces);
     }
 }
 
@@ -74,6 +75,10 @@ double SstTree::evalutate_distance_euclidean(v3d p1, V13d p2){
 
 double SstTree::evalutate_distance_euclidean_and_velocity(V13d p1, V13d p2, double velocity_weight){
     return (p1.block<3,1>(0,0) - p2.block<3,1>(0,0)).norm() + fabs(p1.block<3,1>(7,0).norm() - p2.block<3,1>(7,0).norm()) * velocity_weight;
+}
+
+Eigen::Quaterniond SstTree::getYawQuat(double yaw){
+    return Eigen::Quaterniond(cos(yaw/2), 0, 0, sin(yaw/2));
 }
 
 SstNode* SstTree::getLowestCostNodeWithinRange(V13d reference){
@@ -119,15 +124,15 @@ V12d SstTree::generate_random_controls(){
     V12d control;
     control.setZero();
 
-    for(int i = 0; i < env.control_limits.size(); i++){
-        control[i] = rand() * (env.control_limits.at(i).second - env.control_limits.at(i).first) / RAND_MAX + env.control_limits.at(i).first;
+    for(int i = 0; i < env->control_limits.size(); i++){
+        control[i] = rand() * (env->control_limits.at(i).second - env->control_limits.at(i).first) / RAND_MAX + env->control_limits.at(i).first;
     }
 
     return control;
 }
 
 double SstTree::generate_random_duration(){
-    return rand() * (env.duration_limits.second - env.duration_limits.first) / RAND_MAX + env.duration_limits.first;
+    return rand() * (env->duration_limits.second - env->duration_limits.first) / RAND_MAX + env->duration_limits.first;
 }
 
 bool SstTree::propagate_agent(V12d controls, double duration, std::vector<std::pair<double, V13d>>* substates){
@@ -152,9 +157,9 @@ bool SstTree::propagate_agent(V12d controls, double duration, std::vector<std::p
             //determine the yaw angle of the agent
             double yaw = atan2(2 *(agent->state[3] * agent->state[6] + agent->state[4] * agent->state[5]), 1 - 2 *(agent->state[5] * agent->state[5] + agent->state[6] * agent->state[6]));
 
-            RectPrism prism(env.agent_dim, v3d(agent->state[0], agent->state[1], agent->state[2]), yaw, 0);
+            RectPrism prism(env->agent_dim, v3d(agent->state[0], agent->state[1], agent->state[2]), yaw, 0);
 
-            if(prism.checkPrismsCollision(env.obstalces)){
+            if(prism.checkPrismsCollision(env->obstalces)){
 
                 //fail as there is a collision
                 return false;
@@ -165,6 +170,8 @@ bool SstTree::propagate_agent(V12d controls, double duration, std::vector<std::p
             }
 
         }
+
+        ticks--;
 
     }
 
@@ -198,7 +205,7 @@ SstNode SstTree::generateNewNode(){
 
         //configure the current state of the agent
         agent->state = base_node->state;
-        
+
         //propagate the agent according to the controls
         if(!propagate_agent(control, duration, &(substates))){
             i--;
@@ -242,6 +249,8 @@ bool SstTree::processNewNode(){
         }
 
     }
+
+    RCLCPP_INFO(node_ptr->get_logger(), "increasing node count %d", tree.size());
 
     //not in a neighboorhood so make a new one
     node_pile.push_back(node);

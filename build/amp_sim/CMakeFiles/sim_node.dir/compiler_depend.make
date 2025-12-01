@@ -455,6 +455,7 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp \
+  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/agent_properties.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -1803,6 +1804,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/eigen3/Eigen/SVD:
 
+/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/agent_properties.hpp:
+
 /usr/include/c++/11/tr1/gamma.tcc:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
@@ -2314,6 +2317,10 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
 /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
+
+/opt/ros/humble/include/rmw/rmw/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
 
@@ -2836,7 +2843,3 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/rcl/rcl/log_level.h:
 
 /opt/ros/humble/include/rcl/rcl/macros.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
-
-/opt/ros/humble/include/rmw/rmw/types.h:

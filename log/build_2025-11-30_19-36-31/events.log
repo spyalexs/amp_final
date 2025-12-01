@@ -1,0 +1,580 @@
+[0.000000] (-) TimerEvent: {}
+[0.001131] (amp_msgs) JobQueued: {'identifier': 'amp_msgs', 'dependencies': OrderedDict()}
+[0.001156] (amp_sim) JobQueued: {'identifier': 'amp_sim', 'dependencies': OrderedDict([('amp_msgs', '/home/hollis/cu/5254_final/install/amp_msgs')])}
+[0.001167] (amp_agents) JobQueued: {'identifier': 'amp_agents', 'dependencies': OrderedDict([('amp_msgs', '/home/hollis/cu/5254_final/install/amp_msgs'), ('amp_sim', '/home/hollis/cu/5254_final/install/amp_sim')])}
+[0.001175] (amp_viz) JobQueued: {'identifier': 'amp_viz', 'dependencies': OrderedDict([('amp_msgs', '/home/hollis/cu/5254_final/install/amp_msgs'), ('amp_sim', '/home/hollis/cu/5254_final/install/amp_sim')])}
+[0.001183] (amp_msgs) JobStarted: {'identifier': 'amp_msgs'}
+[0.005436] (amp_msgs) JobProgress: {'identifier': 'amp_msgs', 'progress': 'cmake'}
+[0.005488] (amp_msgs) JobProgress: {'identifier': 'amp_msgs', 'progress': 'build'}
+[0.005499] (amp_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hollis/cu/5254_final/build/amp_msgs', '--', '-j24', '-l24'], 'cwd': '/home/hollis/cu/5254_final/build/amp_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/home/hollis/cu/5254_final/install/amp_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble')]), 'shell': False}
+[0.034907] (amp_msgs) StdoutLine: {'line': b'[  2%] Built target amp_msgs__cpp\n'}
+[0.036562] (amp_msgs) StdoutLine: {'line': b'[ 12%] Built target amp_msgs__rosidl_generator_c\n'}
+[0.042220] (amp_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_amp_msgs\n'}
+[0.051186] (amp_msgs) StdoutLine: {'line': b'[ 23%] Built target amp_msgs__rosidl_typesupport_cpp\n'}
+[0.051340] (amp_msgs) StdoutLine: {'line': b'[ 34%] Built target amp_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.051388] (amp_msgs) StdoutLine: {'line': b'[ 53%] Built target amp_msgs__rosidl_typesupport_introspection_c\n'}
+[0.051430] (amp_msgs) StdoutLine: {'line': b'[ 55%] Built target amp_msgs__rosidl_typesupport_c\n'}
+[0.051470] (amp_msgs) StdoutLine: {'line': b'[ 65%] Built target amp_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.051508] (amp_msgs) StdoutLine: {'line': b'[ 76%] Built target amp_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.063980] (amp_msgs) StdoutLine: {'line': b'[ 76%] Built target amp_msgs\n'}
+[0.074622] (amp_msgs) StdoutLine: {'line': b'[ 78%] Built target amp_msgs__py\n'}
+[0.087395] (amp_msgs) StdoutLine: {'line': b'[ 87%] Built target amp_msgs__rosidl_generator_py\n'}
+[0.100024] (-) TimerEvent: {}
+[0.101145] (amp_msgs) StdoutLine: {'line': b'[ 93%] Built target amp_msgs__rosidl_typesupport_c__pyext\n'}
+[0.101247] (amp_msgs) StdoutLine: {'line': b'[ 95%] Built target amp_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.101614] (amp_msgs) StdoutLine: {'line': b'[100%] Built target amp_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.162920] (amp_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.163137] (amp_msgs) StdoutLine: {'line': b'writing amp_msgs.egg-info/PKG-INFO\n'}
+[0.163190] (amp_msgs) StdoutLine: {'line': b'writing dependency_links to amp_msgs.egg-info/dependency_links.txt\n'}
+[0.163221] (amp_msgs) StdoutLine: {'line': b'writing top-level names to amp_msgs.egg-info/top_level.txt\n'}
+[0.163702] (amp_msgs) StdoutLine: {'line': b"reading manifest file 'amp_msgs.egg-info/SOURCES.txt'\n"}
+[0.163836] (amp_msgs) StdoutLine: {'line': b"writing manifest file 'amp_msgs.egg-info/SOURCES.txt'\n"}
+[0.181551] (amp_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_amp_msgs_egg\n'}
+[0.191072] (amp_msgs) CommandEnded: {'returncode': 0}
+[0.192785] (amp_msgs) JobProgress: {'identifier': 'amp_msgs', 'progress': 'install'}
+[0.196744] (amp_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hollis/cu/5254_final/build/amp_msgs'], 'cwd': '/home/hollis/cu/5254_final/build/amp_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/home/hollis/cu/5254_final/install/amp_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble')]), 'shell': False}
+[0.200087] (-) TimerEvent: {}
+[0.203412] (amp_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.203494] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/rosidl_interfaces/amp_msgs\n'}
+[0.203526] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs\n'}
+[0.203573] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg\n'}
+[0.203622] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/agent_control.h\n'}
+[0.203648] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.203672] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail\n'}
+[0.203694] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__functions.h\n'}
+[0.203715] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__struct.h\n'}
+[0.203738] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__functions.c\n'}
+[0.203759] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__struct.h\n'}
+[0.203780] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__struct.h\n'}
+[0.203801] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.h\n'}
+[0.203826] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__functions.c\n'}
+[0.203852] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.h\n'}
+[0.203876] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__functions.h\n'}
+[0.203904] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.h\n'}
+[0.203930] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__functions.h\n'}
+[0.203982] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__functions.c\n'}
+[0.204008] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/set_pose.h\n'}
+[0.204031] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/launch_ball.h\n'}
+[0.204053] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/library_path.sh\n'}
+[0.204074] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/library_path.dsv\n'}
+[0.204098] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_generator_c.so\n'}
+[0.204119] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs\n'}
+[0.204141] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg\n'}
+[0.204162] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.204182] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail\n'}
+[0.204209] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_fastrtps_c.h\n'}
+[0.204230] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[0.204252] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h\n'}
+[0.204274] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.204352] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs\n'}
+[0.204384] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg\n'}
+[0.204408] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail\n'}
+[0.204430] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_c.h\n'}
+[0.204453] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.c\n'}
+[0.204474] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.c\n'}
+[0.204495] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.c\n'}
+[0.204516] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h\n'}
+[0.204537] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_c.h\n'}
+[0.204558] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.204578] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.204599] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_c.so\n'}
+[0.207571] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs\n'}
+[0.207701] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg\n'}
+[0.207808] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/agent_control.hpp\n'}
+[0.207842] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.207878] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/set_pose.hpp\n'}
+[0.207909] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/launch_ball.hpp\n'}
+[0.207933] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail\n'}
+[0.207959] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__struct.hpp\n'}
+[0.207989] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__builder.hpp\n'}
+[0.208013] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__traits.hpp\n'}
+[0.208037] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__struct.hpp\n'}
+[0.208061] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.hpp\n'}
+[0.208085] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.hpp\n'}
+[0.208108] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__traits.hpp\n'}
+[0.208132] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__traits.hpp\n'}
+[0.208154] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__struct.hpp\n'}
+[0.208177] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__builder.hpp\n'}
+[0.208200] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__builder.hpp\n'}
+[0.208222] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.hpp\n'}
+[0.208250] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs\n'}
+[0.208273] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg\n'}
+[0.208296] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.208319] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail\n'}
+[0.208341] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/dds_fastrtps\n'}
+[0.208363] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.208386] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.208408] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.208431] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.208455] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs\n'}
+[0.208483] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg\n'}
+[0.208509] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail\n'}
+[0.208533] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.208557] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/launch_ball__type_support.cpp\n'}
+[0.208581] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__type_support.cpp\n'}
+[0.208604] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.208627] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/agent_control__type_support.cpp\n'}
+[0.208649] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/include/amp_msgs/amp_msgs/msg/detail/set_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.208672] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.208693] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_cpp.so\n'}
+[0.208715] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/pythonpath.sh\n'}
+[0.208739] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/pythonpath.dsv\n'}
+[0.208761] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info\n'}
+[0.208783] (amp_msgs) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.208805] (amp_msgs) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.208828] (amp_msgs) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.208850] (amp_msgs) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.208872] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs\n'}
+[0.208899] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.208922] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.208944] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.208967] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.208994] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/__init__.py\n'}
+[0.209019] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/libamp_msgs__rosidl_generator_py.so\n'}
+[0.209045] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.209067] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg\n'}
+[0.209089] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_agent_control_s.c\n'}
+[0.209111] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_launch_ball_s.c\n'}
+[0.209133] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_set_pose_s.c\n'}
+[0.209155] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/__init__.py\n'}
+[0.209176] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_launch_ball.py\n'}
+[0.209197] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_set_pose.py\n'}
+[0.209219] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg/_agent_control.py\n'}
+[0.209240] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.225899] (amp_msgs) StdoutLine: {'line': b"Listing '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs'...\n"}
+[0.226002] (amp_msgs) StdoutLine: {'line': b"Listing '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/msg'...\n"}
+[0.229016] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.229087] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.229915] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages/amp_msgs/amp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.230013] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_generator_py.so\n'}
+[0.230051] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/AgentControl.idl\n'}
+[0.230083] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/LaunchBall.idl\n'}
+[0.230111] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/SetPose.idl\n'}
+[0.230138] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/AgentControl.msg\n'}
+[0.230163] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/LaunchBall.msg\n'}
+[0.230188] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/msg/SetPose.msg\n'}
+[0.230212] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/package_run_dependencies/amp_msgs\n'}
+[0.230241] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/parent_prefix_path/amp_msgs\n'}
+[0.230265] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/ament_prefix_path.sh\n'}
+[0.230290] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/ament_prefix_path.dsv\n'}
+[0.230314] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/path.sh\n'}
+[0.230339] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/environment/path.dsv\n'}
+[0.230362] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.bash\n'}
+[0.230388] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.sh\n'}
+[0.230412] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.zsh\n'}
+[0.230436] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/local_setup.dsv\n'}
+[0.230460] (amp_msgs) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.dsv\n'}
+[0.230521] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/ament_index/resource_index/packages/amp_msgs\n'}
+[0.230557] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_cExport.cmake\n'}
+[0.230586] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.230611] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.230636] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.230661] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.230685] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.230710] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.230737] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.230760] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.230783] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.230806] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.230829] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.230852] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.230877] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.230907] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.231257] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.231354] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/export_amp_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.231396] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.231432] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.233689] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.235056] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.235110] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.235151] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.235188] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.235223] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgsConfig.cmake\n'}
+[0.235256] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/cmake/amp_msgsConfig-version.cmake\n'}
+[0.235288] (amp_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.xml\n'}
+[0.235322] (amp_msgs) CommandEnded: {'returncode': 0}
+[0.247993] (amp_msgs) JobEnded: {'identifier': 'amp_msgs', 'rc': 0}
+[0.248205] (amp_sim) JobStarted: {'identifier': 'amp_sim'}
+[0.254301] (amp_sim) JobProgress: {'identifier': 'amp_sim', 'progress': 'cmake'}
+[0.254629] (amp_sim) JobProgress: {'identifier': 'amp_sim', 'progress': 'build'}
+[0.254800] (amp_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hollis/cu/5254_final/build/amp_sim', '--', '-j24', '-l24'], 'cwd': '/home/hollis/cu/5254_final/build/amp_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_sim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble')]), 'shell': False}
+[0.290667] (amp_sim) StdoutLine: {'line': b'[ 25%] Built target dynamic_object\n'}
+[0.300181] (-) TimerEvent: {}
+[0.307012] (amp_sim) StdoutLine: {'line': b'[ 75%] Built target dynamic_ball\n'}
+[0.307156] (amp_sim) StdoutLine: {'line': b'[ 75%] Built target omni_agent\n'}
+[0.324694] (amp_sim) StdoutLine: {'line': b'[100%] Built target sim_node\n'}
+[0.333059] (amp_sim) CommandEnded: {'returncode': 0}
+[0.335622] (amp_sim) JobProgress: {'identifier': 'amp_sim', 'progress': 'install'}
+[0.335666] (amp_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hollis/cu/5254_final/build/amp_sim'], 'cwd': '/home/hollis/cu/5254_final/build/amp_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_sim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble')]), 'shell': False}
+[0.339679] (amp_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.339792] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/lib/amp_sim/sim_node\n'}
+[0.339834] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/library_path.sh\n'}
+[0.339871] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/library_path.dsv\n'}
+[0.339912] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include\n'}
+[0.339946] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim\n'}
+[0.339979] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/dynamic_ball.hpp\n'}
+[0.340009] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/dynamic_object.hpp\n'}
+[0.340038] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/agent_statuses.hpp\n'}
+[0.340065] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/agent_properties.hpp\n'}
+[0.340093] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/environment_properties.hpp\n'}
+[0.340121] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/include/amp_sim/omni_agent.hpp\n'}
+[0.340149] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_object.a\n'}
+[0.340174] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/lib/libomni_agent.a\n'}
+[0.340199] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_ball.a\n'}
+[0.340240] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/package_run_dependencies/amp_sim\n'}
+[0.340276] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/parent_prefix_path/amp_sim\n'}
+[0.340302] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/ament_prefix_path.sh\n'}
+[0.340325] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/ament_prefix_path.dsv\n'}
+[0.340348] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/path.sh\n'}
+[0.340372] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/environment/path.dsv\n'}
+[0.340395] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.bash\n'}
+[0.340909] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.sh\n'}
+[0.340999] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.zsh\n'}
+[0.341033] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/local_setup.dsv\n'}
+[0.341062] (amp_sim) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.dsv\n'}
+[0.341088] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/ament_index/resource_index/packages/amp_sim\n'}
+[0.341118] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/export_amp_simExport.cmake\n'}
+[0.341143] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/export_amp_simExport-noconfig.cmake\n'}
+[0.341166] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.341188] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.341211] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig.cmake\n'}
+[0.341244] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/cmake/amp_simConfig-version.cmake\n'}
+[0.341267] (amp_sim) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.xml\n'}
+[0.341912] (amp_sim) CommandEnded: {'returncode': 0}
+[0.348832] (amp_sim) JobEnded: {'identifier': 'amp_sim', 'rc': 0}
+[0.351396] (amp_agents) JobStarted: {'identifier': 'amp_agents'}
+[0.352096] (amp_viz) JobStarted: {'identifier': 'amp_viz'}
+[0.356779] (amp_agents) JobProgress: {'identifier': 'amp_agents', 'progress': 'cmake'}
+[0.358415] (amp_agents) JobProgress: {'identifier': 'amp_agents', 'progress': 'build'}
+[0.358450] (amp_agents) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hollis/cu/5254_final/build/amp_agents', '--', '-j24', '-l24'], 'cwd': '/home/hollis/cu/5254_final/build/amp_agents', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_agents'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble')]), 'shell': False}
+[0.359630] (amp_viz) JobProgress: {'identifier': 'amp_viz', 'progress': 'cmake'}
+[0.360474] (amp_viz) JobProgress: {'identifier': 'amp_viz', 'progress': 'build'}
+[0.361615] (amp_viz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hollis/cu/5254_final/build/amp_viz', '--', '-j24', '-l24'], 'cwd': '/home/hollis/cu/5254_final/build/amp_viz', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_viz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble')]), 'shell': False}
+[0.392689] (amp_agents) StdoutLine: {'line': b'[ 16%] Built target collision_checker\n'}
+[0.395633] (amp_agents) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o\x1b[0m\n'}
+[0.397059] (amp_viz) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target template_panel\x1b[0m\n'}
+[0.400252] (-) TimerEvent: {}
+[0.401322] (amp_agents) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sst_tree\x1b[0m\n'}
+[0.413450] (amp_agents) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o\x1b[0m\n'}
+[0.414310] (amp_viz) StdoutLine: {'line': b'[ 16%] Built target template_panel_autogen\n'}
+[0.445690] (amp_viz) StdoutLine: {'line': b'[100%] Built target template_panel\n'}
+[0.458054] (amp_viz) CommandEnded: {'returncode': 0}
+[0.458594] (amp_viz) JobProgress: {'identifier': 'amp_viz', 'progress': 'install'}
+[0.458795] (amp_viz) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hollis/cu/5254_final/build/amp_viz'], 'cwd': '/home/hollis/cu/5254_final/build/amp_viz', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_viz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble')]), 'shell': False}
+[0.470127] (amp_viz) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.470232] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/lib/libtemplate_panel.so\n'}
+[0.470279] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/include\n'}
+[0.470318] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/include/amp_viz\n'}
+[0.470356] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/include/amp_viz/template_panel.hpp\n'}
+[0.470392] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/rviz_common_plugins.xml\n'}
+[0.470428] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/rviz_common_plugins.xml\n'}
+[0.470460] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/lib/amp_viz/marker_pub.py\n'}
+[0.470491] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/marker_pub.py\n'}
+[0.470566] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//launch\n'}
+[0.470596] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//launch/amp_viz.launch.py\n'}
+[0.470623] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes\n'}
+[0.470650] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes/cannon_barrel\n'}
+[0.470677] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes/cannon_barrel/mesh.dae\n'}
+[0.470704] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz//meshes/cannon_barrel/model.dae\n'}
+[0.470730] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/package_run_dependencies/amp_viz\n'}
+[0.470757] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/parent_prefix_path/amp_viz\n'}
+[0.470783] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.sh\n'}
+[0.470807] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/ament_prefix_path.dsv\n'}
+[0.470832] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.sh\n'}
+[0.470857] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/environment/path.dsv\n'}
+[0.470889] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.bash\n'}
+[0.470915] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.sh\n'}
+[0.470939] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.zsh\n'}
+[0.470965] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/local_setup.dsv\n'}
+[0.470989] (amp_viz) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.dsv\n'}
+[0.471016] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/packages/amp_viz\n'}
+[0.471040] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/ament_index/resource_index/rviz_common__pluginlib__plugin/amp_viz\n'}
+[0.471065] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/export_template_panelExport.cmake\n'}
+[0.471091] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/export_template_panelExport-noconfig.cmake\n'}
+[0.471119] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.471146] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.471172] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig.cmake\n'}
+[0.471199] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/cmake/amp_vizConfig-version.cmake\n'}
+[0.471224] (amp_viz) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_viz/share/amp_viz/package.xml\n'}
+[0.474197] (amp_viz) CommandEnded: {'returncode': 0}
+[0.483723] (amp_viz) JobEnded: {'identifier': 'amp_viz', 'rc': 0}
+[0.500368] (-) TimerEvent: {}
+[0.600743] (-) TimerEvent: {}
+[0.700927] (-) TimerEvent: {}
+[0.801154] (-) TimerEvent: {}
+[0.901389] (-) TimerEvent: {}
+[1.001598] (-) TimerEvent: {}
+[1.101792] (-) TimerEvent: {}
+[1.202286] (-) TimerEvent: {}
+[1.302502] (-) TimerEvent: {}
+[1.402733] (-) TimerEvent: {}
+[1.502925] (-) TimerEvent: {}
+[1.603154] (-) TimerEvent: {}
+[1.703366] (-) TimerEvent: {}
+[1.803593] (-) TimerEvent: {}
+[1.903796] (-) TimerEvent: {}
+[2.003986] (-) TimerEvent: {}
+[2.104190] (-) TimerEvent: {}
+[2.105551] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KV13d SstTree::generate_random_sample()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.105680] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:47:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.105719] (amp_agents) StderrLine: {'line': b'   47 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[2.105750] (amp_agents) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.117521] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KV12d SstTree::generate_random_controls()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.117577] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:126:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::pair<double, double> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.117608] (amp_agents) StderrLine: {'line': b'  126 |     for(int i = 0; \x1b[01;35m\x1b[Ki < env->control_limits.size()\x1b[m\x1b[K; i++){\n'}
+[2.117634] (amp_agents) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.124302] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSstPath::SstPath(SstNode, DynamicObject*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.124376] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:300:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.124406] (amp_agents) StderrLine: {'line': b'  300 |     for(int i = 0; \x1b[01;35m\x1b[Ki < states.size()\x1b[m\x1b[K; i++){\n'}
+[2.124430] (amp_agents) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.124455] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:306:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.124482] (amp_agents) StderrLine: {'line': b'  306 |     for(int i = 0; \x1b[01;35m\x1b[Ki < controls.size()\x1b[m\x1b[K; i++){\n'}
+[2.124505] (amp_agents) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.124579] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SstPath::create_forward_path(SstNode)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.124608] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:323:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.124638] (amp_agents) StderrLine: {'line': b'  323 |         for(int i = 0; \x1b[01;35m\x1b[Ki < current->sub_states.size()\x1b[m\x1b[K; i++){\n'}
+[2.124661] (amp_agents) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.204279] (-) TimerEvent: {}
+[2.304587] (-) TimerEvent: {}
+[2.404841] (-) TimerEvent: {}
+[2.505101] (-) TimerEvent: {}
+[2.605334] (-) TimerEvent: {}
+[2.705534] (-) TimerEvent: {}
+[2.805748] (-) TimerEvent: {}
+[2.905923] (-) TimerEvent: {}
+[3.006172] (-) TimerEvent: {}
+[3.073502] (amp_agents) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX static library libsst_tree.a\x1b[0m\n'}
+[3.103330] (amp_agents) StdoutLine: {'line': b'[ 41%] Built target sst_tree\n'}
+[3.107667] (-) TimerEvent: {}
+[3.125808] (amp_agents) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/backend.dir/src/agent_backend.cpp.o\x1b[0m\n'}
+[3.208085] (-) TimerEvent: {}
+[3.308544] (-) TimerEvent: {}
+[3.313940] (amp_agents) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX static library libtree_visualizer.a\x1b[0m\n'}
+[3.338729] (amp_agents) StdoutLine: {'line': b'[ 58%] Built target tree_visualizer\n'}
+[3.408649] (-) TimerEvent: {}
+[3.508967] (-) TimerEvent: {}
+[3.609332] (-) TimerEvent: {}
+[3.711052] (-) TimerEvent: {}
+[3.811341] (-) TimerEvent: {}
+[3.911611] (-) TimerEvent: {}
+[4.011943] (-) TimerEvent: {}
+[4.112274] (-) TimerEvent: {}
+[4.212715] (-) TimerEvent: {}
+[4.313584] (-) TimerEvent: {}
+[4.413916] (-) TimerEvent: {}
+[4.514255] (-) TimerEvent: {}
+[4.614641] (-) TimerEvent: {}
+[4.715010] (-) TimerEvent: {}
+[4.815414] (-) TimerEvent: {}
+[4.915739] (-) TimerEvent: {}
+[5.016058] (-) TimerEvent: {}
+[5.116380] (-) TimerEvent: {}
+[5.216709] (-) TimerEvent: {}
+[5.316959] (-) TimerEvent: {}
+[5.417798] (-) TimerEvent: {}
+[5.476747] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped AgentBackend::getBallTransform(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.477263] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:76:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.477311] (amp_agents) StderrLine: {'line': b'   76 |         for(int i = 0; \x1b[01;35m\x1b[Ki < valid_ball_frames.size()\x1b[m\x1b[K; i++){\n'}
+[5.477344] (amp_agents) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.477468] (amp_agents) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[5.477507] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.477533] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.477559] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.477583] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.477606] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.477628] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.477651] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.477673] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.477695] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.477717] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.477738] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:9\x1b[m\x1b[K,\n'}
+[5.477759] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1\x1b[m\x1b[K:\n'}
+[5.477781] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped AgentBackend::getTransform(std::string, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.477807] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.477832] (amp_agents) StderrLine: {'line': b'  105 |         RCLCPP_WARN(get_logger(), \x1b[01;35m\x1b[K"Could not transform %s to %s: %s"\x1b[m\x1b[K, to_frame, from_frame, ex.what());\n'}
+[5.477854] (amp_agents) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.478256] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[5.478304] (amp_agents) StderrLine: {'line': b'  105 |         RCLCPP_WARN(get_logger(), "Could not transform \x1b[01;36m\x1b[K%s\x1b[m\x1b[K to %s: %s", to_frame, from_frame, ex.what());\n'}
+[5.478332] (amp_agents) StderrLine: {'line': b'      |                                                        \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[5.478360] (amp_agents) StderrLine: {'line': b'      |                                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[5.478385] (amp_agents) StderrLine: {'line': b'      |                                                         \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[5.478409] (amp_agents) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[5.478432] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.478454] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.478477] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.478498] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.478520] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.478543] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.478565] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.478588] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.478614] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.478636] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.478659] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:9\x1b[m\x1b[K,\n'}
+[5.478682] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1\x1b[m\x1b[K:\n'}
+[5.478708] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.478736] (amp_agents) StderrLine: {'line': b'  105 |         RCLCPP_WARN(get_logger(), \x1b[01;35m\x1b[K"Could not transform %s to %s: %s"\x1b[m\x1b[K, to_frame, from_frame, ex.what());\n'}
+[5.478759] (amp_agents) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.478781] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:63:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[5.478803] (amp_agents) StderrLine: {'line': b'  105 |         RCLCPP_WARN(get_logger(), "Could not transform %s to \x1b[01;36m\x1b[K%s\x1b[m\x1b[K: %s", to_frame, from_frame, ex.what());\n'}
+[5.478825] (amp_agents) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[5.478846] (amp_agents) StderrLine: {'line': b'      |                                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[5.478867] (amp_agents) StderrLine: {'line': b'      |                                                               \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[5.490434] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void AgentBackend::generate_tree(int, BallCatchEnvironment)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.490545] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:152:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knumber_of_nodes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.490577] (amp_agents) StderrLine: {'line': b'  152 | void AgentBackend::generate_tree(\x1b[01;35m\x1b[Kint number_of_nodes\x1b[m\x1b[K, BallCatchEnvironment env){\n'}
+[5.490603] (amp_agents) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.490629] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:152:76:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kenv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.490656] (amp_agents) StderrLine: {'line': b'  152 |  AgentBackend::generate_tree(int number_of_nodes, \x1b[01;35m\x1b[KBallCatchEnvironment env\x1b[m\x1b[K){\n'}
+[5.490680] (amp_agents) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.490712] (amp_agents) StderrLine: {'line': b'\n'}
+[5.517913] (-) TimerEvent: {}
+[5.618166] (-) TimerEvent: {}
+[5.718435] (-) TimerEvent: {}
+[5.818680] (-) TimerEvent: {}
+[5.918965] (-) TimerEvent: {}
+[6.019321] (-) TimerEvent: {}
+[6.119569] (-) TimerEvent: {}
+[6.219886] (-) TimerEvent: {}
+[6.320272] (-) TimerEvent: {}
+[6.420802] (-) TimerEvent: {}
+[6.521188] (-) TimerEvent: {}
+[6.621585] (-) TimerEvent: {}
+[6.721852] (-) TimerEvent: {}
+[6.822344] (-) TimerEvent: {}
+[6.923402] (-) TimerEvent: {}
+[7.023743] (-) TimerEvent: {}
+[7.124108] (-) TimerEvent: {}
+[7.224545] (-) TimerEvent: {}
+[7.325008] (-) TimerEvent: {}
+[7.425356] (-) TimerEvent: {}
+[7.525731] (-) TimerEvent: {}
+[7.626063] (-) TimerEvent: {}
+[7.726385] (-) TimerEvent: {}
+[7.826752] (-) TimerEvent: {}
+[7.927156] (-) TimerEvent: {}
+[8.027970] (-) TimerEvent: {}
+[8.128317] (-) TimerEvent: {}
+[8.228713] (-) TimerEvent: {}
+[8.329155] (-) TimerEvent: {}
+[8.429630] (-) TimerEvent: {}
+[8.530029] (-) TimerEvent: {}
+[8.630357] (-) TimerEvent: {}
+[8.731146] (-) TimerEvent: {}
+[8.831546] (-) TimerEvent: {}
+[8.913944] (amp_agents) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libbackend.a\x1b[0m\n'}
+[8.931618] (-) TimerEvent: {}
+[8.996787] (amp_agents) StdoutLine: {'line': b'[ 66%] Built target backend\n'}
+[9.013689] (amp_agents) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.o\x1b[0m\n'}
+[9.031791] (-) TimerEvent: {}
+[9.132114] (-) TimerEvent: {}
+[9.232552] (-) TimerEvent: {}
+[9.332945] (-) TimerEvent: {}
+[9.433369] (-) TimerEvent: {}
+[9.533697] (-) TimerEvent: {}
+[9.634103] (-) TimerEvent: {}
+[9.734568] (-) TimerEvent: {}
+[9.834967] (-) TimerEvent: {}
+[9.935397] (-) TimerEvent: {}
+[10.035843] (-) TimerEvent: {}
+[10.136148] (-) TimerEvent: {}
+[10.236413] (-) TimerEvent: {}
+[10.337494] (-) TimerEvent: {}
+[10.437865] (-) TimerEvent: {}
+[10.538513] (-) TimerEvent: {}
+[10.640084] (-) TimerEvent: {}
+[10.740428] (-) TimerEvent: {}
+[10.840858] (-) TimerEvent: {}
+[10.941333] (-) TimerEvent: {}
+[11.041784] (-) TimerEvent: {}
+[11.107368] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void OmniAgentActor::generate_tree(int, BallCatchEnvironment)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.107583] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:33:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::list<SstNode*>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.107615] (amp_agents) StderrLine: {'line': b'   33 |     while(\x1b[01;35m\x1b[Kagent_tree.tree.size() < number_of_nodes\x1b[m\x1b[K){\n'}
+[11.107637] (amp_agents) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.107656] (amp_agents) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.107674] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.107690] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.107708] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.107724] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.107747] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.107763] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.107779] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.107795] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.107817] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.107833] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.107849] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/omni_agent_actor.hpp:3\x1b[m\x1b[K,\n'}
+[11.107867] (amp_agents) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:1\x1b[m\x1b[K:\n'}
+[11.107888] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:38:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::list<SstNode*>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.107908] (amp_agents) StderrLine: {'line': b'   38 |             RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K"Added node number %d out of %d."\x1b[m\x1b[K, \x1b[32m\x1b[Kagent_tree.tree.size()\x1b[m\x1b[K, number_of_nodes);\n'}
+[11.107925] (amp_agents) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.107940] (amp_agents) StderrLine: {'line': b'      |                                                                                              \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[11.107955] (amp_agents) StderrLine: {'line': b'      |                                                                                              \x1b[32m\x1b[Kstd::__cxx11::list<SstNode*>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[11.107971] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:38:59:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[11.107985] (amp_agents) StderrLine: {'line': b'   38 |             RCLCPP_INFO(get_logger(), "Added node number \x1b[01;36m\x1b[K%d\x1b[m\x1b[K out of %d.", agent_tree.tree.size(), number_of_nodes);\n'}
+[11.108000] (amp_agents) StderrLine: {'line': b'      |                                                          \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[11.108014] (amp_agents) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[11.108029] (amp_agents) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[11.108046] (amp_agents) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[11.108061] (amp_agents) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:26:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kenv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.108078] (amp_agents) StderrLine: {'line': b'   26 | niAgentActor::generate_tree(int number_of_nodes, \x1b[01;35m\x1b[KBallCatchEnvironment env\x1b[m\x1b[K) {\n'}
+[11.108092] (amp_agents) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[11.108107] (amp_agents) StderrLine: {'line': b'\n'}
+[11.141947] (-) TimerEvent: {}
+[11.242352] (-) TimerEvent: {}
+[11.342799] (-) TimerEvent: {}
+[11.427311] (amp_agents) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX static library libomni_actor.a\x1b[0m\n'}
+[11.442992] (-) TimerEvent: {}
+[11.445009] (amp_agents) StdoutLine: {'line': b'[ 83%] Built target omni_actor\n'}
+[11.460562] (amp_agents) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/run.dir/src/run_agent.cpp.o\x1b[0m\n'}
+[11.543127] (-) TimerEvent: {}
+[11.643448] (-) TimerEvent: {}
+[11.743785] (-) TimerEvent: {}
+[11.844395] (-) TimerEvent: {}
+[11.944884] (-) TimerEvent: {}
+[12.046943] (-) TimerEvent: {}
+[12.147223] (-) TimerEvent: {}
+[12.247596] (-) TimerEvent: {}
+[12.348172] (-) TimerEvent: {}
+[12.448557] (-) TimerEvent: {}
+[12.549477] (-) TimerEvent: {}
+[12.649728] (-) TimerEvent: {}
+[12.750650] (-) TimerEvent: {}
+[12.851781] (-) TimerEvent: {}
+[12.952217] (-) TimerEvent: {}
+[13.052758] (-) TimerEvent: {}
+[13.153207] (-) TimerEvent: {}
+[13.253463] (-) TimerEvent: {}
+[13.353797] (-) TimerEvent: {}
+[13.454206] (-) TimerEvent: {}
+[13.554589] (-) TimerEvent: {}
+[13.654985] (-) TimerEvent: {}
+[13.755297] (-) TimerEvent: {}
+[13.844010] (amp_agents) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable run\x1b[0m\n'}
+[13.855948] (-) TimerEvent: {}
+[13.956454] (-) TimerEvent: {}
+[14.056782] (-) TimerEvent: {}
+[14.157057] (-) TimerEvent: {}
+[14.167542] (amp_agents) StdoutLine: {'line': b'[100%] Built target run\n'}
+[14.175337] (amp_agents) CommandEnded: {'returncode': 0}
+[14.176574] (amp_agents) JobProgress: {'identifier': 'amp_agents', 'progress': 'install'}
+[14.176595] (amp_agents) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hollis/cu/5254_final/build/amp_agents'], 'cwd': '/home/hollis/cu/5254_final/build/amp_agents', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis/cu/5254_final/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2440'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2413,unix/blizzard:/tmp/.ICE-unix/2413'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f72c2099_9dba_443b_9df7_14ea28744ba2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_agents'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble')]), 'shell': False}
+[14.181011] (amp_agents) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.181091] (amp_agents) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run\n'}
+[14.185111] (amp_agents) StdoutLine: {'line': b'-- Set runtime path of "/home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run" to ""\n'}
+[14.185243] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/package_run_dependencies/amp_agents\n'}
+[14.185276] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/parent_prefix_path/amp_agents\n'}
+[14.185305] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.sh\n'}
+[14.185331] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.dsv\n'}
+[14.185802] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.sh\n'}
+[14.185833] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.dsv\n'}
+[14.185864] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.bash\n'}
+[14.185892] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.sh\n'}
+[14.185917] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.zsh\n'}
+[14.185939] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.dsv\n'}
+[14.185964] (amp_agents) StdoutLine: {'line': b'-- Installing: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.dsv\n'}
+[14.185986] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/packages/amp_agents\n'}
+[14.186010] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig.cmake\n'}
+[14.186032] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig-version.cmake\n'}
+[14.186054] (amp_agents) StdoutLine: {'line': b'-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.xml\n'}
+[14.187320] (amp_agents) CommandEnded: {'returncode': 0}
+[14.196416] (amp_agents) JobEnded: {'identifier': 'amp_agents', 'rc': 0}
+[14.196891] (-) EventReactorShutdown: {}

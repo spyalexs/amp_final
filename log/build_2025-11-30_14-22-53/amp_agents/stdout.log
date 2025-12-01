@@ -1,5 +1,0 @@
-[ 25%] Built target sst_tree
-[ 50%] Built target tree_visualizer
-[ 75%] Built target backend
-[ 87%] [32mBuilding CXX object CMakeFiles/run.dir/src/run_agent.cpp.o[0m
-[100%] [32m[1mLinking CXX executable run[0m

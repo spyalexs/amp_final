@@ -6,6 +6,8 @@
 #include <cstdlib>
 #include <cmath>
 
+#include <rclcpp/rclcpp.hpp>
+
 //this is scuffed...
 #include "../../amp_sim/include/amp_sim/dynamic_object.hpp"
 #include "../../amp_sim/include/amp_sim/omni_agent.hpp"
@@ -21,10 +23,6 @@
 
 typedef Eigen::Matrix<double, 12, 1> V12d;
 typedef Eigen::Matrix<double, 13, 1> V13d;
-
-Eigen::Quaterniond getYawQuat(double yaw){
-    return Eigen::Quaterniond(cos(yaw/2), 0, 0, sin(yaw/2));
-}
 
 class SstNode{
 
@@ -98,7 +96,7 @@ class SstNeighborhood{
 class SstTree{
 
     public:
-        SstTree(DynamicObject* Agent, BallCatchEnvironment environment);
+        SstTree(DynamicObject* Agent, BallCatchEnvironment* environment);
 
         DynamicObject* agent;
 
@@ -117,7 +115,7 @@ class SstTree{
         V12d sample_minimums;
         V12d sample_d_maximums;
 
-        BallCatchEnvironment env;
+        BallCatchEnvironment* env;
 
         int samples_before_collision_check;
 
@@ -129,6 +127,10 @@ class SstTree{
         SstNode* getLowestCostNodeWithinRange(V13d reference);
 
         bool propagate_agent(V12d controls, double duration, std::vector<std::pair<double, V13d>>* substates);  
+
+        Eigen::Quaterniond getYawQuat(double yaw);
+        
+        rclcpp::Node* node_ptr;
 };
 
 class SstPath{

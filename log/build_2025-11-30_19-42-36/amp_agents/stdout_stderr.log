@@ -1,0 +1,72 @@
+[ 16%] Built target collision_checker
+[ 33%] Built target tree_visualizer
+[ 41%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstTree::SstTree(DynamicObject*, BallCatchEnvironment*)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:13:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+   13 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "here26");
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:9[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:13:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   13 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "here26");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV13d SstTree::generate_random_sample()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:50:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   50 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:129:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  129 |     for(int i = 0; [01;35m[Ki < env->control_limits.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstPath::SstPath(SstNode, DynamicObject*, bool)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:303:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  303 |     for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:309:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  309 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::create_forward_path(SstNode)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:326:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  326 |         for(int i = 0; [01;35m[Ki < current->sub_states.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sst_tree.dir/build.make:76: CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/sst_tree.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -198,6 +198,19 @@ amp_agents_uninstall/fast:
 .PHONY : amp_agents_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named collision_checker
+
+# Build rule for target.
+collision_checker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 collision_checker
+.PHONY : collision_checker
+
+# fast build rule for target.
+collision_checker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/build
+.PHONY : collision_checker/fast
+
+#=============================================================================
 # Target rules for targets named sst_tree
 
 # Build rule for target.
@@ -222,6 +235,19 @@ backend: cmake_check_build_system
 backend/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/build
 .PHONY : backend/fast
+
+#=============================================================================
+# Target rules for targets named omni_actor
+
+# Build rule for target.
+omni_actor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omni_actor
+.PHONY : omni_actor
+
+# fast build rule for target.
+omni_actor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_actor.dir/build.make CMakeFiles/omni_actor.dir/build
+.PHONY : omni_actor/fast
 
 #=============================================================================
 # Target rules for targets named tree_visualizer
@@ -272,6 +298,54 @@ src/agent_backend.s: src/agent_backend.cpp.s
 src/agent_backend.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/src/agent_backend.cpp.s
 .PHONY : src/agent_backend.cpp.s
+
+src/collision_checker.o: src/collision_checker.cpp.o
+.PHONY : src/collision_checker.o
+
+# target to build an object file
+src/collision_checker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/src/collision_checker.cpp.o
+.PHONY : src/collision_checker.cpp.o
+
+src/collision_checker.i: src/collision_checker.cpp.i
+.PHONY : src/collision_checker.i
+
+# target to preprocess a source file
+src/collision_checker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/src/collision_checker.cpp.i
+.PHONY : src/collision_checker.cpp.i
+
+src/collision_checker.s: src/collision_checker.cpp.s
+.PHONY : src/collision_checker.s
+
+# target to generate assembly for a file
+src/collision_checker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/src/collision_checker.cpp.s
+.PHONY : src/collision_checker.cpp.s
+
+src/omni_agent_actor.o: src/omni_agent_actor.cpp.o
+.PHONY : src/omni_agent_actor.o
+
+# target to build an object file
+src/omni_agent_actor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_actor.dir/build.make CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.o
+.PHONY : src/omni_agent_actor.cpp.o
+
+src/omni_agent_actor.i: src/omni_agent_actor.cpp.i
+.PHONY : src/omni_agent_actor.i
+
+# target to preprocess a source file
+src/omni_agent_actor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_actor.dir/build.make CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.i
+.PHONY : src/omni_agent_actor.cpp.i
+
+src/omni_agent_actor.s: src/omni_agent_actor.cpp.s
+.PHONY : src/omni_agent_actor.s
+
+# target to generate assembly for a file
+src/omni_agent_actor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_actor.dir/build.make CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.s
+.PHONY : src/omni_agent_actor.cpp.s
 
 src/propagate_sst.o: src/propagate_sst.cpp.o
 .PHONY : src/propagate_sst.o
@@ -361,12 +435,20 @@ help:
 	@echo "... amp_agents_uninstall"
 	@echo "... uninstall"
 	@echo "... backend"
+	@echo "... collision_checker"
+	@echo "... omni_actor"
 	@echo "... run"
 	@echo "... sst_tree"
 	@echo "... tree_visualizer"
 	@echo "... src/agent_backend.o"
 	@echo "... src/agent_backend.i"
 	@echo "... src/agent_backend.s"
+	@echo "... src/collision_checker.o"
+	@echo "... src/collision_checker.i"
+	@echo "... src/collision_checker.s"
+	@echo "... src/omni_agent_actor.o"
+	@echo "... src/omni_agent_actor.i"
+	@echo "... src/omni_agent_actor.s"
 	@echo "... src/propagate_sst.o"
 	@echo "... src/propagate_sst.i"
 	@echo "... src/propagate_sst.s"

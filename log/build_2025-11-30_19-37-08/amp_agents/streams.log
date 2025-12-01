@@ -1,0 +1,68 @@
+[0.007s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target tree_visualizer[0m
+[0.047s] [ 16%] Built target collision_checker
+[0.052s] [ 33%] Built target tree_visualizer
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target sst_tree[0m
+[0.064s] [ 50%] Built target sst_tree
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target backend[0m
+[0.089s] [ 66%] Built target backend
+[0.099s] [35m[1mConsolidate compiler generated dependencies of target omni_actor[0m
+[0.114s] [ 75%] [32mBuilding CXX object CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.o[0m
+[2.379s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:[m[K In member function ‘[01m[Kvirtual void OmniAgentActor::generate_tree(int, BallCatchEnvironment)[m[K’:
+[2.379s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:32:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::__cxx11::list<SstNode*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.379s]    32 |     while([01;35m[Kagent_tree.tree.size() < number_of_nodes[m[K){
+[2.379s]       |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[2.379s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.379s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/omni_agent_actor.hpp:3[m[K,
+[2.380s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:1[m[K:
+[2.380s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:37:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::__cxx11::list<SstNode*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.380s]    37 |             RCLCPP_INFO(get_logger(), [01;35m[K"Added node number %d out of %d."[m[K, [32m[Kagent_tree.tree.size()[m[K, number_of_nodes);
+[2.380s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.380s]       |                                                                                              [32m[K|[m[K
+[2.380s]       |                                                                                              [32m[Kstd::__cxx11::list<SstNode*>::size_type {aka long unsigned int}[m[K
+[2.380s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:37:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.380s]    37 |             RCLCPP_INFO(get_logger(), "Added node number [01;36m[K%d[m[K out of %d.", agent_tree.tree.size(), number_of_nodes);
+[2.380s]       |                                                          [01;36m[K~^[m[K
+[2.380s]       |                                                           [01;36m[K|[m[K
+[2.380s]       |                                                           [01;36m[Kint[m[K
+[2.380s]       |                                                          [32m[K%ld[m[K
+[2.380s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:25:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kenv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.380s]    25 | niAgentActor::generate_tree(int number_of_nodes, [01;35m[KBallCatchEnvironment env[m[K) {
+[2.380s]       |                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.380s] 
+[2.793s] [ 83%] [32m[1mLinking CXX static library libomni_actor.a[0m
+[2.817s] [ 83%] Built target omni_actor
+[2.827s] [35m[1mConsolidate compiler generated dependencies of target run[0m
+[2.842s] [ 91%] [32m[1mLinking CXX executable run[0m
+[3.197s] [100%] Built target run
+[3.206s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[3.207s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_agents
+[3.214s] -- Install configuration: ""
+[3.214s] -- Installing: /home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run
+[3.216s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run" to ""
+[3.216s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/package_run_dependencies/amp_agents
+[3.216s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/parent_prefix_path/amp_agents
+[3.216s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.sh
+[3.216s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.dsv
+[3.216s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.sh
+[3.216s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.dsv
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.bash
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.sh
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.zsh
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.dsv
+[3.217s] -- Installing: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.dsv
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/packages/amp_agents
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig.cmake
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig-version.cmake
+[3.217s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.xml
+[3.218s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_agents

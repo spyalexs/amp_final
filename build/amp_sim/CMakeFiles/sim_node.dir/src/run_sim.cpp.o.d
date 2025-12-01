@@ -402,6 +402,7 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: \
  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp \
  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp \
  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp \
+ /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/agent_properties.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
