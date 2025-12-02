@@ -457,6 +457,12 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -520,7 +526,6 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
-  /usr/include/c++/11/iostream \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
@@ -649,7 +654,6 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
   /usr/include/c++/11/codecvt \
-  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -891,12 +895,18 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
+  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp \
   /home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/collision_checker.hpp
 
 
 /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp:
+
+/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h:
+
+/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
@@ -1348,6 +1358,12 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
+/opt/ros/humble/include/rcutils/rcutils/error_handling.h:
+
+/opt/ros/humble/include/rcl/rcl/types.h:
+
+/opt/ros/humble/include/rcl/rcl/macros.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/string.h:
@@ -1411,8 +1427,6 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/c++/11/debug/debug.h:
-
-/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -1942,8 +1956,6 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 
 /usr/include/c++/11/bits/specfun.h:
 
-/opt/ros/humble/include/rcl/rcl/types.h:
-
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
@@ -2152,6 +2164,10 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 
 /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
 
+/opt/ros/humble/include/rmw/rmw/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+
 /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
@@ -2191,6 +2207,8 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 /usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
@@ -2432,9 +2450,9 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 
 /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
 
-/usr/include/c++/11/bits/codecvt.h:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
+
+/usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
 
@@ -2511,6 +2529,14 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/c++/11/fstream:
+
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
@@ -2655,11 +2681,3 @@ CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o: /home/hollis/cu/5254_final/src/
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /opt/ros/humble/include/rcl/rcl/log_level.h:
-
-/opt/ros/humble/include/rcl/rcl/macros.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
-
-/opt/ros/humble/include/rmw/rmw/types.h:
-
-/opt/ros/humble/include/rcutils/rcutils/error_handling.h:

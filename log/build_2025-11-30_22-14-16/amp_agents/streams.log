@@ -1,0 +1,21 @@
+[0.006s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target tree_visualizer[0m
+[0.042s] [ 16%] Built target collision_checker
+[0.049s] [ 25%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
+[0.060s] [ 41%] Built target sst_tree
+[0.082s] [ 58%] Built target backend
+[2.234s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:[m[K In member function ‘[01m[Kvoid TreeVisualizer::drawNode(SstNode*)[m[K’:
+[2.234s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:28:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.234s]    28 |         for(int i = 0; [01;35m[Ki < node->sub_states.size() - 1[m[K; i++){
+[2.234s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.235s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:32:190:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[2.235s]    32 |             cv::line(tree_image, cv::Point(sub_center_pos1.first, sub_center_pos1.second), cv::Point(sub_center_pos2.first, sub_center_pos2.second), cv::Scalar(0, 255, 0), SUBCIRCLE_RADIUS)
+[2.235s]       |                                                                                                                                                                                              [01;31m[K^[m[K
+[2.235s]       |                                                                                                                                                                                              [32m[K;[m[K
+[2.235s]    33 | 
+[2.235s]    34 |         [32m[K}[m[K
+[2.235s]       |         [32m[K~[m[K                                                                                                                                                                                     
+[2.693s] gmake[2]: *** [CMakeFiles/tree_visualizer.dir/build.make:76: CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o] Error 1
+[2.694s] gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/tree_visualizer.dir/all] Error 2
+[2.694s] gmake: *** [Makefile:146: all] Error 2
+[2.695s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '2': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24

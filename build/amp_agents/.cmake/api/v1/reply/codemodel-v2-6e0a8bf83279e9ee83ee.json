@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b9a4ef1543aaad5f2dac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "amp_agents",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_agents_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_agents_uninstall-c72789ecfb503c226aea.json",
+					"name" : "amp_agents_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "backend::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-backend-dea8f56f6e3c9cf90e1c.json",
+					"name" : "backend",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "collision_checker::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-collision_checker-d92d50120503aec5933e.json",
+					"name" : "collision_checker",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omni_actor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omni_actor-909b4eeda724b5b93d13.json",
+					"name" : "omni_actor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run-fb4878f0038fd1e88fee.json",
+					"name" : "run",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sst_tree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sst_tree-27b53a0799d3dd22c165.json",
+					"name" : "sst_tree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tree_visualizer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tree_visualizer-ebe3e3743dda8822b0d9.json",
+					"name" : "tree_visualizer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-21c2eb8e3fdf7e18d3fb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hollis/cu/5254_final/build/amp_agents",
+		"source" : "/home/hollis/cu/5254_final/src/amp_agents"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

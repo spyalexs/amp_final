@@ -36,24 +36,24 @@ M12d OmniAgent::getBMatrix(V12d current_state) {
 
     //first four control inputs represent the force applied by for corner wheels
     //positive positive corner
-    b_mat(0,0) = .7071 / mass;
-    b_mat(1,0) = -.7071 / mass;
-    b_mat(5,0) = OMNI_AGENT_WHEEL_RADIUS / (mass * ROTATIONAL_INTERIA_SCALE);
+    b_mat(6,0) = (.7071 / mass) * cos(current_state[5]) - (-.7071 / mass) * sin(current_state[5]);
+    b_mat(7,0) = (-.7071 / mass)  * cos(current_state[5]) + (.7071 / mass) * sin(current_state[5]);
+    b_mat(11,0) = OMNI_AGENT_WHEEL_RADIUS / (mass * ROTATIONAL_INTERIA_SCALE);
 
     //ypos xnegative corner
-    b_mat(0,1) = .7071 / mass;
-    b_mat(1,1) = .7071 / mass;
-    b_mat(5,1) = OMNI_AGENT_WHEEL_RADIUS/ (mass * ROTATIONAL_INTERIA_SCALE);
+    b_mat(6,1) = (.7071 / mass) * cos(current_state[5]) - (.7071 / mass) * sin(current_state[5]);
+    b_mat(7,1) = (.7071 / mass) * cos(current_state[5]) + (.7071 / mass) * sin(current_state[5]);
+    b_mat(11,1) = OMNI_AGENT_WHEEL_RADIUS/ (mass * ROTATIONAL_INTERIA_SCALE);
 
     //negative negative corner
-    b_mat(0,2) = -.7071 / mass;
-    b_mat(1,2) = .7071 / mass;
-    b_mat(5,2) = OMNI_AGENT_WHEEL_RADIUS / (mass * ROTATIONAL_INTERIA_SCALE);
+    b_mat(6,2) = (-.7071 / mass) * cos(current_state[5]) - (.7071 / mass) * sin(current_state[5]);
+    b_mat(7,2) = (.7071 / mass) * cos(current_state[5]) + (-.7071 / mass) * sin(current_state[5]);
+    b_mat(11,2) = OMNI_AGENT_WHEEL_RADIUS / (mass * ROTATIONAL_INTERIA_SCALE);
 
     //xpositive y negative corner
-    b_mat(0,3) = -.7071 / mass;
-    b_mat(1,3) = -.7071 / mass;
-    b_mat(5,3) = OMNI_AGENT_WHEEL_RADIUS / (mass * ROTATIONAL_INTERIA_SCALE);
+    b_mat(6,3) = (-.7071 / mass) * cos(current_state[5]) - (-.7071 / mass) * sin(current_state[5]);
+    b_mat(7,3) = (-.7071 / mass) * cos(current_state[5]) + (-.7071 / mass) * sin(current_state[5]);
+    b_mat(11,3) = OMNI_AGENT_WHEEL_RADIUS / (mass * ROTATIONAL_INTERIA_SCALE);
 
     return b_mat;
 }

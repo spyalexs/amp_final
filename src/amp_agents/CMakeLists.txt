@@ -32,6 +32,14 @@ target_include_directories(collision_checker PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 
+#build the tree visualizer
+add_library(tree_visualizer src/visualize_tree.cpp)
+ament_target_dependencies(tree_visualizer PUBLIC rclcpp OpenCV)
+target_include_directories(tree_visualizer PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
 #declare the sst t as a library
 add_library(sst_tree src/propagate_sst.cpp)
 ament_target_dependencies(sst_tree PUBLIC rclcpp amp_sim)
@@ -52,23 +60,15 @@ target_include_directories(backend PUBLIC
 
 add_library(omni_actor src/omni_agent_actor.cpp)
 ament_target_dependencies(omni_actor PUBLIC rclcpp geometry_msgs tf2_ros amp_msgs amp_sim)
-target_link_libraries(omni_actor PUBLIC backend sst_tree amp_sim::dynamic_object amp_sim::omni_agent collision_checker)
+target_link_libraries(omni_actor PUBLIC backend sst_tree amp_sim::dynamic_object amp_sim::omni_agent collision_checker tree_visualizer)
 target_include_directories(omni_actor PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
-)
-
-#build the tree visualizer
-add_library(tree_visualizer src/visualize_tree.cpp)
-ament_target_dependencies(tree_visualizer PUBLIC rclcpp OpenCV)
-target_include_directories(tree_visualizer PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
 )
 
 add_executable(run src/run_agent.cpp)
 ament_target_dependencies(run PUBLIC rclcpp amp_sim tf2_ros amp_msgs)
-target_link_libraries(run PUBLIC backend sst_tree amp_sim::dynamic_object amp_sim::omni_agent collision_checker omni_actor)
+target_link_libraries(run PUBLIC backend sst_tree amp_sim::dynamic_object amp_sim::omni_agent collision_checker omni_actor tree_visualizer)
 target_include_directories(run PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -77,6 +77,10 @@ target_include_directories(run PUBLIC
 install(TARGETS run
   DESTINATION lib/${PROJECT_NAME}
 )
+
+#install the trees
+file(GLOB trees RELATIVE ${PROJECT_SOURCE_DIR} trees/*.dat)
+install(DIRECTORY trees DESTINATION share/${PROJECT_NAME}/)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

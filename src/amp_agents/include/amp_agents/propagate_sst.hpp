@@ -5,8 +5,14 @@
 #include <list>
 #include <cstdlib>
 #include <cmath>
+#include <string>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <fstream> 
 
 #include <rclcpp/rclcpp.hpp>
+#include <ament_index_cpp/get_package_share_directory.hpp>
 
 //this is scuffed...
 #include "../../amp_sim/include/amp_sim/dynamic_object.hpp"
@@ -15,7 +21,7 @@
 
 #define NUM_PROPAGATIONS 5
 #define SAMPLING_INTERVAL 0.01
-#define COLLISION_CHECK_INTERVAL 0.1
+#define COLLISION_CHECK_INTERVAL 0.01
 #define SEARCHING_RANGE 0.4
 #define NEIGHBORHOOD_RANGE 0.15
 
@@ -52,6 +58,8 @@ class SstNode{
         
         V12d control_vector;
         double duration;
+
+        int node_index;
 };
 
 class BallCatchEnvironment{
@@ -93,10 +101,19 @@ class SstNeighborhood{
         }
 };
 
+
+
 class SstTree{
 
     public:
         SstTree(DynamicObject* Agent, BallCatchEnvironment* environment);
+        SstTree(DynamicObject* Agent, BallCatchEnvironment* environment, std::string file_name);
+
+        bool parse_line(std::string data);
+        std::vector<int> parseIntVectorFromLine(const std::string& line);
+
+        template<typename Derived>
+        void parseEigenVector(const std::string &csv, Eigen::DenseBase<Derived> &vec);
 
         DynamicObject* agent;
 
@@ -131,6 +148,8 @@ class SstTree{
         Eigen::Quaterniond getYawQuat(double yaw);
         
         rclcpp::Node* node_ptr;
+
+        void save_tree_to_file(std::string filename);
 };
 
 class SstPath{

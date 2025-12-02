@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target collision_checker[0m
+[  8%] [32mBuilding CXX object CMakeFiles/collision_checker.dir/src/collision_checker.cpp.o[0m
+[ 25%] Built target tree_visualizer
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:[m[K In member function ‘[01m[Kbool RectPrism::checkPrismCollision(RectPrism)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:185:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Plane>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  185 |     for(int i = 0; [01;35m[Ki < planes.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:188:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<Eigen::Matrix<double, 3, 1>, Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  188 |         for(int j = 0; [01;35m[Kj < segments.size()[m[K; j++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:198:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<Plane> planes[m[K’
+  198 |     std::vector<Plane> [01;31m[Kplanes[m[K = prism.getPlanes();
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:180:24:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<Plane> planes[m[K’ previously declared here
+  180 |     std::vector<Plane> [01;36m[Kplanes[m[K = getPlanes();
+      |                        [01;36m[K^~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:199:38:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<std::pair<Eigen::Matrix<double, 3, 1>, Eigen::Matrix<double, 3, 1> > > segments[m[K’
+  199 |     std::vector<std::pair<v3d, v3d>> [01;31m[Ksegments[m[K = get_segments();
+      |                                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:182:38:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<std::pair<Eigen::Matrix<double, 3, 1>, Eigen::Matrix<double, 3, 1> > > segments[m[K’ previously declared here
+  182 |     std::vector<std::pair<v3d, v3d>> [01;36m[Ksegments[m[K = prism.get_segments();
+      |                                      [01;36m[K^~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:201:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Plane>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  201 |     for(int i = 0; [01;35m[Ki < planes.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:204:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<Eigen::Matrix<double, 3, 1>, Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  204 |         for(int j = 0; [01;35m[Kj < segments.size()[m[K; j++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:[m[K In member function ‘[01m[Kbool RectPrism::checkPrismsCollision(std::vector<RectPrism>)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/collision_checker.cpp:222:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<RectPrism>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  222 |     for(int i = 0; [01;35m[Ki < prisms.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/collision_checker.dir/build.make:76: CMakeFiles/collision_checker.dir/src/collision_checker.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/collision_checker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

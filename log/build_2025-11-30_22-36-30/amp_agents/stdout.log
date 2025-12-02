@@ -1,0 +1,6 @@
+[ 16%] Built target collision_checker
+[ 33%] Built target tree_visualizer
+[ 50%] Built target sst_tree
+[ 66%] Built target backend
+[35m[1mConsolidate compiler generated dependencies of target omni_actor[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.o[0m

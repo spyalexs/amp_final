@@ -211,6 +211,19 @@ collision_checker/fast:
 .PHONY : collision_checker/fast
 
 #=============================================================================
+# Target rules for targets named tree_visualizer
+
+# Build rule for target.
+tree_visualizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_visualizer
+.PHONY : tree_visualizer
+
+# fast build rule for target.
+tree_visualizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/build
+.PHONY : tree_visualizer/fast
+
+#=============================================================================
 # Target rules for targets named sst_tree
 
 # Build rule for target.
@@ -248,19 +261,6 @@ omni_actor: cmake_check_build_system
 omni_actor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_actor.dir/build.make CMakeFiles/omni_actor.dir/build
 .PHONY : omni_actor/fast
-
-#=============================================================================
-# Target rules for targets named tree_visualizer
-
-# Build rule for target.
-tree_visualizer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_visualizer
-.PHONY : tree_visualizer
-
-# fast build rule for target.
-tree_visualizer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/build
-.PHONY : tree_visualizer/fast
 
 #=============================================================================
 # Target rules for targets named run

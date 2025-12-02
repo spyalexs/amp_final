@@ -1,0 +1,164 @@
+[0.006s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target tree_visualizer[0m
+[0.047s] [ 16%] Built target collision_checker
+[0.049s] [ 33%] Built target tree_visualizer
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target sst_tree[0m
+[0.066s] [ 41%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[1.629s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kbool SstTree::parse_line(std::string)[m[K’:
+[1.629s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:74:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.629s]    74 |             for(int i = 0; [01;35m[Ki < top_level_nodes.size()[m[K; i++){
+[1.629s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.629s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:33:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kn[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.629s]    33 |     int [01;35m[Kn[m[K = 0;
+[1.629s]       |         [01;35m[K^[m[K
+[1.642s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[1.643s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:269:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.643s]   269 |     for(int i = 0; [01;35m[Ki < env->control_limits.size()[m[K; i++){
+[1.643s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.648s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstPath::SstPath(SstNode, DynamicObject*, bool)[m[K’:
+[1.648s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:434:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.648s]   434 |     for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+[1.648s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[1.648s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:440:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.648s]   440 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+[1.648s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[1.648s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::create_forward_path(SstNode)[m[K’:
+[1.648s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:457:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.648s]   457 |         for(int i = 0; [01;35m[Ki < current->sub_states.size()[m[K; i++){
+[1.648s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.481s] [ 50%] [32m[1mLinking CXX static library libsst_tree.a[0m
+[2.505s] [ 50%] Built target sst_tree
+[2.522s] [ 58%] [32mBuilding CXX object CMakeFiles/backend.dir/src/agent_backend.cpp.o[0m
+[4.688s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::TransformStamped AgentBackend::getBallTransform(int)[m[K’:
+[4.688s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:76:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.688s]    76 |         for(int i = 0; [01;35m[Ki < valid_ball_frames.size()[m[K; i++){
+[4.688s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.689s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.689s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.690s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:9[m[K,
+[4.690s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1[m[K:
+[4.690s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::TransformStamped AgentBackend::getTransform(std::string, std::string)[m[K’:
+[4.690s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.690s]   105 |         RCLCPP_WARN(get_logger(), [01;35m[K"Could not transform %s to %s: %s"[m[K, to_frame, from_frame, ex.what());
+[4.690s]       |                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.690s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:57:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.690s]   105 |         RCLCPP_WARN(get_logger(), "Could not transform [01;36m[K%s[m[K to %s: %s", to_frame, from_frame, ex.what());
+[4.690s]       |                                                        [01;36m[K~^[m[K
+[4.690s]       |                                                         [01;36m[K|[m[K
+[4.690s]       |                                                         [01;36m[Kchar*[m[K
+[4.690s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.690s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.691s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/agent_backend.hpp:9[m[K,
+[4.691s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:1[m[K:
+[4.691s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 6 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.691s]   105 |         RCLCPP_WARN(get_logger(), [01;35m[K"Could not transform %s to %s: %s"[m[K, to_frame, from_frame, ex.what());
+[4.691s]       |                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.691s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:105:63:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.691s]   105 |       RCLCPP_WARN(get_logger(), "Could not transform %s to [01;36m[K%s[m[K: %s", to_frame, from_frame, ex.what());
+[4.691s]       |                                                            [01;36m[K~^[m[K
+[4.691s]       |                                                             [01;36m[K|[m[K
+[4.691s]       |                                                             [01;36m[Kchar*[m[K
+[4.691s] 
+[4.702s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:[m[K In member function ‘[01m[Kvirtual void AgentBackend::generate_tree(double)[m[K’:
+[4.702s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/agent_backend.cpp:152:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpropagation_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.702s]   152 | void AgentBackend::generate_tree([01;35m[Kdouble propagation_time[m[K){
+[4.702s]       |                                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[8.043s] [ 66%] [32m[1mLinking CXX static library libbackend.a[0m
+[8.137s] [ 66%] Built target backend
+[8.153s] [ 75%] [32mBuilding CXX object CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.o[0m
+[10.451s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.452s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/omni_agent_actor.hpp:3[m[K,
+[10.452s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:1[m[K:
+[10.452s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:[m[K In member function ‘[01m[Kvirtual void OmniAgentActor::generate_tree(double)[m[K’:
+[10.452s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:54:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::__cxx11::list<SstNode*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.452s]    54 |             RCLCPP_INFO(get_logger(), [01;35m[K"Added node number %d! Pile size %d."[m[K, [32m[Kagent_tree.tree.size()[m[K, agent_tree.node_pile.size());
+[10.452s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.452s]       |                                                                                                  [32m[K|[m[K
+[10.452s]       |                                                                                                  [32m[Kstd::__cxx11::list<SstNode*>::size_type {aka long unsigned int}[m[K
+[10.452s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:54:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.452s]    54 |             RCLCPP_INFO(get_logger(), "Added node number [01;36m[K%d[m[K! Pile size %d.", agent_tree.tree.size(), agent_tree.node_pile.size());
+[10.452s]       |                                                          [01;36m[K~^[m[K
+[10.452s]       |                                                           [01;36m[K|[m[K
+[10.452s]       |                                                           [01;36m[Kint[m[K
+[10.452s]       |                                                          [32m[K%ld[m[K
+[10.452s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.452s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/omni_agent_actor.hpp:3[m[K,
+[10.452s]                  from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:1[m[K:
+[10.452s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:54:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::__cxx11::list<SstNode>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.452s]    54 |             RCLCPP_INFO(get_logger(), [01;35m[K"Added node number %d! Pile size %d."[m[K, agent_tree.tree.size(), [32m[Kagent_tree.node_pile.size()[m[K);
+[10.452s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                          [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.452s]       |                                                                                                                               [32m[K|[m[K
+[10.452s]       |                                                                                                                               [32m[Kstd::__cxx11::list<SstNode>::size_type {aka long unsigned int}[m[K
+[10.452s] [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/omni_agent_actor.cpp:54:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.452s]    54 | RCLCPP_INFO(get_logger(), "Added node number %d! Pile size [01;36m[K%d[m[K.", agent_tree.tree.size(), agent_tree.node_pile.size());
+[10.452s]       |                                                            [01;36m[K~^[m[K
+[10.452s]       |                                                             [01;36m[K|[m[K
+[10.452s]       |                                                             [01;36m[Kint[m[K
+[10.452s]       |                                                            [32m[K%ld[m[K
+[10.982s] [ 83%] [32m[1mLinking CXX static library libomni_actor.a[0m
+[11.000s] [ 83%] Built target omni_actor
+[11.018s] [ 91%] [32mBuilding CXX object CMakeFiles/run.dir/src/run_agent.cpp.o[0m
+[13.718s] [100%] [32m[1mLinking CXX executable run[0m
+[14.282s] [100%] Built target run
+[14.289s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[14.291s] Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_agents
+[14.296s] -- Install configuration: ""
+[14.296s] -- Installing: /home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run
+[14.302s] -- Set runtime path of "/home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run" to ""
+[14.302s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents//trees
+[14.302s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents//trees/small_tree.dat
+[14.302s] -- Installing: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents//trees/medium_tree.dat
+[14.305s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/package_run_dependencies/amp_agents
+[14.305s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/parent_prefix_path/amp_agents
+[14.306s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.sh
+[14.306s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.dsv
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.sh
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.dsv
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.bash
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.sh
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.zsh
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.dsv
+[14.307s] -- Installing: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.dsv
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/packages/amp_agents
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig.cmake
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig-version.cmake
+[14.307s] -- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.xml
+[14.308s] Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_agents

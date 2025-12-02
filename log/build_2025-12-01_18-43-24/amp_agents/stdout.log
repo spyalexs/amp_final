@@ -1,0 +1,5 @@
+[ 16%] Built target collision_checker
+[ 25%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[ 41%] [32m[1mLinking CXX static library libtree_visualizer.a[0m
+[ 41%] Built target tree_visualizer

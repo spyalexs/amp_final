@@ -7,16 +7,21 @@
 #include "propagate_sst.hpp"
 
 #define TREE_IMAGE_SIZE 2000
-#define TREE_IMAGE_BOUND 5
+#define TREE_IMAGE_BOUND 10
 #define CIRCLE_RADIUS 10
+#define SUBCIRCLE_RADIUS 2
+#define DISPLAY_SUBSTATES true
+#define DISPLAY_NEIGHBORHOOD true
 
 class TreeVisualizer{
-    TreeVisualizer();
+    public:
+        TreeVisualizer();
 
-    cv::Mat tree_image;
+        cv::Mat tree_image;
 
-    void displayTree(std::list<SstNode*> tree);
-    void drawNode(SstNode* node);
+        void displayTree(std::list<SstNode*> tree);
+        void displayTree(std::list<SstNode*> tree, std::list<SstNeighborhood> neighborhoods);
+        void drawNode(SstNode* node);
 
-    std::pair<int, int> getPixelFromState(SstNode* node);
+        std::pair<int, int> getPixelFromState(V13d* node);
 };

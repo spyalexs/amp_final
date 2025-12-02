@@ -149,8 +149,13 @@ int AgentBackend::get_agent_status(){
     return agent_status;
 }
 
-void AgentBackend::generate_tree(int number_of_nodes){
+void AgentBackend::generate_tree(double propagation_time){
     RCLCPP_WARN(get_logger(), "This shouldn't be called...");
 }
+
+double AgentBackend::get_time_as_double(){
+    return get_clock()->now().seconds() + get_clock()->now().nanoseconds() * 1e-9;
+}
+
 
 

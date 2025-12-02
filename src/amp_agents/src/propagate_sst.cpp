@@ -15,9 +15,143 @@ SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment* environment){
     tree.push_back(&node_pile.back());
 }
 
+SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment* environment, std::string file_name) : SstTree(Agent, environment){
+
+    //load the tree from a file
+    //help from Gemni here
+    std::ifstream inputFile(file_name);
+
+    std::string line;
+    bool continue_parsing = true;
+    while(std::getline(inputFile, line) && continue_parsing){
+        continue_parsing = parse_line(line);
+    }
+}
+
+//CHATGPT SPECIAL
+bool SstTree::parse_line(std::string data){
+    int n = 0;
+    int p = 0;
+    double d = 0.0;
+    double c = 0.0;
+
+    Eigen::Matrix<double,13,1> s;
+    Eigen::Matrix<double,12,1> u;
+
+    // Split by '|'
+    std::stringstream ss(data);
+    std::string part;
+
+    while (getline(ss, part, '|')) {
+
+        // Find key:value format
+        size_t colon = part.find(':');
+        if (colon == std::string::npos) continue;
+
+        std::string key = part.substr(0, colon);
+        std::string value = part.substr(colon + 1);
+
+        if (key == "n") {
+            n = stoi(value);
+        }
+        else if (key == "p") {
+            p = stoi(value);
+        }
+        else if (key == "s") {
+            parseEigenVector(value, s);
+        }
+        else if (key == "u") {
+            parseEigenVector(value, u);
+        }
+        else if (key == "d") {
+            d = stod(value);
+        }
+        else if (key == "c") {
+            c = stod(value);
+        }else if(key == "top_level"){
+            std::vector<int> top_level_nodes = parseIntVectorFromLine(data);
+
+            for(int i = 0; i < top_level_nodes.size(); i++){
+                //get pointer to the top level node
+                std::list<SstNode>::iterator it = node_pile.begin();
+                std::advance(it, top_level_nodes.at(i));
+
+                //add to the top level nodes and neighborhoods list
+                tree.push_back(&(*it));
+                neighborhoods.push_back(SstNeighborhood(&(*it)));
+            }
+
+            return false;
+        }
+    }
+
+    //get the pointer to the parent
+    std::list<SstNode>::iterator it = node_pile.begin();
+    std::advance(it, p);
+
+    //make a tree node
+    SstNode new_node(s, c, &(*it));
+    new_node.control_vector = u;
+    new_node.duration = d;
+    new_node.node_index = node_pile.size();
+
+    //recreate the substates
+    agent->state = new_node.parent->state;
+    propagate_agent(u,d,&(new_node.sub_states));
+
+    node_pile.push_back(new_node);
+
+    return true;
+}
+
+std::vector<int> SstTree::parseIntVectorFromLine(const std::string& line) {
+    std::vector<int> result;
+
+    // Find the position of the colon (':')
+    size_t colonPos = line.find(':');
+    if (colonPos != std::string::npos) {
+        // Get the part of the string after the colon
+        std::string valuesStr = line.substr(colonPos + 1);
+        
+        // Create a stringstream to parse the values
+        std::stringstream ss(valuesStr);
+        std::string token;
+
+        // Split the string by commas and convert each token into an integer
+        while (std::getline(ss, token, ',')) {
+            if (!token.empty()) {  // Make sure the token is not empty
+                try {
+                    result.push_back(std::stoi(token));  // Convert token to int and add to vector
+                } catch (const std::invalid_argument& e) {
+                    std::cerr << "Invalid integer: " << token << std::endl;  // Error handling
+                } catch (const std::out_of_range& e) {
+                    std::cerr << "Out of range integer: " << token << std::endl;  // Error handling
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
+//CHATGPT SPECIAL
+template<typename Derived>
+void SstTree::parseEigenVector(const std::string &csv, Eigen::DenseBase<Derived> &vec){
+    std::string token;
+    std::stringstream ss(csv);
+    int i = 0;
+
+    while (getline(ss, token, ',') && i < vec.size()) {
+        vec(i) = stod(token);
+        i++;
+    }
+}
+
+
 V13d SstTree::generate_random_sample(){
 
-    bool searching = false;
+    V13d sampled;
+    bool searching = true;
 
     while(searching){
         double yaw = rand() * 2 * (M_PI / RAND_MAX);
@@ -25,7 +159,7 @@ V13d SstTree::generate_random_sample(){
         Eigen::Quaterniond quat = getYawQuat(yaw);
 
         //generate a random sample node to further propagate the tree
-        V13d sampled(
+        sampled = V13d(
             rand() * (sample_d_maximums[0] / RAND_MAX) + sample_minimums[0],
             rand() * (sample_d_maximums[1] / RAND_MAX) + sample_minimums[1],
             0, 
@@ -45,6 +179,8 @@ V13d SstTree::generate_random_sample(){
         
         searching = prism.checkPrismsCollision(env->obstalces);
     }
+
+    return sampled;
 }
 
 double SstTree::evaluate_distance_full(V13d p1, V13d p2, V12d weights){
@@ -91,30 +227,41 @@ SstNode* SstTree::getLowestCostNodeWithinRange(V13d reference){
     double cost = -1;
     double d;
 
-    for(auto it = tree.begin(); it != tree.end(); ++it){
-        d = evalutate_distance_euclidean((*it)->state, reference);
+    for(std::list<SstNode*>::iterator it = tree.begin(); it != tree.end(); ++it){
+        SstNode* tree_node_ptr = *it;
+
+        d = evalutate_distance_euclidean(tree_node_ptr->state, reference);
+
+        // RCLCPP_INFO(node_ptr->get_logger(), "Distance is %f to %f %f from reference %f %f", d, tree_node_ptr->state[0], tree_node_ptr->state[1], reference[0], reference[1]);
 
         if(found_within_range){
             //if the node is the lowest cost within the range
-            if(d < SEARCHING_RANGE || (*it)->cost_from_source < cost){
-                cost = (*it)->cost_from_source;
-                lowest_node = &(**it);
+            if(d < SEARCHING_RANGE && tree_node_ptr->cost_from_source < cost){
+
+                cost = tree_node_ptr->cost_from_source;
+                lowest_node = tree_node_ptr;
             }
         } else {
             // if the node is withing the range
             if(d < SEARCHING_RANGE){
-                cost = (*it)->cost_from_source;
-                lowest_node = &(**it);
+                cost = tree_node_ptr->cost_from_source;
+                lowest_node = tree_node_ptr;
+
+                found_within_range = true;
 
             //if the node is the closest but not in the range
             }else if(d < cost || cost == -1){
-                lowest_node = &(**it);
+                lowest_node = tree_node_ptr;
                 cost = d;
 
             }
-        }
-    }
 
+
+        }
+
+
+    }
+    
     return lowest_node;
 }
 
@@ -184,6 +331,8 @@ SstNode SstTree::generateNewNode(){
     //generate a random node
     V13d sampled_node = generate_random_sample();
 
+    // RCLCPP_INFO(node_ptr->get_logger(), "Sampled %f %f", sampled_node[0], sampled_node[1]);
+
     //determine the closest node
     SstNode* base_node = getLowestCostNodeWithinRange(sampled_node);
 
@@ -193,6 +342,8 @@ SstNode SstTree::generateNewNode(){
     SstNode lowestCostNode(V13d(), 0, base_node);
     std::vector<std::pair<double, V13d>> substates;
     double lowest_distance = -1;
+
+    int fail_counter = 0;
 
     for(int i = 0; i < NUM_PROPAGATIONS; i++){
 
@@ -209,6 +360,19 @@ SstNode SstTree::generateNewNode(){
         //propagate the agent according to the controls
         if(!propagate_agent(control, duration, &(substates))){
             i--;
+            fail_counter++;
+
+            if(fail_counter > NUM_PROPAGATIONS){
+                fail_counter = 0;
+                i = 0;
+                lowest_distance = -1;
+
+                sampled_node = generate_random_sample();
+                base_node = getLowestCostNodeWithinRange(sampled_node);
+                lowestCostNode = SstNode(V13d(), 0, base_node);
+
+            }
+
             continue;
         }
 
@@ -240,9 +404,13 @@ bool SstTree::processNewNode(){
     for(auto it = neighborhoods.begin(); it != neighborhoods.end(); ++it){
 
         if(evalutate_distance_euclidean(it->center, node.state) < it->radius){
+            // RCLCPP_INFO(node_ptr->get_logger(), "Former cost: %f Current Cost %f", it->sst_node->cost_from_source, node.cost_from_source);
+            // RCLCPP_INFO(node_ptr->get_logger(), "Former Center: %f %f Current Center %f %f", it->sst_node->state[0], it->sst_node->state[1], node.state[0], node.state[1]);
+
             if(it->subplant_node(&node)){
                 node_pile.push_back(node);
-                tree.push_back(&node_pile.back());
+                node_pile.back().node_index = node_pile.size() - 1;
+                //tree.push_back(&node_pile.back());
             }
 
             return false;
@@ -250,12 +418,13 @@ bool SstTree::processNewNode(){
 
     }
 
-    RCLCPP_INFO(node_ptr->get_logger(), "increasing node count %d", tree.size());
+    //RCLCPP_INFO(node_ptr->get_logger(), "increasing node count %d", tree.size());
 
     //not in a neighboorhood so make a new one
     node_pile.push_back(node);
     tree.push_back(&node_pile.back());
-    neighborhoods.push_back(SstNeighborhood(&node));
+    node_pile.back().node_index = node_pile.size() - 1;
+    neighborhoods.push_back(SstNeighborhood(&node_pile.back()));
 
     return true;
 }
@@ -316,6 +485,70 @@ void SstPath::create_forward_path(SstNode leaf){
         }
     }
 }
+
+void SstTree::save_tree_to_file(std::string filename){
+    //save an sst tree to a file as it can take some time to generate
+
+    //little help from gemni here
+    FILE* filePointer;
+    filePointer = fopen(filename.c_str(), "w");
+
+
+    if (filePointer == NULL) {
+        RCLCPP_WARN(node_ptr->get_logger(), "Failed to open tree write file");
+        return;
+    } 
+
+    //loop through node pile
+    for(auto it = node_pile.begin(); it != node_pile.end(); ++it){
+        
+        if(it->parent == nullptr){
+            continue;
+        }
+
+        //write out node information
+        fprintf(filePointer, "n:%d|p:%d|s:%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f|d:%f|u:%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f|c:%f\n",
+            it->node_index,
+            it->parent->node_index,
+            it->state[0],
+            it->state[1],
+            it->state[2],
+            it->state[3],
+            it->state[4],
+            it->state[5],
+            it->state[6],
+            it->state[7],
+            it->state[8],
+            it->state[9],
+            it->state[10],
+            it->state[11],
+            it->state[12],
+            it->duration,
+            it->control_vector[0],
+            it->control_vector[1],
+            it->control_vector[2],
+            it->control_vector[3],
+            it->control_vector[4],
+            it->control_vector[5],
+            it->control_vector[6],
+            it->control_vector[7],
+            it->control_vector[8],
+            it->control_vector[9],
+            it->control_vector[10],
+            it->control_vector[11],
+            it->cost_from_source);
+    }
+
+    fprintf(filePointer, "top_level:");
+    for(auto it = tree.begin(); it != tree.end(); it++){
+        fprintf(filePointer, "%d,", (*it)->node_index);
+    }
+    fprintf(filePointer, "\n");
+
+
+    fclose(filePointer);
+}
+
 
 
 

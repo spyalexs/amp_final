@@ -41,7 +41,7 @@ bool Plane::check_segment_collision(v3d p1, v3d p2){
 
     //printf("Intersection at %f %f %f \n", intersection_location[0], intersection_location[1], intersection_location[2]);
 
-    if(x > (p2 - p1).norm()){
+    if(x > (p2 - p1).norm() || x < 0){
         //segment doesn't reach the plane
 
         return false;
@@ -85,7 +85,7 @@ RectPrism::RectPrism(v3d dim, v3d Center, double yaw, double pitch){
     points.push_back(rot_pit * rot_yaw * v3d(-1,-1,1).cwiseProduct(dim / 2) + center);
     points.push_back(rot_pit * rot_yaw * v3d(-1,-1,-1).cwiseProduct(dim / 2) + center);
 
-    insta_radius = dim.norm();
+    insta_radius = dim.norm() / 2;
 }
 
 std::vector<Plane> RectPrism::getPlanes(){
@@ -97,16 +97,16 @@ std::vector<Plane> RectPrism::getPlanes(){
     //front plane
     plane_points.push_back(points[0]);
     plane_points.push_back(points[1]);
-    plane_points.push_back(points[2]);
     plane_points.push_back(points[3]);
+    plane_points.push_back(points[2]);
     planes.push_back(Plane(plane_points));
 
     //back plane
     plane_points.clear();
     plane_points.push_back(points[4]);
     plane_points.push_back(points[5]);
-    plane_points.push_back(points[6]);
     plane_points.push_back(points[7]);
+    plane_points.push_back(points[6]);
     planes.push_back(Plane(plane_points));
     
     //bottom
@@ -154,10 +154,10 @@ std::vector<std::pair<v3d, v3d>> RectPrism::get_segments(){
     segments.push_back({points.at(3), points.at(0)});
 
     //back plane
-    segments.push_back({points.at(4), points.at(4)});
-    segments.push_back({points.at(5), points.at(5)});
-    segments.push_back({points.at(6), points.at(6)});
-    segments.push_back({points.at(7), points.at(7)});
+    segments.push_back({points.at(4), points.at(5)});
+    segments.push_back({points.at(5), points.at(6)});
+    segments.push_back({points.at(6), points.at(7)});
+    segments.push_back({points.at(7), points.at(4)});
 
     //segments connecting front and back planes
     segments.push_back({points.at(0), points.at(4)});
@@ -171,9 +171,9 @@ std::vector<std::pair<v3d, v3d>> RectPrism::get_segments(){
 bool RectPrism::checkPrismCollision(RectPrism prism){
 
     //quickly check to see if a collision is even a question...
-    if((prism.center - center).norm() > insta_radius + prism.insta_radius){
-        return false;
-    }
+    // if((prism.center - center).norm() > insta_radius + prism.insta_radius){
+    //     return false;
+    // }
 
     //check this prism's planes with the other prism's segments
 
@@ -182,6 +182,22 @@ bool RectPrism::checkPrismCollision(RectPrism prism){
     std::vector<std::pair<v3d, v3d>> segments = prism.get_segments();
 
     //iterate through planes
+    for(int i = 0; i < planes.size(); i++){
+
+        //iterate through segments
+        for(int j = 0; j < segments.size(); j++){
+
+            //printf("Here %d %d \n", i, j);
+
+            if(planes.at(i).check_segment_collision(segments.at(j).first, segments.at(j).second)){
+                return true;
+            }
+        }
+    }
+
+    planes = prism.getPlanes();
+    segments = get_segments();
+
     for(int i = 0; i < planes.size(); i++){
 
         //iterate through segments

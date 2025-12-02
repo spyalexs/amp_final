@@ -73,7 +73,7 @@ void DynamicObject::tic(V12d control, double current_time){
     state[0] +=  d_state[0] * locked_states.at(0);
     state[1] +=  d_state[1] * locked_states.at(1);
     state[2] +=  d_state[2] * locked_states.at(2);
-    state[7] +=  d_state[6] * locked_states.at(8);
+    state[7] +=  d_state[6] * locked_states.at(6);
     state[8] +=  d_state[7] * locked_states.at(7);
     state[9] +=  d_state[8] * locked_states.at(8);
     state[10] +=  d_state[9] * locked_states.at(9);

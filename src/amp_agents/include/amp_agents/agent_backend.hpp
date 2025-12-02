@@ -71,7 +71,9 @@ class AgentBackend : public rclcpp::Node{
 
         TargetInformation determine_ball_landing_location(V3d current_position, V3d current_velocities, V3d current_damping, double mass, double landing_hieght);
 
-        virtual void generate_tree(int number_of_nodes);
+        virtual void generate_tree(double propagation_time);
+
+        double get_time_as_double();
 
     private:
 
