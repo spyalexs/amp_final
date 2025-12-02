@@ -146,6 +146,7 @@ void AgentBackend::update_agent_status(int status){
 }
 
 int AgentBackend::get_agent_status(){
+    
     return agent_status;
 }
 
@@ -154,7 +155,7 @@ void AgentBackend::generate_tree(double propagation_time){
 }
 
 double AgentBackend::get_time_as_double(){
-    return get_clock()->now().seconds() + get_clock()->now().nanoseconds() * 1e-9;
+    return get_clock()->now().nanoseconds() * 1e-9;
 }
 
 

@@ -141,7 +141,8 @@ class SstTree{
         double evalutate_distance_euclidean(v3d p1, V13d p2);
         double evalutate_distance_euclidean_and_velocity(V13d p1, V13d p2, double velocity_weight);
 
-        SstNode* getLowestCostNodeWithinRange(V13d reference);
+        SstNode* getLowestCostNodeWithinRange(V13d reference, double range);
+
 
         bool propagate_agent(V12d controls, double duration, std::vector<std::pair<double, V13d>>* substates);  
 
@@ -154,12 +155,15 @@ class SstTree{
 
 class SstPath{
 
-    SstPath(SstNode leaf);
-    SstPath(SstNode leaf, DynamicObject* agent, bool invert);
+    public:
 
-    void create_forward_path(SstNode leaf);
+        SstPath(SstNode leaf);
+        SstPath(SstNode leaf, DynamicObject* agent, bool invert);
 
-    std::vector<std::pair<double, V13d>> states;
-    std::vector<V12d> controls;
-    std::vector<double> durations;
+        void create_forward_path(SstNode leaf);
+
+        std::vector<std::pair<double, V13d>> states;
+        std::vector<V12d> controls;
+        std::vector<double> durations;
+ 
 };

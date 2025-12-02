@@ -70,10 +70,14 @@ amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/_amp_msgs_s.e
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_introspection_c.c
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_c.c
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_agent_control.py
+amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ball_trajectory.py
+amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ideal_path.py
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_launch_ball.py
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_set_pose.py
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/__init__.py
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_agent_control_s.c
+amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ball_trajectory_s.c
+amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ideal_path_s.c
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_launch_ball_s.c
 amp_msgs__py/CMakeFiles/amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_set_pose_s.c
 
@@ -91,6 +95,8 @@ rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /op
 rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/amp_msgs/msg/AgentControl.idl
+rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/amp_msgs/msg/BallTrajectory.idl
+rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/amp_msgs/msg/SetPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
@@ -105,6 +111,12 @@ rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_c.c: rosidl_gener
 rosidl_generator_py/amp_msgs/msg/_agent_control.py: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_agent_control.py
 
+rosidl_generator_py/amp_msgs/msg/_ball_trajectory.py: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_ball_trajectory.py
+
+rosidl_generator_py/amp_msgs/msg/_ideal_path.py: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_ideal_path.py
+
 rosidl_generator_py/amp_msgs/msg/_launch_ball.py: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_launch_ball.py
 
@@ -116,6 +128,12 @@ rosidl_generator_py/amp_msgs/msg/__init__.py: rosidl_generator_py/amp_msgs/_amp_
 
 rosidl_generator_py/amp_msgs/msg/_agent_control_s.c: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_agent_control_s.c
+
+rosidl_generator_py/amp_msgs/msg/_ball_trajectory_s.c: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_ball_trajectory_s.c
+
+rosidl_generator_py/amp_msgs/msg/_ideal_path_s.c: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_ideal_path_s.c
 
 rosidl_generator_py/amp_msgs/msg/_launch_ball_s.c: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/amp_msgs/msg/_launch_ball_s.c
@@ -130,6 +148,10 @@ amp_msgs__py: rosidl_generator_py/amp_msgs/_amp_msgs_s.ep.rosidl_typesupport_int
 amp_msgs__py: rosidl_generator_py/amp_msgs/msg/__init__.py
 amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_agent_control.py
 amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_agent_control_s.c
+amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ball_trajectory.py
+amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ball_trajectory_s.c
+amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ideal_path.py
+amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_ideal_path_s.c
 amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_launch_ball.py
 amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_launch_ball_s.c
 amp_msgs__py: rosidl_generator_py/amp_msgs/msg/_set_pose.py

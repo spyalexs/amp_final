@@ -360,6 +360,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/amp_msgs/msg" TYPE FILE FILES "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/BallTrajectory.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/amp_msgs/msg" TYPE FILE FILES "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/IdealPath.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/amp_msgs/msg" TYPE FILE FILES "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/LaunchBall.idl")
 endif()
 
@@ -369,6 +377,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/amp_msgs/msg" TYPE FILE FILES "/home/hollis/cu/5254_final/src/amp_msgs/msg/AgentControl.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/amp_msgs/msg" TYPE FILE FILES "/home/hollis/cu/5254_final/src/amp_msgs/msg/BallTrajectory.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/amp_msgs/msg" TYPE FILE FILES "/home/hollis/cu/5254_final/src/amp_msgs/msg/IdealPath.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -217,7 +217,8 @@ Eigen::Quaterniond SstTree::getYawQuat(double yaw){
     return Eigen::Quaterniond(cos(yaw/2), 0, 0, sin(yaw/2));
 }
 
-SstNode* SstTree::getLowestCostNodeWithinRange(V13d reference){
+
+SstNode* SstTree::getLowestCostNodeWithinRange(V13d reference, double range = SEARCHING_RANGE){
 
     //determine wether a node has been found within the range or not
     // if false, lowest node is the node closest to the other nodes
@@ -236,14 +237,14 @@ SstNode* SstTree::getLowestCostNodeWithinRange(V13d reference){
 
         if(found_within_range){
             //if the node is the lowest cost within the range
-            if(d < SEARCHING_RANGE && tree_node_ptr->cost_from_source < cost){
+            if(d < range && tree_node_ptr->cost_from_source < cost){
 
                 cost = tree_node_ptr->cost_from_source;
                 lowest_node = tree_node_ptr;
             }
         } else {
             // if the node is withing the range
-            if(d < SEARCHING_RANGE){
+            if(d < range){
                 cost = tree_node_ptr->cost_from_source;
                 lowest_node = tree_node_ptr;
 

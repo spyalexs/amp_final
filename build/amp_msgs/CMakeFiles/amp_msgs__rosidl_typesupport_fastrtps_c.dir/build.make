@@ -78,6 +78,8 @@ rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupp
 rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em
 rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/amp_msgs/msg/AgentControl.idl
+rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/amp_msgs/msg/BallTrajectory.idl
+rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/amp_msgs/msg/SetPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
@@ -85,6 +87,18 @@ rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupp
 
 rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_fastrtps_c.h
@@ -112,10 +126,38 @@ CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp -o CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp.s
 
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o -MF CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o.d -o CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp
+
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp > CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.i
+
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp -o CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.s
+
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o -MF CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o.d -o CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp
+
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp > CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.i
+
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp -o CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.s
+
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o -MF CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o.d -o CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp
 
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.i: cmake_force
@@ -129,7 +171,7 @@ CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrt
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o -MF CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o.d -o CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp
 
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.i: cmake_force
@@ -143,6 +185,8 @@ CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrt
 # Object files for target amp_msgs__rosidl_typesupport_fastrtps_c
 amp_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp.o" \
+"CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o" \
+"CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o" \
 "CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o" \
 "CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o"
 
@@ -150,6 +194,8 @@ amp_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 amp_msgs__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 libamp_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp.o
+libamp_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp.o
+libamp_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp.o
 libamp_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp.o
 libamp_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__type_support_c.cpp.o
 libamp_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/build.make
@@ -161,7 +207,7 @@ libamp_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
 libamp_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libamp_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libamp_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libamp_msgs__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libamp_msgs__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -174,6 +220,10 @@ CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/clean:
 
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/agent_control__type_support_c.cpp
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ball_trajectory__type_support_c.cpp
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/ideal_path__type_support_c.cpp
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/launch_ball__type_support_c.cpp
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/amp_msgs/msg/detail/set_pose__rosidl_typesupport_fastrtps_c.h

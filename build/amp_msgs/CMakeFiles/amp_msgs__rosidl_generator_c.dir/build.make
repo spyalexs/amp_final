@@ -83,6 +83,8 @@ rosidl_generator_c/amp_msgs/msg/agent_control.h: /opt/ros/humble/share/rosidl_ge
 rosidl_generator_c/amp_msgs/msg/agent_control.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/amp_msgs/msg/agent_control.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/AgentControl.idl
+rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/BallTrajectory.idl
+rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/SetPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
@@ -96,6 +98,30 @@ rosidl_generator_c/amp_msgs/msg/detail/agent_control__struct.h: rosidl_generator
 
 rosidl_generator_c/amp_msgs/msg/detail/agent_control__type_support.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/agent_control__type_support.h
+
+rosidl_generator_c/amp_msgs/msg/ball_trajectory.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/ball_trajectory.h
+
+rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.h
+
+rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__struct.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__struct.h
+
+rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__type_support.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__type_support.h
+
+rosidl_generator_c/amp_msgs/msg/ideal_path.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/ideal_path.h
+
+rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.h
+
+rosidl_generator_c/amp_msgs/msg/detail/ideal_path__struct.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ideal_path__struct.h
+
+rosidl_generator_c/amp_msgs/msg/detail/ideal_path__type_support.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ideal_path__type_support.h
 
 rosidl_generator_c/amp_msgs/msg/launch_ball.h: rosidl_generator_c/amp_msgs/msg/agent_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/launch_ball.h
@@ -124,6 +150,12 @@ rosidl_generator_c/amp_msgs/msg/detail/set_pose__type_support.h: rosidl_generato
 rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c: rosidl_generator_c/amp_msgs/msg/agent_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c
 
+rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c
+
+rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c: rosidl_generator_c/amp_msgs/msg/agent_control.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c
+
 rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c: rosidl_generator_c/amp_msgs/msg/agent_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c
 
@@ -144,10 +176,38 @@ CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/deta
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c -o CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c.s
 
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o: rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o -MF CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o.d -o CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c
+
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c > CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.i
+
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c -o CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.s
+
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o: rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o -MF CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o.d -o CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c
+
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c > CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.i
+
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c -o CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.s
+
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o: rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o -MF CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o.d -o CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c
 
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.i: cmake_force
@@ -161,7 +221,7 @@ CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/deta
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o: rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o: CMakeFiles/amp_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o -MF CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o.d -o CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o -c /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c
 
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.i: cmake_force
@@ -175,6 +235,8 @@ CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/deta
 # Object files for target amp_msgs__rosidl_generator_c
 amp_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c.o" \
+"CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o" \
+"CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o" \
 "CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o" \
 "CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o"
 
@@ -182,13 +244,15 @@ amp_msgs__rosidl_generator_c_OBJECTS = \
 amp_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c.o
+libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o
+libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/build.make
 libamp_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libamp_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libamp_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libamp_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/amp_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -200,10 +264,19 @@ CMakeFiles/amp_msgs__rosidl_generator_c.dir/clean:
 .PHONY : CMakeFiles/amp_msgs__rosidl_generator_c.dir/clean
 
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/agent_control.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/ball_trajectory.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/agent_control__struct.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/agent_control__type_support.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__struct.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__type_support.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ideal_path__struct.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/ideal_path__type_support.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/launch_ball__struct.h
@@ -212,6 +285,7 @@ CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/set_pose__struct.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/detail/set_pose__type_support.h
+CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/ideal_path.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/launch_ball.h
 CMakeFiles/amp_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/amp_msgs/msg/set_pose.h
 	cd /home/hollis/cu/5254_final/build/amp_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hollis/cu/5254_final/src/amp_msgs /home/hollis/cu/5254_final/src/amp_msgs /home/hollis/cu/5254_final/build/amp_msgs /home/hollis/cu/5254_final/build/amp_msgs /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)

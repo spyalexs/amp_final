@@ -1,5 +1,9 @@
 msg/AgentControl.idl
 msg/AgentControl.msg
+msg/BallTrajectory.idl
+msg/BallTrajectory.msg
+msg/IdealPath.idl
+msg/IdealPath.msg
 msg/LaunchBall.idl
 msg/LaunchBall.msg
 msg/SetPose.idl

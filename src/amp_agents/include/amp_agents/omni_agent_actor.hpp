@@ -9,6 +9,7 @@
 #include "agent_backend.hpp"
 #include "propagate_sst.hpp"
 #include "amp_agents/visualize_tree.hpp"
+#include "amp_msgs/msg/ball_trajectory.hpp"
 
 class OmniAgentActor : public AgentBackend {
     public:
@@ -16,6 +17,10 @@ class OmniAgentActor : public AgentBackend {
         ~OmniAgentActor();
     
         void generate_tree(double propagation_time) override;
+
+        rclcpp::Subscription<amp_msgs::msg::BallTrajectory>::SharedPtr ball_trajectory_sub;
+
+        void selectPathForLanding(amp_msgs::msg::BallTrajectory msg);
 
         TreeVisualizer viz;
 

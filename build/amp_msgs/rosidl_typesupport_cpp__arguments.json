@@ -4,6 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/AgentControl.idl",
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/BallTrajectory.idl",
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/IdealPath.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/LaunchBall.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs:msg/SetPose.idl"
   ],
@@ -15,6 +17,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/AgentControl.idl",
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/BallTrajectory.idl",
+    "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/IdealPath.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/LaunchBall.idl",
     "/home/hollis/cu/5254_final/build/amp_msgs/rosidl_adapter/amp_msgs/msg/SetPose.idl"
   ]

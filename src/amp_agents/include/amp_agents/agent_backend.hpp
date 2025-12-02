@@ -16,6 +16,7 @@
 #include "amp_msgs/msg/agent_control.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
 #include "std_msgs/msg/int16.hpp"
+#include "amp_msgs/msg/ball_trajectory.hpp"
 
 #include "propagate_sst.hpp"
 

@@ -71,6 +71,16 @@ CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__struct.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/ball_trajectory.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__builder.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__struct.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__traits.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__type_support.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/ideal_path.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__builder.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__struct.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__traits.hpp
+CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__type_support.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp
 CMakeFiles/amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp
@@ -99,6 +109,8 @@ rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosid
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/AgentControl.idl
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/BallTrajectory.idl
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/SetPose.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
@@ -115,6 +127,36 @@ rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp: rosidl_gener
 
 rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/ball_trajectory.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/ball_trajectory.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__builder.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__builder.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__struct.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__struct.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__traits.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__traits.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__type_support.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/ideal_path.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/ideal_path.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__builder.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__builder.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__struct.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__struct.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__traits.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__traits.hpp
+
+rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__type_support.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__type_support.hpp
 
 rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
@@ -148,10 +190,19 @@ rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__type_support.hpp: rosidl_gene
 
 amp_msgs__cpp: CMakeFiles/amp_msgs__cpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/ball_trajectory.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__builder.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__struct.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__traits.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/agent_control__type_support.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__builder.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__struct.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__traits.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ball_trajectory__type_support.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__builder.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__struct.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__traits.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__type_support.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__builder.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__struct.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/launch_ball__traits.hpp
@@ -160,6 +211,7 @@ amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__builder.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__struct.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__traits.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/detail/set_pose__type_support.hpp
+amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/ideal_path.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/launch_ball.hpp
 amp_msgs__cpp: rosidl_generator_cpp/amp_msgs/msg/set_pose.hpp
 amp_msgs__cpp: CMakeFiles/amp_msgs__cpp.dir/build.make

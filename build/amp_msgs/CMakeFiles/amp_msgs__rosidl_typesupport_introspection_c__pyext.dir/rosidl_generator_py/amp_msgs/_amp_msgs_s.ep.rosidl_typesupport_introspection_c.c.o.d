@@ -205,6 +205,13 @@ CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_genera
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/rosidl_generator_c__visibility_control.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/agent_control__struct.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.h \
+ /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__type_support.h \
+ /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__struct.h \
+ /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.h \
+ /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__type_support.h \
+ /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__type_support.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__struct.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.h \

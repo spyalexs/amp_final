@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from amp_msgs/msg/BallTrajectory.msg
+// generated code does not contain a copyright notice
+
+
+module amp_msgs {
+  module msg {
+    struct BallTrajectory {
+      float current_pos_x;
+
+      float current_pos_y;
+
+      float current_pos_z;
+
+      float current_vel_x;
+
+      float current_vel_y;
+
+      float current_vel_z;
+
+      float current_damping_x;
+
+      float current_damping_y;
+
+      float current_damping_z;
+
+      float current_mass;
+
+      float landing_height;
+    };
+  };
+};
