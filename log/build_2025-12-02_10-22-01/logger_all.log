@@ -1,0 +1,293 @@
+[0.088s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.088s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7aae21655930>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7aae2175ae90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7aae2175ae90>>, mixin_verb=('build',))
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.201s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hollis/cu/5254_final'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_agents) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amp_agents' with type 'ros.ament_cmake' and name 'amp_agents'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_msgs) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amp_msgs' with type 'ros.ament_cmake' and name 'amp_msgs'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_sim) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amp_sim' with type 'ros.ament_cmake' and name 'amp_sim'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/amp_viz) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amp_viz' with type 'ros.ament_cmake' and name 'amp_viz'
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hollis/cu/5254_final/install/amp_viz' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hollis/cu/5254_final/install/amp_agents' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hollis/cu/5254_final/install/amp_sim' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hollis/cu/5254_final/install/amp_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hollis/cu/5254_final/install/amp_viz' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hollis/cu/5254_final/install/amp_agents' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hollis/cu/5254_final/install/amp_sim' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.242s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hollis/cu/5254_final/install/amp_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.242s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/hollis/cu/5254_final/install
+[0.243s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 267 installed packages in /opt/ros/humble
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'amp_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hollis/cu/5254_final/build/amp_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hollis/cu/5254_final/install/amp_msgs', 'merge_install': False, 'path': '/home/hollis/cu/5254_final/src/amp_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'amp_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hollis/cu/5254_final/build/amp_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hollis/cu/5254_final/install/amp_sim', 'merge_install': False, 'path': '/home/hollis/cu/5254_final/src/amp_sim', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_agents' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'amp_agents' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hollis/cu/5254_final/build/amp_agents', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hollis/cu/5254_final/install/amp_agents', 'merge_install': False, 'path': '/home/hollis/cu/5254_final/src/amp_agents', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'amp_viz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'amp_viz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hollis/cu/5254_final/build/amp_viz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hollis/cu/5254_final/install/amp_viz', 'merge_install': False, 'path': '/home/hollis/cu/5254_final/src/amp_viz', 'symlink_install': False, 'test_result_base': None}
+[0.270s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.271s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.272s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hollis/cu/5254_final/src/amp_msgs' with build type 'ament_cmake'
+[0.272s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hollis/cu/5254_final/src/amp_msgs'
+[0.274s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.274s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.274s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs
+[1.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_msgs -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_msgs
+[1.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_msgs -- -j24 -l24
+[3.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_msgs -- -j24 -l24
+[3.754s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_msgs
+[3.821s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amp_msgs)
+[3.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_msgs
+[3.823s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs' for CMake module files
+[3.823s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs' for CMake config files
+[3.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('amp_msgs', 'cmake_prefix_path')
+[3.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/cmake_prefix_path.ps1'
+[3.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/cmake_prefix_path.dsv'
+[3.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/cmake_prefix_path.sh'
+[3.825s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/lib'
+[3.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('amp_msgs', 'ld_library_path_lib')
+[3.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/ld_library_path_lib.ps1'
+[3.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/ld_library_path_lib.dsv'
+[3.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/ld_library_path_lib.sh'
+[3.827s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/bin'
+[3.827s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/lib/pkgconfig/amp_msgs.pc'
+[3.827s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/lib/python3.10/site-packages'
+[3.827s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/bin'
+[3.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.ps1'
+[3.828s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.dsv'
+[3.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.sh'
+[3.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.bash'
+[3.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.zsh'
+[3.831s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hollis/cu/5254_final/install/amp_msgs/share/colcon-core/packages/amp_msgs)
+[3.831s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amp_msgs)
+[3.832s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs' for CMake module files
+[3.832s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs' for CMake config files
+[3.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('amp_msgs', 'cmake_prefix_path')
+[3.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/cmake_prefix_path.ps1'
+[3.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/cmake_prefix_path.dsv'
+[3.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/cmake_prefix_path.sh'
+[3.834s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/lib'
+[3.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('amp_msgs', 'ld_library_path_lib')
+[3.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/ld_library_path_lib.ps1'
+[3.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/ld_library_path_lib.dsv'
+[3.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/hook/ld_library_path_lib.sh'
+[3.835s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/bin'
+[3.835s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/lib/pkgconfig/amp_msgs.pc'
+[3.835s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/lib/python3.10/site-packages'
+[3.835s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_msgs/bin'
+[3.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.ps1'
+[3.836s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.dsv'
+[3.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.sh'
+[3.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.bash'
+[3.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_msgs/share/amp_msgs/package.zsh'
+[3.838s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hollis/cu/5254_final/install/amp_msgs/share/colcon-core/packages/amp_msgs)
+[3.838s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hollis/cu/5254_final/src/amp_sim' with build type 'ament_cmake'
+[3.838s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hollis/cu/5254_final/src/amp_sim'
+[3.838s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.838s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_sim': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_sim -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_sim
+[4.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_sim' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_sim -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_sim
+[4.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_sim': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_sim -- -j24 -l24
+[21.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_sim' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_sim -- -j24 -l24
+[21.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_sim': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_sim
+[21.805s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amp_sim)
+[21.805s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim' for CMake module files
+[21.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_sim' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/hollis/cu/5254_final/build/amp_sim
+[21.806s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim' for CMake config files
+[21.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('amp_sim', 'cmake_prefix_path')
+[21.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/hook/cmake_prefix_path.ps1'
+[21.807s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/hook/cmake_prefix_path.dsv'
+[21.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/hook/cmake_prefix_path.sh'
+[21.807s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/lib'
+[21.808s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/bin'
+[21.808s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/lib/pkgconfig/amp_sim.pc'
+[21.808s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/lib/python3.10/site-packages'
+[21.808s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/bin'
+[21.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.ps1'
+[21.809s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.dsv'
+[21.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.sh'
+[21.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.bash'
+[21.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.zsh'
+[21.810s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hollis/cu/5254_final/install/amp_sim/share/colcon-core/packages/amp_sim)
+[21.810s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amp_sim)
+[21.810s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim' for CMake module files
+[21.810s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim' for CMake config files
+[21.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('amp_sim', 'cmake_prefix_path')
+[21.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/hook/cmake_prefix_path.ps1'
+[21.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/hook/cmake_prefix_path.dsv'
+[21.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/hook/cmake_prefix_path.sh'
+[21.812s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/lib'
+[21.812s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/bin'
+[21.812s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/lib/pkgconfig/amp_sim.pc'
+[21.812s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/lib/python3.10/site-packages'
+[21.812s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_sim/bin'
+[21.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.ps1'
+[21.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.dsv'
+[21.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.sh'
+[21.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.bash'
+[21.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_sim/share/amp_sim/package.zsh'
+[21.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hollis/cu/5254_final/install/amp_sim/share/colcon-core/packages/amp_sim)
+[21.814s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hollis/cu/5254_final/src/amp_agents' with build type 'ament_cmake'
+[21.814s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hollis/cu/5254_final/src/amp_agents'
+[21.814s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.814s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[21.817s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hollis/cu/5254_final/src/amp_viz' with build type 'ament_cmake'
+[21.817s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hollis/cu/5254_final/src/amp_viz'
+[21.817s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.817s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[21.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_agents -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_agents
+[21.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_viz -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_viz
+[22.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_agents -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_agents
+[22.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_agents': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[23.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_viz' returned '0': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/hollis/cu/5254_final/src/amp_viz -DCMAKE_INSTALL_PREFIX=/home/hollis/cu/5254_final/install/amp_viz
+[23.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hollis/cu/5254_final/build/amp_viz': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_viz -- -j24 -l24
+[24.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hollis/cu/5254_final/build/amp_agents' returned '2': CMAKE_PREFIX_PATH=/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/opt/ros/humble LD_LIBRARY_PATH=/home/hollis/cu/5254_final/install/amp_msgs/lib:/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hollis/cu/5254_final/build/amp_agents -- -j24 -l24
+[24.986s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amp_agents)
+[24.986s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_agents' for CMake module files
+[24.987s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_agents' for CMake config files
+[24.987s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_agents/bin'
+[24.987s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_agents/lib/pkgconfig/amp_agents.pc'
+[24.987s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_agents/lib/python3.10/site-packages'
+[24.988s] Level 1:colcon.colcon_core.environment:checking '/home/hollis/cu/5254_final/install/amp_agents/bin'
+[24.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.ps1'
+[24.989s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.dsv'
+[24.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.sh'
+[24.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.bash'
+[24.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.zsh'
+[24.990s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hollis/cu/5254_final/install/amp_agents/share/colcon-core/packages/amp_agents)
+[31.104s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[31.105s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[31.105s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[31.105s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[31.110s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[31.110s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[31.110s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[31.122s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[31.123s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hollis/cu/5254_final/install/local_setup.ps1'
+[31.123s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hollis/cu/5254_final/install/_local_setup_util_ps1.py'
+[31.124s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hollis/cu/5254_final/install/setup.ps1'
+[31.125s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hollis/cu/5254_final/install/local_setup.sh'
+[31.125s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hollis/cu/5254_final/install/_local_setup_util_sh.py'
+[31.126s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hollis/cu/5254_final/install/setup.sh'
+[31.127s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hollis/cu/5254_final/install/local_setup.bash'
+[31.127s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hollis/cu/5254_final/install/setup.bash'
+[31.128s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hollis/cu/5254_final/install/local_setup.zsh'
+[31.128s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hollis/cu/5254_final/install/setup.zsh'

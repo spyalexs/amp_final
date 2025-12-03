@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.001197] (amp_msgs) JobQueued: {'identifier': 'amp_msgs', 'dependencies': OrderedDict()}
+[0.001237] (amp_sim) JobQueued: {'identifier': 'amp_sim', 'dependencies': OrderedDict([('amp_msgs', '/home/hollis/cu/5254_final/install/amp_msgs')])}
+[0.001251] (amp_agents) JobQueued: {'identifier': 'amp_agents', 'dependencies': OrderedDict([('amp_msgs', '/home/hollis/cu/5254_final/install/amp_msgs'), ('amp_sim', '/home/hollis/cu/5254_final/install/amp_sim')])}
+[0.001264] (amp_viz) JobQueued: {'identifier': 'amp_viz', 'dependencies': OrderedDict([('amp_msgs', '/home/hollis/cu/5254_final/install/amp_msgs'), ('amp_sim', '/home/hollis/cu/5254_final/install/amp_sim')])}
+[0.001274] (amp_msgs) JobStarted: {'identifier': 'amp_msgs'}
+[0.005446] (amp_msgs) JobProgress: {'identifier': 'amp_msgs', 'progress': 'cmake'}
+[0.005981] (amp_msgs) JobProgress: {'identifier': 'amp_msgs', 'progress': 'build'}
+[0.006021] (amp_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hollis/cu/5254_final/build/amp_msgs', '--', '-j24', '-l24'], 'cwd': '/home/hollis/cu/5254_final/build/amp_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hollis'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hollis/cu/5254_final/install/amp_viz/lib:/home/hollis/cu/5254_final/install/amp_sim/lib:/home/hollis/cu/5254_final/install/amp_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hollis'), ('OLDPWD', '/home/hollis'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2497'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hollis/cu/5254_final/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hollis'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hollis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/hollis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/blizzard:@/tmp/.ICE-unix/2478,unix/blizzard:/tmp/.ICE-unix/2478'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4bf07363_ae0e_4b29_b907_92ce43dfdfaf'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hollis/cu/5254_final/build/amp_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('PICO_SDK_PATH', '/home/hollis/pico/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hollis/cu/5254_final/install/amp_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hollis/cu/5254_final/install/amp_viz:/home/hollis/cu/5254_final/install/amp_agents:/home/hollis/cu/5254_final/install/amp_sim:/home/hollis/cu/5254_final/install/amp_msgs:/opt/ros/humble')]), 'shell': False}
+[0.025340] (amp_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099794] (-) TimerEvent: {}
+[0.105586] (amp_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.106493] (amp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.108421] (amp_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.125596] (amp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199877] (-) TimerEvent: {}
+[0.300634] (-) TimerEvent: {}
+[0.307995] (amp_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.400880] (-) TimerEvent: {}
+[0.419933] (amp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500974] (-) TimerEvent: {}
+[0.591739] (amp_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601068] (-) TimerEvent: {}
+[0.607632] (amp_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.624919] (amp_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.625113] (amp_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.625164] (amp_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.632186] (amp_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.636914] (amp_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.637373] (amp_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.638566] (amp_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.664185] (amp_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[0.670778] (amp_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/hollis/cu/5254_final/build/amp_msgs\n'}
+[0.689607] (amp_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.701313] (-) TimerEvent: {}
+[0.703360] (amp_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.706563] (amp_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_amp_msgs\n'}
+[0.802344] (-) TimerEvent: {}
+[0.890760] (amp_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.891360] (amp_msgs) StdoutLine: {'line': b'writing amp_msgs.egg-info/PKG-INFO\n'}
+[0.891660] (amp_msgs) StdoutLine: {'line': b'writing dependency_links to amp_msgs.egg-info/dependency_links.txt\n'}
+[0.891713] (amp_msgs) StdoutLine: {'line': b'writing top-level names to amp_msgs.egg-info/top_level.txt\n'}
+[0.892975] (amp_msgs) StdoutLine: {'line': b"reading manifest file 'amp_msgs.egg-info/SOURCES.txt'\n"}
+[0.893392] (amp_msgs) StdoutLine: {'line': b"writing manifest file 'amp_msgs.egg-info/SOURCES.txt'\n"}
+[0.902435] (-) TimerEvent: {}
+[0.919067] (amp_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_amp_msgs_egg\n'}
+[0.998397] (amp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target amp_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.002545] (-) TimerEvent: {}
+[1.012979] (amp_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.c.o\x1b[0m\n'}
+[1.013898] (amp_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ball_trajectory__functions.c.o\x1b[0m\n'}
+[1.014038] (amp_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o\x1b[0m\n'}
+[1.014103] (amp_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o\x1b[0m\n'}
+[1.014393] (amp_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o\x1b[0m\n'}
+[1.019707] (amp_msgs) StdoutLine: {'line': b'[ 11%] Built target amp_msgs__cpp\n'}
+[1.025610] (amp_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.h:19\x1b[m\x1b[K,\n'}
+[1.025789] (amp_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c:4\x1b[m\x1b[K:\n'}
+[1.025850] (amp_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__struct.h:26:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kamp_msgs/msg/detail/time__struct.h: No such file or directory\n'}
+[1.025905] (amp_msgs) StderrLine: {'line': b'   26 | #include \x1b[01;31m\x1b[K"amp_msgs/msg/detail/time__struct.h"\x1b[m\x1b[K\n'}
+[1.025953] (amp_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.025999] (amp_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[1.026045] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/amp_msgs__rosidl_generator_c.dir/build.make:197: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.c.o] Error 1\n'}
+[1.026099] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.027906] (amp_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.028183] (amp_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.028268] (amp_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.061685] (amp_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/amp_msgs__rosidl_generator_c.dir/all] Error 2\n'}
+[1.061882] (amp_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.103133] (-) TimerEvent: {}
+[1.206470] (-) TimerEvent: {}
+[1.258370] (amp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target amp_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.271101] (amp_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/ball_trajectory__type_support.cpp.o\x1b[0m\n'}
+[1.274930] (amp_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/ideal_path__type_support.cpp.o\x1b[0m\n'}
+[1.275108] (amp_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/agent_control__type_support.cpp.o\x1b[0m\n'}
+[1.275176] (amp_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/launch_ball__type_support.cpp.o\x1b[0m\n'}
+[1.275231] (amp_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/set_pose__type_support.cpp.o\x1b[0m\n'}
+[1.287038] (amp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target amp_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.303456] (amp_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/agent_control__type_support.cpp.o\x1b[0m\n'}
+[1.306574] (-) TimerEvent: {}
+[1.306701] (amp_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/ball_trajectory__type_support.cpp.o\x1b[0m\n'}
+[1.306799] (amp_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/ideal_path__type_support.cpp.o\x1b[0m\n'}
+[1.306857] (amp_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/launch_ball__type_support.cpp.o\x1b[0m\n'}
+[1.306906] (amp_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/set_pose__type_support.cpp.o\x1b[0m\n'}
+[1.322334] (amp_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_cpp/amp_msgs/msg/ideal_path__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[1.322479] (amp_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__struct.hpp:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kamp_msgs/msg/detail/time__struct.hpp: No such file or directory\n'}
+[1.322535] (amp_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"amp_msgs/msg/detail/time__struct.hpp"\x1b[m\x1b[K\n'}
+[1.322583] (amp_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.322628] (amp_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[1.322672] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/build.make:130: CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amp_msgs/msg/ideal_path__type_support.cpp.o] Error 1\n'}
+[1.322715] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.367420] (amp_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target amp_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.384008] (amp_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/ideal_path__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[1.384217] (amp_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__struct.hpp:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kamp_msgs/msg/detail/time__struct.hpp: No such file or directory\n'}
+[1.384326] (amp_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"amp_msgs/msg/detail/time__struct.hpp"\x1b[m\x1b[K\n'}
+[1.384388] (amp_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.384435] (amp_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[1.384490] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:147: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amp_msgs/msg/detail/ideal_path__type_support.cpp.o] Error 1\n'}
+[1.384536] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.388125] (amp_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/ball_trajectory__type_support.cpp.o\x1b[0m\n'}
+[1.388291] (amp_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/ideal_path__type_support.cpp.o\x1b[0m\n'}
+[1.388367] (amp_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__type_support.cpp.o\x1b[0m\n'}
+[1.390833] (amp_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/set_pose__type_support.cpp.o\x1b[0m\n'}
+[1.390988] (amp_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/launch_ball__type_support.cpp.o\x1b[0m\n'}
+[1.418549] (-) TimerEvent: {}
+[1.452486] (amp_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/ideal_path__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[1.452699] (amp_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/ideal_path__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[1.452775] (amp_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_cpp/amp_msgs/msg/detail/ideal_path__struct.hpp:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kamp_msgs/msg/detail/time__struct.hpp: No such file or directory\n'}
+[1.452836] (amp_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"amp_msgs/msg/detail/time__struct.hpp"\x1b[m\x1b[K\n'}
+[1.452890] (amp_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.452941] (amp_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[1.458145] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:147: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/ideal_path__type_support.cpp.o] Error 1\n'}
+[1.458300] (amp_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.519356] (-) TimerEvent: {}
+[1.526887] (amp_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[1.619462] (-) TimerEvent: {}
+[1.676508] (amp_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2\n'}
+[1.720668] (-) TimerEvent: {}
+[1.803403] (amp_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[1.803936] (amp_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.806738] (amp_msgs) CommandEnded: {'returncode': 2}
+[1.813690] (amp_msgs) JobEnded: {'identifier': 'amp_msgs', 'rc': 2}
+[1.820782] (-) TimerEvent: {}
+[1.824265] (amp_sim) JobSkipped: {'identifier': 'amp_sim'}
+[1.824288] (amp_agents) JobSkipped: {'identifier': 'amp_agents'}
+[1.824301] (amp_viz) JobSkipped: {'identifier': 'amp_viz'}
+[1.824309] (-) EventReactorShutdown: {}

@@ -16,6 +16,8 @@
 #include "amp_msgs/msg/detail/agent_control__functions.h"
 // Member `duration_array`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
+// Member `start_time`
+#include "builtin_interfaces/msg/detail/time__functions.h"
 
 bool
 amp_msgs__msg__IdealPath__init(amp_msgs__msg__IdealPath * msg)
@@ -34,6 +36,11 @@ amp_msgs__msg__IdealPath__init(amp_msgs__msg__IdealPath * msg)
     return false;
   }
   // run_time
+  // start_time
+  if (!builtin_interfaces__msg__Time__init(&msg->start_time)) {
+    amp_msgs__msg__IdealPath__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -48,6 +55,8 @@ amp_msgs__msg__IdealPath__fini(amp_msgs__msg__IdealPath * msg)
   // duration_array
   rosidl_runtime_c__float__Sequence__fini(&msg->duration_array);
   // run_time
+  // start_time
+  builtin_interfaces__msg__Time__fini(&msg->start_time);
 }
 
 bool
@@ -70,6 +79,12 @@ amp_msgs__msg__IdealPath__are_equal(const amp_msgs__msg__IdealPath * lhs, const 
   }
   // run_time
   if (lhs->run_time != rhs->run_time) {
+    return false;
+  }
+  // start_time
+  if (!builtin_interfaces__msg__Time__are_equal(
+      &(lhs->start_time), &(rhs->start_time)))
+  {
     return false;
   }
   return true;
@@ -97,6 +112,12 @@ amp_msgs__msg__IdealPath__copy(
   }
   // run_time
   output->run_time = input->run_time;
+  // start_time
+  if (!builtin_interfaces__msg__Time__copy(
+      &(input->start_time), &(output->start_time)))
+  {
+    return false;
+  }
   return true;
 }
 

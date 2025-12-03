@@ -50,6 +50,7 @@ CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/deta
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/agent_control__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /usr/include/assert.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
@@ -69,4 +70,6 @@ CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/deta
  /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h

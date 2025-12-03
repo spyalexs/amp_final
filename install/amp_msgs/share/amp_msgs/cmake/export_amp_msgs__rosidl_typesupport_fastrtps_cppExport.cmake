@@ -55,7 +55,7 @@ add_library(amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_cpp SHARED IMPORTED)
 
 set_target_properties(amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_cpp PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/amp_msgs"
-  INTERFACE_LINK_LIBRARIES "fastcdr;rmw::rmw;rosidl_runtime_c::rosidl_runtime_c;rosidl_runtime_cpp::rosidl_runtime_cpp;rosidl_typesupport_interface::rosidl_typesupport_interface;rosidl_typesupport_fastrtps_cpp::rosidl_typesupport_fastrtps_cpp;amp_msgs::amp_msgs__rosidl_generator_cpp"
+  INTERFACE_LINK_LIBRARIES "fastcdr;rmw::rmw;rosidl_runtime_c::rosidl_runtime_c;rosidl_runtime_cpp::rosidl_runtime_cpp;rosidl_typesupport_interface::rosidl_typesupport_interface;rosidl_typesupport_fastrtps_cpp::rosidl_typesupport_fastrtps_cpp;builtin_interfaces::builtin_interfaces__rosidl_typesupport_fastrtps_cpp;amp_msgs::amp_msgs__rosidl_generator_cpp"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

@@ -35,6 +35,7 @@ extern "C"
 #endif
 
 #include "amp_msgs/msg/detail/agent_control__functions.h"  // control_array
+#include "builtin_interfaces/msg/detail/time__functions.h"  // start_time
 #include "rosidl_runtime_c/primitives_sequence.h"  // duration_array
 #include "rosidl_runtime_c/primitives_sequence_functions.h"  // duration_array
 
@@ -50,6 +51,20 @@ size_t max_serialized_size_amp_msgs__msg__AgentControl(
 
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, amp_msgs, msg, AgentControl)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_amp_msgs
+size_t get_serialized_size_builtin_interfaces__msg__Time(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_amp_msgs
+size_t max_serialized_size_builtin_interfaces__msg__Time(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_amp_msgs
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, builtin_interfaces, msg, Time)();
 
 
 using _IdealPath__ros_msg_type = amp_msgs__msg__IdealPath;
@@ -93,6 +108,20 @@ static bool _IdealPath__cdr_serialize(
   // Field name: run_time
   {
     cdr << ros_message->run_time;
+  }
+
+  // Field name: start_time
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, builtin_interfaces, msg, Time
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->start_time, cdr))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -155,6 +184,20 @@ static bool _IdealPath__cdr_deserialize(
     cdr >> ros_message->run_time;
   }
 
+  // Field name: start_time
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, builtin_interfaces, msg, Time
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->start_time))
+    {
+      return false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -201,6 +244,10 @@ size_t get_serialized_size_amp_msgs__msg__IdealPath(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name start_time
+
+  current_alignment += get_serialized_size_builtin_interfaces__msg__Time(
+    &(ros_message->start_time), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -273,6 +320,25 @@ size_t max_serialized_size_amp_msgs__msg__IdealPath(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: start_time
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_builtin_interfaces__msg__Time(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -282,7 +348,7 @@ size_t max_serialized_size_amp_msgs__msg__IdealPath(
     using DataType = amp_msgs__msg__IdealPath;
     is_plain =
       (
-      offsetof(DataType, run_time) +
+      offsetof(DataType, start_time) +
       last_member_size
       ) == ret_val;
   }

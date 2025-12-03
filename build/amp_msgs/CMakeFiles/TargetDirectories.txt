@@ -3,10 +3,10 @@
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs.dir
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_generator_c.dir
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir
-/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir
-/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_c.dir
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__cpp.dir
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir
+/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir
+/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_c.dir
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir
 /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles/ament_cmake_python_copy_amp_msgs.dir

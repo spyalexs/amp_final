@@ -22,6 +22,8 @@ extern "C"
 #include "amp_msgs/msg/detail/agent_control__struct.h"
 // Member 'duration_array'
 #include "rosidl_runtime_c/primitives_sequence.h"
+// Member 'start_time'
+#include "builtin_interfaces/msg/detail/time__struct.h"
 
 /// Struct defined in msg/IdealPath in the package amp_msgs.
 typedef struct amp_msgs__msg__IdealPath
@@ -29,6 +31,7 @@ typedef struct amp_msgs__msg__IdealPath
   amp_msgs__msg__AgentControl__Sequence control_array;
   rosidl_runtime_c__float__Sequence duration_array;
   float run_time;
+  builtin_interfaces__msg__Time start_time;
 } amp_msgs__msg__IdealPath;
 
 // Struct for a sequence of amp_msgs__msg__IdealPath.

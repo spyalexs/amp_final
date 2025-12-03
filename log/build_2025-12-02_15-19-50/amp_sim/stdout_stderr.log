@@ -1,0 +1,7 @@
+[ 25%] Built target dynamic_object
+[ 50%] Built target dynamic_ball
+[ 75%] Built target omni_agent
+[ 87%] [32mBuilding CXX object CMakeFiles/sim_node.dir/src/run_sim.cpp.o[0m
+gmake[2]: *** [CMakeFiles/sim_node.dir/build.make:76: CMakeFiles/sim_node.dir/src/run_sim.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/sim_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

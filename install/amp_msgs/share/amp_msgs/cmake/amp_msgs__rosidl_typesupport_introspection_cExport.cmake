@@ -55,7 +55,7 @@ add_library(amp_msgs::amp_msgs__rosidl_typesupport_introspection_c SHARED IMPORT
 
 set_target_properties(amp_msgs::amp_msgs__rosidl_typesupport_introspection_c PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/amp_msgs"
-  INTERFACE_LINK_LIBRARIES "amp_msgs::amp_msgs__rosidl_generator_c;rosidl_typesupport_introspection_c::rosidl_typesupport_introspection_c"
+  INTERFACE_LINK_LIBRARIES "amp_msgs::amp_msgs__rosidl_generator_c;rosidl_typesupport_introspection_c::rosidl_typesupport_introspection_c;builtin_interfaces::builtin_interfaces__rosidl_typesupport_introspection_c"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

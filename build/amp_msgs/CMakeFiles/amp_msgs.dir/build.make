@@ -71,6 +71,8 @@ CMakeFiles/amp_msgs: /home/hollis/cu/5254_final/src/amp_msgs/msg/BallTrajectory.
 CMakeFiles/amp_msgs: /home/hollis/cu/5254_final/src/amp_msgs/msg/IdealPath.msg
 CMakeFiles/amp_msgs: /home/hollis/cu/5254_final/src/amp_msgs/msg/LaunchBall.msg
 CMakeFiles/amp_msgs: /home/hollis/cu/5254_final/src/amp_msgs/msg/SetPose.msg
+CMakeFiles/amp_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+CMakeFiles/amp_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 
 amp_msgs: CMakeFiles/amp_msgs
 amp_msgs: CMakeFiles/amp_msgs.dir/build.make

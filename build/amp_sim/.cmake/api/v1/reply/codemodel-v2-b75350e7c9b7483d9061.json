@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-fdf7790174188227b0d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "amp_sim",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "amp_sim_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amp_sim_uninstall-60ffee6493f5786660f4.json",
+					"name" : "amp_sim_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamic_ball::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamic_ball-3b8b0eb51eefb0fd2b55.json",
+					"name" : "dynamic_ball",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamic_object::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamic_object-736247dcaab06f831c67.json",
+					"name" : "dynamic_object",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omni_agent::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omni_agent-08787196ea9c00fc07e9.json",
+					"name" : "omni_agent",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sim_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sim_node-2318d7b435df5e846f45.json",
+					"name" : "sim_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-11550f64604fa6fc10fe.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hollis/cu/5254_final/build/amp_sim",
+		"source" : "/home/hollis/cu/5254_final/src/amp_sim"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

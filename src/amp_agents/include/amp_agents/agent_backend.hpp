@@ -56,6 +56,7 @@ class AgentBackend : public rclcpp::Node{
 
         rclcpp::Publisher<amp_msgs::msg::AgentControl>::SharedPtr control_pub;
         rclcpp::Publisher<std_msgs::msg::Int16>::SharedPtr agent_status_pub;
+        rclcpp::Publisher<amp_msgs::msg::IdealPath>::SharedPtr path_pub;
 
         rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr valid_balls_sub;
 
@@ -75,6 +76,11 @@ class AgentBackend : public rclcpp::Node{
         virtual void generate_tree(double propagation_time);
 
         double get_time_as_double();
+        builtin_interfaces::msg::Time create_ros2_time_from_double(double total_seconds);
+       
+        double solve_time(double m, double b, double v0, double x0, double L, double g = 9.81);
+
+
 
     private:
 

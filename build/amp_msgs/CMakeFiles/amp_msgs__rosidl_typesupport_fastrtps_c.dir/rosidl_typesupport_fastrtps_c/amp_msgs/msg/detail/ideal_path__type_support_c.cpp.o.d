@@ -184,8 +184,11 @@ CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrt
  /usr/include/c++/11/bits/istream.tcc /usr/include/malloc.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__struct.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/agent_control__struct.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/ideal_path__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/rosidl_generator_c__visibility_control.h \
  /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c/amp_msgs/msg/detail/agent_control__functions.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

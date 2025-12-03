@@ -87,6 +87,8 @@ rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/Bal
 rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_generator_c/amp_msgs/msg/agent_control.h: rosidl_adapter/amp_msgs/msg/SetPose.idl
+rosidl_generator_c/amp_msgs/msg/agent_control.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_c/amp_msgs/msg/agent_control.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_c__arguments.json
 
@@ -249,6 +251,7 @@ libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/launch_ball__functions.c.o
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/rosidl_generator_c/amp_msgs/msg/detail/set_pose__functions.c.o
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/build.make
+libamp_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libamp_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libamp_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libamp_msgs__rosidl_generator_c.so: CMakeFiles/amp_msgs__rosidl_generator_c.dir/link.txt

@@ -9,6 +9,7 @@ AgentBackend::AgentBackend() : Node("sim_node"), agent_tree(agent, &env){
     //init pubs
     control_pub = create_publisher<amp_msgs::msg::AgentControl>("/agent_control", 10);
     agent_status_pub = create_publisher<std_msgs::msg::Int16>("/agent_status", 10);
+    path_pub = create_publisher<amp_msgs::msg::IdealPath>("/agent_path", 10);
 
     //init subs
     valid_balls_sub = create_subscription<std_msgs::msg::Int32MultiArray>("/valid_ball_frames", 10, std::bind(&AgentBackend::valid_ball_frames_cb, this, std::placeholders::_1));
@@ -118,22 +119,37 @@ TargetInformation AgentBackend::determine_ball_landing_location(V3d current_posi
     current_damping = current_damping / mass;
 
     //calculate the time it will take to complete the fall -- turns out this isn't simple...
-    double a = -9.815 / current_damping(2);
-    double d = (current_velocities(2) + 9.81 / current_damping(2)) / current_damping(2);
-    double c = -d;
-    double dz = current_position(2) - landing_hieght;
-    double lambert_function = boost::math::lambert_w0(current_damping(2) * c / a * exp(-current_damping(2) * (dz) / a));
-    double t = (dz) / a + lambert_function / current_damping(2);
+    double t = solve_time(mass, current_damping(2), current_velocities(2), current_position(2), landing_hieght);
 
     //calculate the displacement in the other axis
-    double x_final = current_position(0) + current_velocities(0) * exp(-current_damping(0) * t);
-    double y_final = current_position(1) + current_velocities(1) * exp(-current_damping(1) * t);
+    // 0 = b(dx) + m(ddx) -> laplace -> bXs + mXss - v0 = 0
+    //v0 / (bs+mss) = X -> a/(b+s) + c/s = X
+    //c = v0/b, a = -c
 
-    if(dz < 0){
-        RCLCPP_WARN(get_logger(), "Ball is below landing height... hmm");
-    }
+    double x_final = current_position(0) + current_velocities(0) / current_damping(0) - (current_velocities(0) / current_damping(0)) * exp(-current_damping(0) * t);
+    double y_final = current_position(1) + current_velocities(1) / current_damping(1) - (current_velocities(1) / current_damping(1)) * exp(-current_damping(1) * t);
 
     return TargetInformation(V3d(x_final, y_final, landing_hieght), t);
+}
+
+//This is a chatgpt special
+double AgentBackend::solve_time(double m, double b, double v0, double x0, double L, double g)
+{
+    // Define intermediate terms
+    const double C = L - x0;
+    const double A = v0 + g / b;
+
+    // Argument for Lambert W
+    double arg = (-(b * v0 + g) / g) *
+                 std::exp((b * b * C - b * m * v0 - g * m) / (g * m));
+
+    // Compute Lambert W principal branch
+    double W = boost::math::lambert_w0(arg);
+
+    // Full closed-form solution
+    double t = (-b * b * C + b * m * v0 + g * m * W + g * m) / (b * g);
+
+    return t;
 }
 
 void AgentBackend::update_agent_status(int status){
@@ -155,8 +171,21 @@ void AgentBackend::generate_tree(double propagation_time){
 }
 
 double AgentBackend::get_time_as_double(){
-    return get_clock()->now().nanoseconds() * 1e-9;
+    //RCLCPP_INFO(get_logger(), "Current time is %f",get_clock()->now().seconds() );
+
+    return get_clock()->now().seconds();
 }
 
+//HELP from gemni here
+builtin_interfaces::msg::Time AgentBackend::create_ros2_time_from_double(double total_seconds){
+    builtin_interfaces::msg::Time ros_time;
+    double integer_part;
+    double fractional_part = std::modf(total_seconds, &integer_part);
+
+    ros_time.sec = static_cast<int32_t>(integer_part);
+    ros_time.nanosec = static_cast<uint32_t>(fractional_part * 1e9);
+
+    return ros_time;
+}
 
 

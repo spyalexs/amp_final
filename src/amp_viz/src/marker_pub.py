@@ -12,7 +12,7 @@ from std_msgs.msg import Int32MultiArray
 from ament_index_python import get_package_share_directory 
 
 
-BALL_SCALE  = 0.05
+BALL_SCALE  = 0.1
 CANNON_SCALE  = 0.02
 AGENT_SCALE = 0.6
 CANNON_FRAME_NAME = "cannon_barrel"

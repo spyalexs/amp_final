@@ -18,6 +18,8 @@
 // Include directives for member types
 // Member 'control_array'
 #include "amp_msgs/msg/detail/agent_control__struct.hpp"
+// Member 'start_time'
+#include "builtin_interfaces/msg/detail/time__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__amp_msgs__msg__IdealPath __attribute__((deprecated))
@@ -38,6 +40,7 @@ struct IdealPath_
   using Type = IdealPath_<ContainerAllocator>;
 
   explicit IdealPath_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : start_time(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -47,8 +50,8 @@ struct IdealPath_
   }
 
   explicit IdealPath_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : start_time(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
@@ -66,6 +69,9 @@ struct IdealPath_
   using _run_time_type =
     float;
   _run_time_type run_time;
+  using _start_time_type =
+    builtin_interfaces::msg::Time_<ContainerAllocator>;
+  _start_time_type start_time;
 
   // setters for named parameter idiom
   Type & set__control_array(
@@ -84,6 +90,12 @@ struct IdealPath_
     const float & _arg)
   {
     this->run_time = _arg;
+    return *this;
+  }
+  Type & set__start_time(
+    const builtin_interfaces::msg::Time_<ContainerAllocator> & _arg)
+  {
+    this->start_time = _arg;
     return *this;
   }
 
@@ -136,6 +148,9 @@ struct IdealPath_
       return false;
     }
     if (this->run_time != other.run_time) {
+      return false;
+    }
+    if (this->start_time != other.start_time) {
       return false;
     }
     return true;

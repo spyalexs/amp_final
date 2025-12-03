@@ -17,6 +17,8 @@
 // Include directives for member types
 // Member 'control_array'
 #include "amp_msgs/msg/detail/agent_control__traits.hpp"
+// Member 'start_time'
+#include "builtin_interfaces/msg/detail/time__traits.hpp"
 
 namespace amp_msgs
 {
@@ -69,6 +71,13 @@ inline void to_flow_style_yaml(
   {
     out << "run_time: ";
     rosidl_generator_traits::value_to_yaml(msg.run_time, out);
+    out << ", ";
+  }
+
+  // member: start_time
+  {
+    out << "start_time: ";
+    to_flow_style_yaml(msg.start_time, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -124,6 +133,15 @@ inline void to_block_style_yaml(
     out << "run_time: ";
     rosidl_generator_traits::value_to_yaml(msg.run_time, out);
     out << "\n";
+  }
+
+  // member: start_time
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "start_time:\n";
+    to_block_style_yaml(msg.start_time, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 

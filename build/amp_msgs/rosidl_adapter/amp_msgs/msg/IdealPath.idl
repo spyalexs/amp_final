@@ -3,6 +3,7 @@
 // generated code does not contain a copyright notice
 
 #include "amp_msgs/msg/AgentControl.idl"
+#include "builtin_interfaces/msg/Time.idl"
 
 module amp_msgs {
   module msg {
@@ -12,6 +13,8 @@ module amp_msgs {
       sequence<float> duration_array;
 
       float run_time;
+
+      builtin_interfaces::msg::Time start_time;
     };
   };
 };

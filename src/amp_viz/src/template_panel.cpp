@@ -79,8 +79,8 @@ void TemplatePanel::updateCannonPose(){
 
     //form header
     t.header.stamp = getRosNode()->get_clock()->now();
-    t.header.frame_id = CANNON_FRAME_NAME;
-    t.child_frame_id = "world";
+    t.header.frame_id = "world";
+    t.child_frame_id = CANNON_FRAME_NAME;
 
     //input information from the state vector
     t.transform.translation.x = ui->launch_x->text().toFloat();;
@@ -88,14 +88,12 @@ void TemplatePanel::updateCannonPose(){
     t.transform.translation.z = ui->launch_z->text().toFloat();;
 
     Eigen::Quaterniond barrel_rotation;
-    barrel_rotation = Eigen::AngleAxisd(ui->launch_angle_input->text().toFloat() / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitX()) * Eigen::AngleAxisd((ui->launch_heading_input->text().toFloat() +180)/ 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitZ());
+    barrel_rotation = Eigen::AngleAxisd((-ui->launch_heading_input->text().toFloat() + 90) / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitZ()) *  Eigen::AngleAxisd(-ui->launch_angle_input->text().toFloat() / 180 * M_PI, Eigen::Matrix<double, 3, 1>::UnitX());
 
     t.transform.rotation.w = barrel_rotation.w();
     t.transform.rotation.x = barrel_rotation.x();
     t.transform.rotation.y = barrel_rotation.y();
     t.transform.rotation.z = barrel_rotation.z();
-
-    RCLCPP_INFO(getRosNode()->get_logger(), "Here!");
 
     //send to broadcaster
     tf_broadcaster->sendTransform(t);

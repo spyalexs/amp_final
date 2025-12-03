@@ -10,16 +10,17 @@ SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment* environment){
         samples_before_collision_check = 1;
     }
 
-
     node_pile.push_back(SstNode(env->root_state));
     tree.push_back(&node_pile.back());
 }
 
-SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment* environment, std::string file_name) : SstTree(Agent, environment){
+SstTree::SstTree(DynamicObject* Agent, BallCatchEnvironment* environment, std::string file_name, rclcpp::Node* ptr) : SstTree(Agent, environment){
 
     //load the tree from a file
     //help from Gemni here
     std::ifstream inputFile(file_name);
+
+    node_ptr = ptr;
 
     std::string line;
     bool continue_parsing = true;
@@ -88,6 +89,9 @@ bool SstTree::parse_line(std::string data){
     //get the pointer to the parent
     std::list<SstNode>::iterator it = node_pile.begin();
     std::advance(it, p);
+    if(p >= node_pile.size()){
+        RCLCPP_WARN(node_ptr->get_logger(), "Setting pointer for node %d equal to non-existant parent %d", n, p);
+    }
 
     //make a tree node
     SstNode new_node(s, c, &(*it));
@@ -97,7 +101,9 @@ bool SstTree::parse_line(std::string data){
 
     //recreate the substates
     agent->state = new_node.parent->state;
-    propagate_agent(u,d,&(new_node.sub_states));
+    if(LOAD_SUBSTATES){
+        propagate_agent(u,d,&(new_node.sub_states));
+    }
 
     node_pile.push_back(new_node);
 
@@ -229,6 +235,7 @@ SstNode* SstTree::getLowestCostNodeWithinRange(V13d reference, double range = SE
     double d;
 
     for(std::list<SstNode*>::iterator it = tree.begin(); it != tree.end(); ++it){
+
         SstNode* tree_node_ptr = *it;
 
         d = evalutate_distance_euclidean(tree_node_ptr->state, reference);
@@ -327,6 +334,118 @@ bool SstTree::propagate_agent(V12d controls, double duration, std::vector<std::p
     return true;
 }
 
+void SstTree::runTreeStats(){
+    double dd = get_average_distance_deviation();
+    double cp = get_converage_percentage();
+    double ev = get_tree_end_velocity();
+
+    RCLCPP_INFO(node_ptr->get_logger(), "Distance Deviation %f, Coverage %f, Velocity %f", dd, cp, ev);
+
+    //save data
+    node_counts.push_back(tree.size());
+    tree_distance_deviations.push_back(dd);
+    tree_end_velocities.push_back(ev);
+    tree_coverage_percentages.push_back(cp);
+    tree_times.push_back(node_ptr->get_clock()->now().seconds() - prop_begin_time);
+}
+
+double SstTree::get_average_distance_deviation(){
+    double total_deviation = 0;
+
+    //loop through all high level nodes
+    for(auto it = tree.begin(); it != tree.end(); ++it){
+
+        SstNode* leaf = *it;
+        
+        double travelled_distance_sum = 0;
+
+        if(fabs(leaf->state[0]) > 5 || fabs(leaf->state[1]) > 5){
+            continue;
+        }
+
+        //dive down the node tree
+        while(leaf->parent != nullptr){
+
+            //loop through states and add dist
+            V13d prev = leaf->parent->state;
+            for(auto it2 = leaf->sub_states.begin(); it2 != leaf->sub_states.end(); ++it2){
+                travelled_distance_sum += evalutate_distance_euclidean((*it2).second, prev);
+
+                prev = (*it2).second;
+            }
+
+            //next node
+            leaf = leaf->parent;
+
+            //increment the total sum
+            total_deviation += (travelled_distance_sum / (*it)->state.block<2,1>(0,0).norm());
+        }
+
+        
+    }
+
+    return total_deviation / tree.size();
+}
+
+double SstTree::get_converage_percentage(){
+
+    //create a coverage map
+    Eigen::Matrix<bool, 10 * COVERAGE_MAP_SCALE, 10 * COVERAGE_MAP_SCALE> coverage_map;
+    coverage_map.setZero();
+
+    //covered spaces
+    int covered_spaces = 0;
+
+    for(auto it = tree.begin(); it != tree.end(); ++it){
+        SstNode* leaf = *it;
+
+        Eigen::Quaterniond quat(leaf->state[3], leaf->state[4], leaf->state[5], leaf->state[6]);
+        
+        for(int i = 0; i < COVERAGE_MAP_SCALE / env->agent_dim[0]; i++){
+            for(int j = 0; j < COVERAGE_MAP_SCALE / env->agent_dim[1]; j++){
+
+                //determine a point within the agent
+                V3d pos = leaf->state.block<3,1>(0,0) + quat * (env->agent_dim.cwiseProduct(V3d(double(i) / (COVERAGE_MAP_SCALE / env->agent_dim[0]) - .5, double(j) / (COVERAGE_MAP_SCALE / env->agent_dim[1]) - .5, 0)));
+
+                //determine the closest point on the coverage map
+                int i1 = pos[0] * COVERAGE_MAP_SCALE + COVERAGE_MAP_SCALE * 5;
+                int i2 = pos[1] * COVERAGE_MAP_SCALE + COVERAGE_MAP_SCALE * 5;
+
+                if(i1 >= COVERAGE_MAP_SCALE * 10 || i2 >= COVERAGE_MAP_SCALE * 10){
+                    continue;
+                }
+
+                if(i1 < 0 || i2 < 0){
+                    continue;
+                }
+
+                if(!coverage_map(i1, i2)){
+                    coverage_map(i1, i2) = true;
+                    covered_spaces++;
+                }
+            }
+        }
+
+    }
+
+    return double(covered_spaces) / (COVERAGE_MAP_SCALE * COVERAGE_MAP_SCALE * 100);
+}
+
+double SstTree::get_tree_end_velocity(){
+
+    double total_velocity = 0;
+
+    //loop through all high level nodes
+    for(auto it = tree.begin(); it != tree.end(); ++it){
+
+        SstNode* leaf = *it;
+
+        total_velocity += leaf->state.block<2,1>(7,0).norm();
+    }
+
+    return total_velocity / tree.size();
+}
+
 SstNode SstTree::generateNewNode(){
 
     //generate a random node
@@ -390,10 +509,71 @@ SstNode SstTree::generateNewNode(){
     }
 
     //determine the ndoe's cost from source
-    lowestCostNode.cost_from_source = lowest_distance + base_node->cost_from_source;
+    lowestCostNode.cost_from_source = lowestCostNode.duration + base_node->cost_from_source;
 
     return lowestCostNode;
 }
+
+SstNode SstTree::subStoppedNode(SstNode* parent, V13d sub_state){
+    //generate a node that ends in the same position as another node but stopped
+
+    V12d control;
+    double duration;
+
+    SstNode lowestCostNode(V13d(), 0, parent);
+    std::vector<std::pair<double, V13d>> substates;
+    double lowest_distance = -1;
+
+    double start_time = node_ptr->get_clock()->now().seconds();
+
+    double max_vel = MAX_STOPPED_VELOCITY;
+
+    for(int i = 0; i < NUM_SUB_PROPAGATIONS; i++){
+
+        if(start_time + SUB_TIMEOUT < node_ptr->get_clock()->now().seconds()){
+            max_vel += MAX_STOPPED_VELOCITY;
+            start_time = node_ptr->get_clock()->now().seconds();
+        }
+
+        //generate random parameters
+        duration = generate_random_duration() * 2;
+        control = generate_random_controls();
+
+        //clear the substates
+        substates.clear();
+
+        //configure the current state of the agent
+        agent->state = parent->state;
+
+        //propagate the agent according to the controls
+        if(!propagate_agent(control, duration, &(substates))){
+            i--;
+
+            continue;
+        } else if(agent->state.block<3,1>(7,0).norm() > max_vel){
+            i--;
+            
+            continue;
+        }
+
+        //determine if this is the best propagation yet
+        double dist = evalutate_distance_euclidean_and_velocity(sub_state, agent->state, 0);
+        if(lowest_distance < 0 || dist < lowest_distance){
+            lowest_distance = dist;
+            
+            lowestCostNode.state = agent->state;
+            lowestCostNode.control_vector = control;
+            lowestCostNode.duration = duration;
+            lowestCostNode.sub_states = substates;
+        }
+    }
+
+    //determine the ndoe's cost from source
+    lowestCostNode.cost_from_source = lowestCostNode.duration + parent->cost_from_source;
+
+    return lowestCostNode;
+}
+
 
 bool SstTree::processNewNode(){
     //returns true if the node count is increased
@@ -469,6 +649,11 @@ void SstPath::create_forward_path(SstNode leaf){
 
     SstNode* current = &leaf;
 
+    if(current->parent == nullptr || current == nullptr){
+        //leaf is root
+        return;
+    }
+
     bool tracing = true;
     while(tracing){
 
@@ -481,10 +666,14 @@ void SstPath::create_forward_path(SstNode leaf){
 
         current = current->parent;
 
-        if(current->parent != nullptr){
+        if(current->parent == nullptr){
             tracing = false;
         }
     }
+
+    std::reverse(controls.begin(), controls.end());
+    std::reverse(durations.begin(), durations.end());
+    std::reverse(states.begin(), states.end());
 }
 
 void SstTree::save_tree_to_file(std::string filename){
@@ -546,9 +735,52 @@ void SstTree::save_tree_to_file(std::string filename){
     }
     fprintf(filePointer, "\n");
 
+    fclose(filePointer);
+}
+
+void SstTree::save_tree_stats_to_file(std::string filename){
+    //little help from gemni here
+    FILE* filePointer;
+    filePointer = fopen(filename.c_str(), "w");
+
+
+    if (filePointer == NULL) {
+        RCLCPP_WARN(node_ptr->get_logger(), "Failed to open tree state write file");
+        return;
+    } 
+
+    //loop through node pile
+    for(int i = 0; i < node_counts.size(); i++){
+        fprintf(filePointer, "%d,%f,%f,%f,%f\n", node_counts.at(i),tree_distance_deviations.at(i),tree_coverage_percentages.at(i),tree_end_velocities.at(i), tree_times.at(i));
+    }
+
+    fprintf(filePointer, "\n");
 
     fclose(filePointer);
 }
+
+
+void SstPath::generate_msg(){
+    //generate a message from the path
+
+    double time_sum = 0;
+    for(int i = 0; i < controls.size(); i++){
+
+        amp_msgs::msg::AgentControl control_msg;
+        control_msg.u0 = controls.at(i)[0];
+        control_msg.u1 = controls.at(i)[1];
+        control_msg.u2 = controls.at(i)[2];
+        control_msg.u3 = controls.at(i)[3];
+
+        path_msg.control_array.push_back(control_msg);
+        path_msg.duration_array.push_back(durations.at(i));
+
+        time_sum += durations.at(i);
+    }
+
+    path_msg.run_time = time_sum;
+}
+
 
 
 

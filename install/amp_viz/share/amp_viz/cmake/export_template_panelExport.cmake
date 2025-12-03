@@ -55,7 +55,7 @@ add_library(amp_viz::template_panel SHARED IMPORTED)
 
 set_target_properties(amp_viz::template_panel PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "pluginlib::pluginlib;rviz_common::rviz_common;amp_msgs::amp_msgs__rosidl_generator_c;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_c;amp_msgs::amp_msgs__rosidl_typesupport_introspection_c;amp_msgs::amp_msgs__rosidl_typesupport_c;amp_msgs::amp_msgs__rosidl_generator_cpp;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_cpp;amp_msgs::amp_msgs__rosidl_typesupport_introspection_cpp;amp_msgs::amp_msgs__rosidl_typesupport_cpp;amp_msgs::amp_msgs__rosidl_generator_py"
+  INTERFACE_LINK_LIBRARIES "pluginlib::pluginlib;rviz_common::rviz_common;amp_msgs::amp_msgs__rosidl_generator_c;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_c;amp_msgs::amp_msgs__rosidl_generator_cpp;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_cpp;amp_msgs::amp_msgs__rosidl_typesupport_introspection_c;amp_msgs::amp_msgs__rosidl_typesupport_c;amp_msgs::amp_msgs__rosidl_typesupport_introspection_cpp;amp_msgs::amp_msgs__rosidl_typesupport_cpp;amp_msgs::amp_msgs__rosidl_generator_py"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

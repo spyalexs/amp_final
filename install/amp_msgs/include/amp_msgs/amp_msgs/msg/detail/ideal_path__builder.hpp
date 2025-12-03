@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_IdealPath_start_time
+{
+public:
+  explicit Init_IdealPath_start_time(::amp_msgs::msg::IdealPath & msg)
+  : msg_(msg)
+  {}
+  ::amp_msgs::msg::IdealPath start_time(::amp_msgs::msg::IdealPath::_start_time_type arg)
+  {
+    msg_.start_time = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::amp_msgs::msg::IdealPath msg_;
+};
+
 class Init_IdealPath_run_time
 {
 public:
   explicit Init_IdealPath_run_time(::amp_msgs::msg::IdealPath & msg)
   : msg_(msg)
   {}
-  ::amp_msgs::msg::IdealPath run_time(::amp_msgs::msg::IdealPath::_run_time_type arg)
+  Init_IdealPath_start_time run_time(::amp_msgs::msg::IdealPath::_run_time_type arg)
   {
     msg_.run_time = std::move(arg);
-    return std::move(msg_);
+    return Init_IdealPath_start_time(msg_);
   }
 
 private:

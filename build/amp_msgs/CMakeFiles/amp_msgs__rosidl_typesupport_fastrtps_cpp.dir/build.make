@@ -82,6 +82,8 @@ rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__
 rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__type_support.cpp: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__type_support.cpp: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__type_support.cpp: rosidl_adapter/amp_msgs/msg/SetPose.idl
+rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/agent_control__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support for eProsima Fast-RTPS"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp --generator-arguments-file /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_fastrtps_cpp__arguments.json
 
@@ -199,6 +201,7 @@ libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/amp_msgs__rosidl_typ
 libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/launch_ball__type_support.cpp.o
 libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amp_msgs/msg/detail/dds_fastrtps/set_pose__type_support.cpp.o
 libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make
+libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 libamp_msgs__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librmw.so

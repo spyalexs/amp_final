@@ -66,9 +66,9 @@ CMAKE_BINARY_DIR = /home/hollis/cu/5254_final/build/amp_msgs
 all: CMakeFiles/amp_msgs.dir/all
 all: CMakeFiles/amp_msgs__rosidl_generator_c.dir/all
 all: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/all
+all: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/all
 all: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all
 all: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all
-all: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/all
 all: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/all
 all: CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/all
 all: CMakeFiles/ament_cmake_python_build_amp_msgs_egg.dir/all
@@ -89,10 +89,10 @@ clean: CMakeFiles/amp_msgs_uninstall.dir/clean
 clean: CMakeFiles/amp_msgs.dir/clean
 clean: CMakeFiles/amp_msgs__rosidl_generator_c.dir/clean
 clean: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/clean
-clean: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean
-clean: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean
 clean: CMakeFiles/amp_msgs__cpp.dir/clean
 clean: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/clean
+clean: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean
+clean: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean
 clean: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/clean
 clean: CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/clean
 clean: CMakeFiles/ament_cmake_python_copy_amp_msgs.dir/clean
@@ -177,10 +177,10 @@ CMakeFiles/amp_msgs_uninstall.dir/clean:
 # All Build rule for target.
 CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_generator_c.dir/all
 CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/all
-CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all
-CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all
 CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__cpp.dir/all
 CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/all
+CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all
+CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all
 CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir/all
 CMakeFiles/amp_msgs.dir/all: CMakeFiles/amp_msgs__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs.dir/build.make CMakeFiles/amp_msgs.dir/depend
@@ -257,58 +257,6 @@ CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/clean:
 .PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_c.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir
-
-# All Build rule for target.
-CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/amp_msgs__rosidl_generator_c.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=48,49,50,51,52,53,54 "Built target amp_msgs__rosidl_typesupport_introspection_c"
-.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 0
-.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rule
-
-# Convenience name for target.
-amp_msgs__rosidl_typesupport_introspection_c: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rule
-.PHONY : amp_msgs__rosidl_typesupport_introspection_c
-
-# clean rule for target.
-CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean
-.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/amp_msgs__rosidl_typesupport_c.dir
-
-# All Build rule for target.
-CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all: CMakeFiles/amp_msgs__rosidl_generator_c.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=16,17,18,19,20,21,22 "Built target amp_msgs__rosidl_typesupport_c"
-.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 0
-.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rule
-
-# Convenience name for target.
-amp_msgs__rosidl_typesupport_c: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rule
-.PHONY : amp_msgs__rosidl_typesupport_c
-
-# clean rule for target.
-CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean
-.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/amp_msgs__cpp.dir
 
 # All Build rule for target.
@@ -359,6 +307,58 @@ amp_msgs__rosidl_typesupport_fastrtps_cpp: CMakeFiles/amp_msgs__rosidl_typesuppo
 CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/clean
 .PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir
+
+# All Build rule for target.
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/amp_msgs__rosidl_generator_c.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=48,49,50,51,52,53,54 "Built target amp_msgs__rosidl_typesupport_introspection_c"
+.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 0
+.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rule
+
+# Convenience name for target.
+amp_msgs__rosidl_typesupport_introspection_c: CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/rule
+.PHONY : amp_msgs__rosidl_typesupport_introspection_c
+
+# clean rule for target.
+CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean
+.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/amp_msgs__rosidl_typesupport_c.dir
+
+# All Build rule for target.
+CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all: CMakeFiles/amp_msgs__rosidl_generator_c.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=16,17,18,19,20,21,22 "Built target amp_msgs__rosidl_typesupport_c"
+.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles 0
+.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rule
+
+# Convenience name for target.
+amp_msgs__rosidl_typesupport_c: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rule
+.PHONY : amp_msgs__rosidl_typesupport_c
+
+# clean rule for target.
+CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean
+.PHONY : CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/amp_msgs__rosidl_typesupport_introspection_cpp.dir

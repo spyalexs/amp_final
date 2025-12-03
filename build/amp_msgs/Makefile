@@ -237,32 +237,6 @@ amp_msgs__rosidl_typesupport_fastrtps_c/fast:
 .PHONY : amp_msgs__rosidl_typesupport_fastrtps_c/fast
 
 #=============================================================================
-# Target rules for targets named amp_msgs__rosidl_typesupport_introspection_c
-
-# Build rule for target.
-amp_msgs__rosidl_typesupport_introspection_c: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 amp_msgs__rosidl_typesupport_introspection_c
-.PHONY : amp_msgs__rosidl_typesupport_introspection_c
-
-# fast build rule for target.
-amp_msgs__rosidl_typesupport_introspection_c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build
-.PHONY : amp_msgs__rosidl_typesupport_introspection_c/fast
-
-#=============================================================================
-# Target rules for targets named amp_msgs__rosidl_typesupport_c
-
-# Build rule for target.
-amp_msgs__rosidl_typesupport_c: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 amp_msgs__rosidl_typesupport_c
-.PHONY : amp_msgs__rosidl_typesupport_c
-
-# fast build rule for target.
-amp_msgs__rosidl_typesupport_c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build
-.PHONY : amp_msgs__rosidl_typesupport_c/fast
-
-#=============================================================================
 # Target rules for targets named amp_msgs__cpp
 
 # Build rule for target.
@@ -287,6 +261,32 @@ amp_msgs__rosidl_typesupport_fastrtps_cpp: cmake_check_build_system
 amp_msgs__rosidl_typesupport_fastrtps_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_fastrtps_cpp.dir/build
 .PHONY : amp_msgs__rosidl_typesupport_fastrtps_cpp/fast
+
+#=============================================================================
+# Target rules for targets named amp_msgs__rosidl_typesupport_introspection_c
+
+# Build rule for target.
+amp_msgs__rosidl_typesupport_introspection_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 amp_msgs__rosidl_typesupport_introspection_c
+.PHONY : amp_msgs__rosidl_typesupport_introspection_c
+
+# fast build rule for target.
+amp_msgs__rosidl_typesupport_introspection_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_introspection_c.dir/build
+.PHONY : amp_msgs__rosidl_typesupport_introspection_c/fast
+
+#=============================================================================
+# Target rules for targets named amp_msgs__rosidl_typesupport_c
+
+# Build rule for target.
+amp_msgs__rosidl_typesupport_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 amp_msgs__rosidl_typesupport_c
+.PHONY : amp_msgs__rosidl_typesupport_c
+
+# fast build rule for target.
+amp_msgs__rosidl_typesupport_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build
+.PHONY : amp_msgs__rosidl_typesupport_c/fast
 
 #=============================================================================
 # Target rules for targets named amp_msgs__rosidl_typesupport_introspection_cpp

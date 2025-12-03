@@ -54,7 +54,7 @@ endif()
 add_library(amp_msgs::amp_msgs__rosidl_typesupport_cpp SHARED IMPORTED)
 
 set_target_properties(amp_msgs::amp_msgs__rosidl_typesupport_cpp PROPERTIES
-  INTERFACE_LINK_LIBRARIES "amp_msgs::amp_msgs__rosidl_generator_cpp"
+  INTERFACE_LINK_LIBRARIES "amp_msgs::amp_msgs__rosidl_generator_cpp;builtin_interfaces::builtin_interfaces__rosidl_typesupport_cpp"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

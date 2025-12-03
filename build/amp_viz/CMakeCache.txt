@@ -949,7 +949,7 @@ statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
 std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
 //Dependencies for the target
-template_panel_LIB_DEPENDS:STATIC=general;rviz_common::rviz_common;general;amp_msgs::amp_msgs__rosidl_generator_c;general;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_c;general;amp_msgs::amp_msgs__rosidl_typesupport_introspection_c;general;amp_msgs::amp_msgs__rosidl_typesupport_c;general;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_cpp;general;amp_msgs::amp_msgs__rosidl_typesupport_introspection_cpp;general;amp_msgs::amp_msgs__rosidl_typesupport_cpp;general;amp_msgs::amp_msgs__rosidl_generator_py;
+template_panel_LIB_DEPENDS:STATIC=general;rviz_common::rviz_common;general;amp_msgs::amp_msgs__rosidl_generator_c;general;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_c;general;amp_msgs::amp_msgs__rosidl_typesupport_fastrtps_cpp;general;amp_msgs::amp_msgs__rosidl_typesupport_introspection_c;general;amp_msgs::amp_msgs__rosidl_typesupport_c;general;amp_msgs::amp_msgs__rosidl_typesupport_introspection_cpp;general;amp_msgs::amp_msgs__rosidl_typesupport_cpp;general;amp_msgs::amp_msgs__rosidl_generator_py;
 
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/humble/share/tf2/cmake
@@ -1511,5 +1511,5 @@ pkgcfg_lib_PKG_FONTCONFIG_freetype-ADVANCED:INTERNAL=1
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl
 pkgcfg_lib__OPENSSL_ssl-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
+prefix_result:INTERNAL=AsynchDNS;GSS-API;HSTS;HTTP2;HTTPS-proxy;IDN;IPv6;Kerberos;Largefile;NTLM;NTLM_WB;PSL;SPNEGO;SSL;TLS-SRP;UnixSockets;alt-svc;brotli;libz;zstd
 

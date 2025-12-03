@@ -24,6 +24,10 @@
 // end nested array functions include
 bool amp_msgs__msg__agent_control__convert_from_py(PyObject * _pymsg, void * _ros_message);
 PyObject * amp_msgs__msg__agent_control__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool builtin_interfaces__msg__time__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * builtin_interfaces__msg__time__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool amp_msgs__msg__ideal_path__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -162,6 +166,17 @@ bool amp_msgs__msg__ideal_path__convert_from_py(PyObject * _pymsg, void * _ros_m
     ros_message->run_time = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // start_time
+    PyObject * field = PyObject_GetAttrString(_pymsg, "start_time");
+    if (!field) {
+      return false;
+    }
+    if (!builtin_interfaces__msg__time__convert_from_py(field, &ros_message->start_time)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -274,6 +289,20 @@ PyObject * amp_msgs__msg__ideal_path__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->run_time);
     {
       int rc = PyObject_SetAttrString(_pymessage, "run_time", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // start_time
+    PyObject * field = NULL;
+    field = builtin_interfaces__msg__time__convert_to_py(&ros_message->start_time);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "start_time", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

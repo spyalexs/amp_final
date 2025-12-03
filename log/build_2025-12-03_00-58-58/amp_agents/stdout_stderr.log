@@ -1,0 +1,61 @@
+[35m[1mConsolidate compiler generated dependencies of target tree_visualizer[0m
+[ 16%] Built target collision_checker
+[ 25%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target sst_tree[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kbool SstTree::parse_line(std::string)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:75:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   75 |             for(int i = 0; [01;35m[Ki < top_level_nodes.size()[m[K; i++){
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:92:10:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::__cxx11::list<SstNode>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   92 |     if([01;35m[Kp >= node_pile.size()[m[K){
+      |        [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:282:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  282 |     for(int i = 0; [01;35m[Ki < env->control_limits.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstPath::SstPath(SstNode, DynamicObject*, bool)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:622:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  622 |     for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:628:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  628 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::create_forward_path(SstNode)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:650:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  650 |         for(int i = 0; [01;35m[Ki < current->sub_states.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::generate_msg()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:732:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  732 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:3[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h: In instantiation of ‘[01m[Kvoid Eigen::internal::check_static_allocation_size() [with T = bool; int Size = 160000][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:110:41:[m[K   required from ‘[01m[KEigen::internal::plain_array<T, Size, MatrixOrArrayOptions, 16>::plain_array() [with T = bool; int Size = 160000; int MatrixOrArrayOptions = 0][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:211:38:[m[K   required from ‘[01m[KEigen::DenseStorage<T, Size, _Rows, _Cols, _Options>::DenseStorage() [with T = bool; int Size = 160000; int _Rows = 400; int _Cols = 400; int _Options = 0][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:476:45:[m[K   required from ‘[01m[KEigen::PlainObjectBase<Derived>::PlainObjectBase() [with Derived = Eigen::Matrix<bool, 400, 400>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:259:21:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix() [with _Scalar = bool; int _Rows = 400; int _Cols = 400; int _Options = 0; int _MaxRows = 400; int _MaxCols = 400][m[K’
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:380:75:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:33:40:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG
+   33 |   EIGEN_STATIC_ASSERT(Size * sizeof(T) <= EIGEN_STACK_ALLOCATION_LIMIT, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:33:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |   [01;36m[KEIGEN_STATIC_ASSERT[m[K(Size * sizeof(T) <= EIGEN_STACK_ALLOCATION_LIMIT, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:33:40:[m[K [01;36m[Knote: [m[K‘[01m[K((160000 * sizeof (bool)) <= 131072)[m[K’ evaluates to false
+   33 |   EIGEN_STATIC_ASSERT(Size * sizeof(T) <= EIGEN_STACK_ALLOCATION_LIMIT, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);
+[01m[K/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:33:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |   [01;36m[KEIGEN_STATIC_ASSERT[m[K(Size * sizeof(T) <= EIGEN_STACK_ALLOCATION_LIMIT, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:[m[K In member function ‘[01m[Kvoid TreeVisualizer::drawNode(SstNode*)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:50:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   50 |         for(int i = 0; [01;35m[Ki < node->sub_states.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sst_tree.dir/build.make:76: CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/sst_tree.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 41%] [32m[1mLinking CXX static library libtree_visualizer.a[0m
+[ 41%] Built target tree_visualizer
+gmake: *** [Makefile:146: all] Error 2

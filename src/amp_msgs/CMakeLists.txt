@@ -7,6 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+Find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -17,6 +18,7 @@ file(GLOB MSGS RELATIVE "${CMAKE_SOURCE_DIR}" "msg/*")
 #generate the custom msg types
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${MSGS}
+  DEPENDENCIES builtin_interfaces
 )
 
 if(BUILD_TESTING)

@@ -1,0 +1,39 @@
+[ 16%] Built target collision_checker
+[ 25%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[ 41%] [32m[1mLinking CXX static library libsst_tree.a[0m
+[ 41%] Built target sst_tree
+[ 50%] [32mBuilding CXX object CMakeFiles/backend.dir/src/agent_backend.cpp.o[0m
+[ 58%] [32m[1mLinking CXX static library libtree_visualizer.a[0m
+[ 58%] Built target tree_visualizer
+[ 66%] [32m[1mLinking CXX static library libbackend.a[0m
+[ 66%] Built target backend
+[35m[1mConsolidate compiler generated dependencies of target omni_actor[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/omni_actor.dir/src/omni_agent_actor.cpp.o[0m
+[ 83%] [32m[1mLinking CXX static library libomni_actor.a[0m
+[ 83%] Built target omni_actor
+[ 91%] [32mBuilding CXX object CMakeFiles/run.dir/src/run_agent.cpp.o[0m
+[100%] [32m[1mLinking CXX executable run[0m
+[100%] Built target run
+-- Install configuration: ""
+-- Installing: /home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run
+-- Set runtime path of "/home/hollis/cu/5254_final/install/amp_agents/lib/amp_agents/run" to ""
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents//trees
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents//trees/real_tree.dat
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents//trees/small_tree.dat
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents//trees/medium_tree.dat
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/package_run_dependencies/amp_agents
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/parent_prefix_path/amp_agents
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/environment/path.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.bash
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.sh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.zsh
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/local_setup.dsv
+-- Installing: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.dsv
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/ament_index/resource_index/packages/amp_agents
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/cmake/amp_agentsConfig-version.cmake
+-- Up-to-date: /home/hollis/cu/5254_final/install/amp_agents/share/amp_agents/package.xml

@@ -158,7 +158,11 @@ rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: CMakeFiles/amp
 rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: CMakeFiles/amp_msgs__rosidl_generator_py.dir/build.make
 rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: libamp_msgs__rosidl_typesupport_c.so
+rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: libamp_msgs__rosidl_generator_c.so
+rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/amp_msgs/libamp_msgs__rosidl_generator_py.so: CMakeFiles/amp_msgs__rosidl_generator_py.dir/link.txt

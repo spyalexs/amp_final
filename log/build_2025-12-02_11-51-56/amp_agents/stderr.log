@@ -1,0 +1,56 @@
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:122:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  122 |         DynamicObject* [01;31m[Kagent[m[K nullptr;
+      |                        [01;31m[K^~~~~[m[K
+      |                             [32m[K;[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:122:30:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knullptr[m[K’
+  122 |         DynamicObject* agent [01;31m[Knullptr[m[K;
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:124:36:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Knullptr[m[K’ from ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kstd::__cxx11::list<SstNode*>[m[K’
+  124 |         std::list<SstNode*> tree = [01;31m[Knullptr[m[K;
+      |                                    [01;31m[K^~~~~~~[m[K
+      |                                    [01;31m[K|[m[K
+      |                                    [01;31m[Kstd::nullptr_t[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kbool SstTree::parse_line(std::string)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:74:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   74 |             for(int i = 0; [01;35m[Ki < top_level_nodes.size()[m[K; i++){
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[KV12d SstTree::generate_random_controls()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:278:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  278 |     for(int i = 0; [01;35m[Ki < env->control_limits.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In constructor ‘[01m[KSstPath::SstPath(SstNode, DynamicObject*, bool)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:458:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  458 |     for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:464:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  464 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:[m[K In member function ‘[01m[Kvoid SstPath::generate_msg()[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/propagate_sst.cpp:564:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 12, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  564 |     for(int i = 0; [01;35m[Ki < controls.size()[m[K; i++){
+      |                    [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/visualize_tree.hpp:7[m[K,
+                 from [01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:1[m[K:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:122:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  122 |         DynamicObject* [01;31m[Kagent[m[K nullptr;
+      |                        [01;31m[K^~~~~[m[K
+      |                             [32m[K;[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:122:30:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knullptr[m[K’
+  122 |         DynamicObject* agent [01;31m[Knullptr[m[K;
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/include/amp_agents/propagate_sst.hpp:124:36:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Knullptr[m[K’ from ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kstd::__cxx11::list<SstNode*>[m[K’
+  124 |         std::list<SstNode*> tree = [01;31m[Knullptr[m[K;
+      |                                    [01;31m[K^~~~~~~[m[K
+      |                                    [01;31m[K|[m[K
+      |                                    [01;31m[Kstd::nullptr_t[m[K
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:[m[K In member function ‘[01m[Kvoid TreeVisualizer::drawNode(SstNode*)[m[K’:
+[01m[K/home/hollis/cu/5254_final/src/amp_agents/src/visualize_tree.cpp:50:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<double, Eigen::Matrix<double, 13, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   50 |         for(int i = 0; [01;35m[Ki < node->sub_states.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sst_tree.dir/build.make:76: CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/sst_tree.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/tree_visualizer.dir/build.make:76: CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/tree_visualizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

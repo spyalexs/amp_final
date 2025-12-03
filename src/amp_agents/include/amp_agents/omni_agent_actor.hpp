@@ -17,6 +17,8 @@ class OmniAgentActor : public AgentBackend {
         ~OmniAgentActor();
     
         void generate_tree(double propagation_time) override;
+        void generate_tree_stops();
+
 
         rclcpp::Subscription<amp_msgs::msg::BallTrajectory>::SharedPtr ball_trajectory_sub;
 

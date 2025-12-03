@@ -80,6 +80,8 @@ rosidl_typesupport_c/amp_msgs/msg/agent_control__type_support.cpp: rosidl_adapte
 rosidl_typesupport_c/amp_msgs/msg/agent_control__type_support.cpp: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_typesupport_c/amp_msgs/msg/agent_control__type_support.cpp: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_typesupport_c/amp_msgs/msg/agent_control__type_support.cpp: rosidl_adapter/amp_msgs/msg/SetPose.idl
+rosidl_typesupport_c/amp_msgs/msg/agent_control__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_c/amp_msgs/msg/agent_control__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/hollis/cu/5254_final/build/amp_msgs/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
 
@@ -183,7 +185,9 @@ libamp_msgs__rosidl_typesupport_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_c.
 libamp_msgs__rosidl_typesupport_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amp_msgs/msg/set_pose__type_support.cpp.o
 libamp_msgs__rosidl_typesupport_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/build.make
 libamp_msgs__rosidl_typesupport_c.so: libamp_msgs__rosidl_generator_c.so
+libamp_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 libamp_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
+libamp_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libamp_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libamp_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libamp_msgs__rosidl_typesupport_c.so: CMakeFiles/amp_msgs__rosidl_typesupport_c.dir/link.txt

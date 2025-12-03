@@ -51,6 +51,10 @@ class Metaclass_IdealPath(type):
             if AgentControl.__class__._TYPE_SUPPORT is None:
                 AgentControl.__class__.__import_type_support__()
 
+            from builtin_interfaces.msg import Time
+            if Time.__class__._TYPE_SUPPORT is None:
+                Time.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -67,18 +71,21 @@ class IdealPath(metaclass=Metaclass_IdealPath):
         '_control_array',
         '_duration_array',
         '_run_time',
+        '_start_time',
     ]
 
     _fields_and_field_types = {
         'control_array': 'sequence<amp_msgs/AgentControl>',
         'duration_array': 'sequence<float>',
         'run_time': 'float',
+        'start_time': 'builtin_interfaces/Time',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['amp_msgs', 'msg'], 'AgentControl')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['builtin_interfaces', 'msg'], 'Time'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -88,6 +95,8 @@ class IdealPath(metaclass=Metaclass_IdealPath):
         self.control_array = kwargs.get('control_array', [])
         self.duration_array = array.array('f', kwargs.get('duration_array', []))
         self.run_time = kwargs.get('run_time', float())
+        from builtin_interfaces.msg import Time
+        self.start_time = kwargs.get('start_time', Time())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -123,6 +132,8 @@ class IdealPath(metaclass=Metaclass_IdealPath):
         if self.duration_array != other.duration_array:
             return False
         if self.run_time != other.run_time:
+            return False
+        if self.start_time != other.start_time:
             return False
         return True
 
@@ -197,3 +208,17 @@ class IdealPath(metaclass=Metaclass_IdealPath):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'run_time' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._run_time = value
+
+    @builtins.property
+    def start_time(self):
+        """Message field 'start_time'."""
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, value):
+        if __debug__:
+            from builtin_interfaces.msg import Time
+            assert \
+                isinstance(value, Time), \
+                "The 'start_time' field must be a sub message of type 'Time'"
+        self._start_time = value

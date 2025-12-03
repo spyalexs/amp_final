@@ -19,6 +19,10 @@
 #include "amp_msgs/msg/detail/agent_control__rosidl_typesupport_introspection_c.h"
 // Member `duration_array`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
+// Member `start_time`
+#include "builtin_interfaces/msg/time.h"
+// Member `start_time`
+#include "builtin_interfaces/msg/detail/time__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -149,7 +153,7 @@ bool amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__resize_functi
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_member_array[4] = {
   {
     "control_array",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -200,13 +204,30 @@ static rosidl_typesupport_introspection_c__MessageMember amp_msgs__msg__IdealPat
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "start_time",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(amp_msgs__msg__IdealPath, start_time),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_members = {
   "amp_msgs__msg",  // message namespace
   "IdealPath",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(amp_msgs__msg__IdealPath),
   amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_member_array,  // message members
   amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -226,6 +247,8 @@ const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, amp_msgs, msg, IdealPath)() {
   amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, amp_msgs, msg, AgentControl)();
+  amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_member_array[3].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, builtin_interfaces, msg, Time)();
   if (!amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_type_support_handle.typesupport_identifier) {
     amp_msgs__msg__IdealPath__rosidl_typesupport_introspection_c__IdealPath_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

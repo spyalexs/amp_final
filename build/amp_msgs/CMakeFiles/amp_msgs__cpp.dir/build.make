@@ -113,6 +113,8 @@ rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/IdealPath.idl
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/LaunchBall.idl
 rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: rosidl_adapter/amp_msgs/msg/SetPose.idl
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/amp_msgs/msg/agent_control.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hollis/cu/5254_final/build/amp_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/hollis/cu/5254_final/build/amp_msgs/rosidl_generator_cpp__arguments.json
 

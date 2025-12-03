@@ -34,7 +34,7 @@ target_include_directories(collision_checker PUBLIC
 
 #build the tree visualizer
 add_library(tree_visualizer src/visualize_tree.cpp)
-ament_target_dependencies(tree_visualizer PUBLIC rclcpp OpenCV)
+ament_target_dependencies(tree_visualizer PUBLIC rclcpp OpenCV amp_msgs)
 target_include_directories(tree_visualizer PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -42,7 +42,7 @@ target_include_directories(tree_visualizer PUBLIC
 
 #declare the sst t as a library
 add_library(sst_tree src/propagate_sst.cpp)
-ament_target_dependencies(sst_tree PUBLIC rclcpp amp_sim)
+ament_target_dependencies(sst_tree PUBLIC rclcpp amp_sim amp_msgs)
 target_link_libraries(sst_tree PUBLIC amp_sim::dynamic_object amp_sim::omni_agent collision_checker)
 target_include_directories(sst_tree PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
