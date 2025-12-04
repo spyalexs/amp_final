@@ -63,7 +63,6 @@ CMAKE_BINARY_DIR = /home/hollis/cu/5254_final/build/amp_agents
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/collision_checker.dir/all
 all: CMakeFiles/tree_visualizer.dir/all
 all: CMakeFiles/sst_tree.dir/all
 all: CMakeFiles/backend.dir/all
@@ -78,7 +77,6 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/amp_agents_uninstall.dir/clean
-clean: CMakeFiles/collision_checker.dir/clean
 clean: CMakeFiles/tree_visualizer.dir/clean
 clean: CMakeFiles/sst_tree.dir/clean
 clean: CMakeFiles/backend.dir/clean
@@ -139,39 +137,13 @@ CMakeFiles/amp_agents_uninstall.dir/clean:
 .PHONY : CMakeFiles/amp_agents_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/collision_checker.dir
-
-# All Build rule for target.
-CMakeFiles/collision_checker.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=3,4 "Built target collision_checker"
-.PHONY : CMakeFiles/collision_checker.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/collision_checker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/collision_checker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 0
-.PHONY : CMakeFiles/collision_checker.dir/rule
-
-# Convenience name for target.
-collision_checker: CMakeFiles/collision_checker.dir/rule
-.PHONY : collision_checker
-
-# clean rule for target.
-CMakeFiles/collision_checker.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/clean
-.PHONY : CMakeFiles/collision_checker.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/tree_visualizer.dir
 
 # All Build rule for target.
 CMakeFiles/tree_visualizer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_visualizer.dir/build.make CMakeFiles/tree_visualizer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=11,12 "Built target tree_visualizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=9,10 "Built target tree_visualizer"
 .PHONY : CMakeFiles/tree_visualizer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -194,15 +166,15 @@ CMakeFiles/tree_visualizer.dir/clean:
 # Target rules for target CMakeFiles/sst_tree.dir
 
 # All Build rule for target.
-CMakeFiles/sst_tree.dir/all: CMakeFiles/collision_checker.dir/all
+CMakeFiles/sst_tree.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sst_tree.dir/build.make CMakeFiles/sst_tree.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sst_tree.dir/build.make CMakeFiles/sst_tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=9,10 "Built target sst_tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=7,8 "Built target sst_tree"
 .PHONY : CMakeFiles/sst_tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sst_tree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sst_tree.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 0
 .PHONY : CMakeFiles/sst_tree.dir/rule
@@ -220,7 +192,6 @@ CMakeFiles/sst_tree.dir/clean:
 # Target rules for target CMakeFiles/backend.dir
 
 # All Build rule for target.
-CMakeFiles/backend.dir/all: CMakeFiles/collision_checker.dir/all
 CMakeFiles/backend.dir/all: CMakeFiles/sst_tree.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/build
@@ -229,7 +200,7 @@ CMakeFiles/backend.dir/all: CMakeFiles/sst_tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/backend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/backend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 0
 .PHONY : CMakeFiles/backend.dir/rule
@@ -247,18 +218,17 @@ CMakeFiles/backend.dir/clean:
 # Target rules for target CMakeFiles/omni_actor.dir
 
 # All Build rule for target.
-CMakeFiles/omni_actor.dir/all: CMakeFiles/collision_checker.dir/all
 CMakeFiles/omni_actor.dir/all: CMakeFiles/tree_visualizer.dir/all
 CMakeFiles/omni_actor.dir/all: CMakeFiles/sst_tree.dir/all
 CMakeFiles/omni_actor.dir/all: CMakeFiles/backend.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_actor.dir/build.make CMakeFiles/omni_actor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/omni_actor.dir/build.make CMakeFiles/omni_actor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=5,6 "Built target omni_actor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=3,4 "Built target omni_actor"
 .PHONY : CMakeFiles/omni_actor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/omni_actor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/omni_actor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 0
 .PHONY : CMakeFiles/omni_actor.dir/rule
@@ -276,19 +246,18 @@ CMakeFiles/omni_actor.dir/clean:
 # Target rules for target CMakeFiles/run.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all: CMakeFiles/collision_checker.dir/all
 CMakeFiles/run.dir/all: CMakeFiles/tree_visualizer.dir/all
 CMakeFiles/run.dir/all: CMakeFiles/sst_tree.dir/all
 CMakeFiles/run.dir/all: CMakeFiles/backend.dir/all
 CMakeFiles/run.dir/all: CMakeFiles/omni_actor.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=7,8 "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollis/cu/5254_final/build/amp_agents/CMakeFiles --progress-num=5,6 "Built target run"
 .PHONY : CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollis/cu/5254_final/build/amp_agents/CMakeFiles 0
 .PHONY : CMakeFiles/run.dir/rule

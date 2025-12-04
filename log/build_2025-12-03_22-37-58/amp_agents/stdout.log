@@ -1,0 +1,4 @@
+[ 10%] [32mBuilding CXX object CMakeFiles/tree_visualizer.dir/src/visualize_tree.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o[0m
+[ 30%] [32m[1mLinking CXX static library libsst_tree.a[0m
+[ 30%] Built target sst_tree

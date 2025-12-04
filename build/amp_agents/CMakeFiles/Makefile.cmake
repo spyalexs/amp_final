@@ -874,7 +874,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/amp_agents_uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/collision_checker.dir/DependInfo.cmake"
   "CMakeFiles/tree_visualizer.dir/DependInfo.cmake"
   "CMakeFiles/sst_tree.dir/DependInfo.cmake"
   "CMakeFiles/backend.dir/DependInfo.cmake"

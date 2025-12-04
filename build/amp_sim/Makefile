@@ -211,6 +211,19 @@ dynamic_object/fast:
 .PHONY : dynamic_object/fast
 
 #=============================================================================
+# Target rules for targets named collision_checker
+
+# Build rule for target.
+collision_checker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 collision_checker
+.PHONY : collision_checker
+
+# fast build rule for target.
+collision_checker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/build
+.PHONY : collision_checker/fast
+
+#=============================================================================
 # Target rules for targets named dynamic_ball
 
 # Build rule for target.
@@ -248,6 +261,30 @@ sim_node: cmake_check_build_system
 sim_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim_node.dir/build.make CMakeFiles/sim_node.dir/build
 .PHONY : sim_node/fast
+
+src/collision_checker.o: src/collision_checker.cpp.o
+.PHONY : src/collision_checker.o
+
+# target to build an object file
+src/collision_checker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/src/collision_checker.cpp.o
+.PHONY : src/collision_checker.cpp.o
+
+src/collision_checker.i: src/collision_checker.cpp.i
+.PHONY : src/collision_checker.i
+
+# target to preprocess a source file
+src/collision_checker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/src/collision_checker.cpp.i
+.PHONY : src/collision_checker.cpp.i
+
+src/collision_checker.s: src/collision_checker.cpp.s
+.PHONY : src/collision_checker.s
+
+# target to generate assembly for a file
+src/collision_checker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_checker.dir/build.make CMakeFiles/collision_checker.dir/src/collision_checker.cpp.s
+.PHONY : src/collision_checker.cpp.s
 
 src/dynamic_ball.o: src/dynamic_ball.cpp.o
 .PHONY : src/dynamic_ball.o
@@ -360,10 +397,14 @@ help:
 	@echo "... test"
 	@echo "... amp_sim_uninstall"
 	@echo "... uninstall"
+	@echo "... collision_checker"
 	@echo "... dynamic_ball"
 	@echo "... dynamic_object"
 	@echo "... omni_agent"
 	@echo "... sim_node"
+	@echo "... src/collision_checker.o"
+	@echo "... src/collision_checker.i"
+	@echo "... src/collision_checker.s"
 	@echo "... src/dynamic_ball.o"
 	@echo "... src/dynamic_ball.i"
 	@echo "... src/dynamic_ball.s"

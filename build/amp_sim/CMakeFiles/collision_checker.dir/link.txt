@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcollision_checker.a CMakeFiles/collision_checker.dir/src/collision_checker.cpp.o
+/usr/bin/ranlib libcollision_checker.a

@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 
 from os.path import join
+import copy
+from math import floor
 
 import rclpy
+import tf2_ros
 from rclpy.node import Node
 from rclpy.duration import Duration
 
 from visualization_msgs.msg import MarkerArray, Marker
 from std_msgs.msg import Int32MultiArray
+from geometry_msgs.msg import TransformStamped
+from builtin_interfaces.msg import Time
 
 from ament_index_python import get_package_share_directory 
 
@@ -27,13 +32,115 @@ class MarkerPub(Node):
 
         self.marker_arrary_pub = self.create_publisher(MarkerArray, "/dynamic_objects", 10)
         self.cannon_barrel_pub = self.create_publisher(Marker, "/cannon_barrel", 10)
+        self.obstalce_pub = self.create_publisher(MarkerArray, "/obstalces", 10)
 
-        self.dynamic_object_timer = self.create_timer(0.03, self.dynamic_object_cb)
-        self.cannon_barrel_timer = self.create_timer(0.03, self.cannon_barrel_cb)
+        self.dynamic_object_timer = self.create_timer(0.1, self.dynamic_object_cb)
+        self.cannon_barrel_timer = self.create_timer(0.1, self.cannon_barrel_cb)
+        self.obstacle_timer = self.create_timer(2.0, self.obstalces_cb)
 
         self.create_subscription(Int32MultiArray, "/valid_ball_frames", self.ball_frames_cb, 10)
 
         self.cannon_barrel_mesh_path =  "file://" + join(get_package_share_directory("amp_viz"), "meshes/cannon_barrel/mesh.dae")
+
+        #statically broadcast obstalce frames
+        self.tf_static_broadcasters = []
+
+        #broadcast the two obstalces
+        self.publish_obstalce_frame("obs_1", [2.4, 0.0, 0.0])
+        self.publish_obstalce_frame("obs_2", [-0.1, 2.3, 0.0])
+
+    #little help from gemni here
+    def publish_obstalce_frame(self, obstacle_frame_name, pos, base_frame = "world"):
+        self.tf_static_broadcasters.append(tf2_ros.StaticTransformBroadcaster(self))
+
+        # Create a TransformStamped message
+        static_transform_stamped = TransformStamped()
+        static_transform_stamped.header.stamp = self.get_clock().now().to_msg()
+        static_transform_stamped.header.frame_id = base_frame  # Parent frame
+        static_transform_stamped.child_frame_id = obstacle_frame_name  # Child frame
+
+        # Set the translation (x, y, z)
+        static_transform_stamped.transform.translation.x = pos[0]
+        static_transform_stamped.transform.translation.y = pos[1]
+        static_transform_stamped.transform.translation.z = pos[2]
+
+        # Set the rotation (quaternion: x, y, z, w) - here, identity quaternion (no rotation)
+        static_transform_stamped.transform.rotation.x = 0.0
+        static_transform_stamped.transform.rotation.y = 0.0
+        static_transform_stamped.transform.rotation.z = 0.0
+        static_transform_stamped.transform.rotation.w = 1.0
+
+        # Publish the static transform
+        self.tf_static_broadcasters[-1].sendTransform(static_transform_stamped)
+
+
+    def obstalces_cb(self):
+
+        #obstalce markers
+        marker_msg = MarkerArray()
+
+        #obstalce 1
+        msg = Marker()
+
+        msg.header.frame_id = "obs_1"
+        msg.header.stamp = self.get_marker_pub_time()
+
+        msg.type = 1
+        msg.action = 0
+        msg.pose.position.x = 0.0
+        msg.pose.position.y = 0.0
+        msg.pose.position.z = 0.55
+        msg.pose.orientation.x = 0.0
+        msg.pose.orientation.y = 0.0
+        msg.pose.orientation.z = 0.0
+        msg.pose.orientation.w = 1.0
+
+        msg.scale.x = 0.6
+        msg.scale.y = 0.6
+        msg.scale.z = 1.1
+
+        msg.color.r = 0.8
+        msg.color.g = 0.0
+        msg.color.b = 0.0
+        msg.color.a = 1.0
+
+        msg.id = 10
+
+        msg.lifetime = Duration().to_msg()
+
+        marker_msg.markers.append(copy.deepcopy(msg))
+
+        #obstalce 2
+        msg.header.frame_id = "obs_2"
+        msg.header.stamp = self.get_marker_pub_time()
+
+        msg.type = 1
+        msg.action = 0
+        msg.pose.position.x = 0.0
+        msg.pose.position.y = 0.0
+        msg.pose.position.z = 0.55
+        msg.pose.orientation.x = 0.0
+        msg.pose.orientation.y = 0.0
+        msg.pose.orientation.z = 0.0
+        msg.pose.orientation.w = 1.0
+
+        msg.scale.x = 1.6
+        msg.scale.y = 1.6
+        msg.scale.z = 1.1
+
+        msg.color.r = 0.8
+        msg.color.g = 0.0
+        msg.color.b = 0.0
+        msg.color.a = 1.0
+
+        msg.id = 11
+
+        msg.lifetime = Duration().to_msg()
+
+        marker_msg.markers.append(copy.deepcopy(msg))
+
+        #publish obstalces
+        self.obstalce_pub.publish(marker_msg)
 
     def ball_frames_cb(self, msg: Int32MultiArray):
         
@@ -43,13 +150,14 @@ class MarkerPub(Node):
         for frame in msg.data:
             self.ball_frames.append(f"ball_{frame}")
 
+
     def cannon_barrel_cb(self):
 
         # update the marker for the cannon barrel
         msg = Marker()
 
         msg.header.frame_id = CANNON_FRAME_NAME
-        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.stamp = self.get_marker_pub_time()
 
         msg.type = 10
         msg.action = 0
@@ -88,7 +196,7 @@ class MarkerPub(Node):
             msg = Marker()
 
             msg.header.frame_id = frame
-            msg.header.stamp = self.get_clock().now().to_msg()
+            msg.header.stamp = self.get_marker_pub_time()
 
             msg.type = 2
             msg.action = 0
@@ -119,7 +227,7 @@ class MarkerPub(Node):
         msg = Marker()
 
         msg.header.frame_id = self.agent_name
-        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.stamp = self.get_marker_pub_time()
 
         msg.type = 1
         msg.action = 0
@@ -147,6 +255,21 @@ class MarkerPub(Node):
         marker_msg.markers.append(msg)
 
         self.marker_arrary_pub.publish(marker_msg)
+
+    def get_marker_pub_time(self):
+
+        #not a clean way of preventing future extrapolation but a time effective one
+        time_tuple = self.get_clock().now().seconds_nanoseconds()
+        time_double = time_tuple[0] + time_tuple[1] * 1e-9
+        time_double = time_double - 0.1
+
+        time_msg = Time()
+        time_msg.sec = floor(time_double)
+        time_msg.nanosec = int((time_double - floor(time_double)) * 1e9)
+
+        return time_msg
+        
+        
 
 
 def main(args=None):

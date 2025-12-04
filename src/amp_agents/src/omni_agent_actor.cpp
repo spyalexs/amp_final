@@ -29,23 +29,23 @@ OmniAgentActor::OmniAgentActor() : AgentBackend(){
     //set the tree's ptr for the sake of logging
     agent_tree.node_ptr = this;
 
-    //generate the tree
-    generate_tree(250);
+    // //generate the tree
+    // generate_tree(250);
 
-    //Help from gemni to get package path
+    // //Help from gemni to get package path
     std::string package_name = "amp_agents";
     std::string share_directory = ament_index_cpp::get_package_share_directory(package_name);
 
-    agent_tree.save_tree_to_file(share_directory + "/tree.dat");
-    agent_tree.save_tree_stats_to_file(share_directory + "/tree_stats.csv");
+    // agent_tree.save_tree_to_file(share_directory + "/tree.dat");
+    // agent_tree.save_tree_stats_to_file(share_directory + "/tree_stats.csv");
 
-    generate_tree_stops();
+    // generate_tree_stops();
 
-    agent_tree.save_tree_to_file(share_directory + "/tree_stops.dat");
-    agent_tree.runTreeStats();
+    // agent_tree.save_tree_to_file(share_directory + "/tree_stops.dat");
+    // agent_tree.runTreeStats();
 
-    //  agent_tree = SstTree(agent, &env, std::string((share_directory + std::string("/trees/real_tree.dat")).c_str()), this);
-    //  agent_tree.node_ptr = this;
+     agent_tree = SstTree(agent, &env, std::string((share_directory + std::string("/trees/t1s.dat")).c_str()), this);
+     agent_tree.node_ptr = this;
     
     // RCLCPP_INFO(get_logger(), "Loaded in %d into the pile, %d in the top level\n", agent_tree.node_pile.size(), agent_tree.tree.size());
 

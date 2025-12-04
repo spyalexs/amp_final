@@ -877,6 +877,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/amp_sim_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/dynamic_object.dir/DependInfo.cmake"
+  "CMakeFiles/collision_checker.dir/DependInfo.cmake"
   "CMakeFiles/dynamic_ball.dir/DependInfo.cmake"
   "CMakeFiles/omni_agent.dir/DependInfo.cmake"
   "CMakeFiles/sim_node.dir/DependInfo.cmake"

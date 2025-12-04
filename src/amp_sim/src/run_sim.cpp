@@ -3,13 +3,19 @@
 #include <Eigen/Dense>
 #include <string>
 #include <cctype>
+#include <iostream>
+#include <sstream>
+#include <fstream> 
 
 #include "amp_sim/dynamic_ball.hpp"
 #include "amp_sim/dynamic_object.hpp"
 #include "amp_sim/omni_agent.hpp"
 #include "amp_sim/agent_properties.hpp"
+#include "amp_sim/collision_checker.hpp"
 
 #include <rclcpp/rclcpp.hpp>
+#include <ament_index_cpp/get_package_share_directory.hpp>
+
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_ros/transform_broadcaster.h"
 
@@ -21,12 +27,16 @@
 #include "std_msgs/msg/int32_multi_array.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
 
-
-#include <string>
-
 using namespace std::chrono_literals;
 
 #define TF_UPDATE_PERIOD .033 //sec
+
+#define TEST_BOUND 5.0
+#define TESTS_PER_LAYER 50
+#define POST_TEST_SAFETY_TIME 5
+#define LANDING_HEIGHT 0.15
+
+typedef Eigen::Matrix<double, 2, 1> v2d;
 
 class SimNode : public rclcpp::Node
 {
@@ -62,8 +72,28 @@ class SimNode : public rclcpp::Node
             double ct = get_current_time();
             dynamic_objects.front()->tic(V12d(0,0,0,0, 0, 0,0,0,0, 0,0,0), ct);
 
+            test_heights = {10.0, 20.0, 30.0, 35.0, 40.0, 45.0, 50.0, 60.0, 100.0};
 
             RCLCPP_INFO(get_logger(), "At%f %f", dynamic_objects.front()->state[0], dynamic_objects.front()->state[1]);
+
+            //get the file path to write stats to
+            std::string package_name = "amp_sim";
+            std::string share_directory = ament_index_cpp::get_package_share_directory(package_name);
+
+            stat_filename = share_directory + "/stats.dat";
+
+            //add obstalces
+            obstacles.push_back(RectPrism(V3d(.6, .6, 1.1), V3d(2.4, 0.0, 0.0), 0.00, 0.00));
+            obstacles.push_back(RectPrism(V3d(.6, .6, 1.1), V3d(2.4, 0.0, 0.0), 1.57, 0.00));
+            obstacles.push_back(RectPrism(V3d(.6, .6, 1.1), V3d(2.4, 0.0, 0.0), 3.14, 0.00));
+            obstacles.push_back(RectPrism(V3d(.6, .6, 1.1), V3d(2.4, 0.0, 0.0), -1.57, 0.00));
+            obstacles.push_back(RectPrism(V3d(1.6, 1.6, 1.1), V3d(-0.1, 2.3, 0.0), 0.00, 0.00));
+            obstacles.push_back(RectPrism(V3d(1.6, 1.6, 1.1), V3d(-0.1, 2.3, 0.0), 1.57, 0.00));
+            obstacles.push_back(RectPrism(V3d(1.6, 1.6, 1.1), V3d(-0.1, 2.3, 0.0), 3.14, 0.00));
+            obstacles.push_back(RectPrism(V3d(1.6, 1.6, 1.1), V3d(-0.1, 2.3, 0.0), -1.57, 0.00));
+
+            //run automation
+            automation_timer = this->create_wall_timer(10ms, std::bind(&SimNode::run_automation, this));
         }
 
 
@@ -79,6 +109,7 @@ class SimNode : public rclcpp::Node
             double st = msg.start_time.nanosec * 1e-9 + msg.start_time.sec;
 
             if(st < get_current_time()){
+                height_rejected_paths++;
                 RCLCPP_ERROR(get_logger(), "Rejecting path as the objective cannot be reached in time");
                 return;
             }
@@ -177,6 +208,9 @@ class SimNode : public rclcpp::Node
                     for(int i = 0; i < controls.size(); i++){
                         (**it).tic(controls.at(i).second, current_time - controls.at(i).first);
                     }
+
+                    //update the control for stats purposes
+                    current_agent_control = controls.back().second;
                 }
 
 
@@ -343,6 +377,182 @@ class SimNode : public rclcpp::Node
             tf_broadcaster->sendTransform(t);
         }
 
+        void run_automation(){
+            //automation for bench marking the performance of the system
+
+            //if there is an active test, tic that
+            if(test_active){
+                tic_automation_test();
+                return;
+            }
+
+            //no active test - start the next one
+
+            //index the test number
+            if(height_test_num >= TESTS_PER_LAYER){
+                //write stats
+                write_height_stats();
+
+                height_test_num = 0;
+                height_index++;
+
+                //reset height stat trackers
+                height_goals = 0;
+                height_collisions = 0;
+                height_effort = 0;
+                height_rejected_paths = 0;
+
+                //testing is over
+                if(height_index > test_heights.size()){
+                    rclcpp::shutdown();
+                }
+            }
+
+            //reset the agent state
+            dynamic_objects.front()->state = V13d(0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+
+            //generate drop position
+            v2d test_position;
+            test_position.setRandom() ;
+            test_position = test_position * TEST_BOUND;
+
+            //create ball launch msg
+            amp_msgs::msg::LaunchBall msg;
+            msg.ball_launch_angle = 0;
+            msg.ball_launch_heading = 0;
+
+            msg.ball_pos_x = test_position[0];
+            msg.ball_pos_y = test_position[1];
+            msg.ball_pos_z = test_heights.at(height_index);
+
+            msg.ball_velocity = 0;
+
+            //launch the ball
+            launch_ball_cb(msg);
+
+            height_effort += test_combined_effort;
+
+            if(test_collision){
+                height_collisions++;
+            }
+
+            //increment the test
+            height_test_num++;
+
+            //note that the test has started
+            test_active = true;
+
+            //since this is a new test, no collision has occured
+            test_collision = false;
+
+            //and no ball has been caught
+            test_goal = false;
+
+            //and no effort has been used
+            test_combined_effort = 0;
+
+            //and no tics have occured
+            test_tic = 0;
+
+            //and the ball has not yet cross the goal plane
+            test_goal_threshold = false;
+
+            prev_tic_time = get_current_time();
+        }
+
+        void tic_automation_test(){
+
+            //current ros time
+            double current_time = get_current_time();
+
+            if(test_goal_threshold){
+                //determine if it is time to end the test
+                if(test_goal_event_time + POST_TEST_SAFETY_TIME < current_time){
+                    //time to end the test and accumulate stats
+
+                    if(test_goal){
+                        height_goals++;
+                    }
+
+                    test_active = false;
+                }
+            }
+
+            if(test_tic % 20 == 0){
+                //test for collision
+                double yaw = atan2(2 *(dynamic_objects.front()->state[3] * dynamic_objects.front()->state[6] + dynamic_objects.front()->state[4] * dynamic_objects.front()->state[5]),
+                     1 - 2 *(dynamic_objects.front()->state[5] * dynamic_objects.front()->state[5] + dynamic_objects.front()->state[6] * dynamic_objects.front()->state[6]));
+            
+                RectPrism agent_prism(AGENT_DIMENSIONS, 
+                    V3d(dynamic_objects.front()->state[0], dynamic_objects.front()->state[1], dynamic_objects.front()->state[2]),
+                    yaw, 0);
+
+                if(agent_prism.checkPrismsCollision(obstacles)){
+
+                    test_collision = true;
+                }
+
+            }
+
+
+            //see if the last dynamic object has cross the goal plane yet
+            if(!test_goal_threshold){
+                if(dynamic_objects.back()->state[2] < LANDING_HEIGHT){
+                    test_goal_threshold = true;
+
+                    //determine the ball's position relative to the center of the rectangle
+                    V3d relative_pos(dynamic_objects.back()->state[0] - dynamic_objects.front()->state[0], dynamic_objects.back()->state[1] - dynamic_objects.front()->state[1], 0);
+
+                    //rotate the ball to be in the angent's aligned frame
+                    Eigen::Quaterniond quat(dynamic_objects.front()->state[3], dynamic_objects.front()->state[4], dynamic_objects.front()->state[5], dynamic_objects.front()->state[6]);
+                    V3d rotated_rel_pos = quat.inverse() * relative_pos;
+
+                    //determine if the goal has been met
+                    if(rotated_rel_pos[0] > -AGENT_DIMENSIONS[0] / 2 &&
+                        rotated_rel_pos[0] < AGENT_DIMENSIONS[0] / 2 &&
+                        rotated_rel_pos[1] > -AGENT_DIMENSIONS[1] / 2 &&
+                        rotated_rel_pos[1] < AGENT_DIMENSIONS[1] / 2){
+                          test_goal = true;
+                          
+                        RCLCPP_INFO(get_logger(), "Ball has met goal");
+                    } else {
+                        RCLCPP_INFO(get_logger(), "Ball has missed goal");
+                    }
+
+                    test_goal_event_time = current_time;
+
+                }
+            }
+
+            //increment effort used
+            test_combined_effort += (current_time - prev_tic_time) * current_agent_control.cwiseAbs().sum();
+
+            //increment tic
+            prev_tic_time = current_time;
+            test_tic++;
+        }
+
+        void write_height_stats(){
+            //little help from gemni here
+            FILE* filePointer;
+            if(height_index != 0){
+                filePointer = fopen(stat_filename.c_str(), "a");
+            } else {
+                filePointer = fopen(stat_filename.c_str(), "w");
+            }
+
+            if (filePointer == NULL) {
+                RCLCPP_WARN(get_logger(), "Failed to open tree state write file");
+                return;
+            } 
+
+            fprintf(filePointer, "%f,%d,%d,%d,%f,%d\n", test_heights.at(height_index), height_rejected_paths, height_goals, height_collisions, height_effort, TESTS_PER_LAYER);
+            
+            fprintf(filePointer, "\n");
+
+            fclose(filePointer);
+        }
+
         double get_current_time(){
             return this->get_clock()->now().seconds();
         }
@@ -361,6 +571,7 @@ class SimNode : public rclcpp::Node
         rclcpp::Publisher<amp_msgs::msg::BallTrajectory>::SharedPtr ball_trajectory_pub;
 
         rclcpp::TimerBase::SharedPtr tic_timer;
+        rclcpp::TimerBase::SharedPtr automation_timer;
 
         double previous_tf_update_time = 0;
 
@@ -379,7 +590,32 @@ class SimNode : public rclcpp::Node
 
         V12d current_agent_control;
 
+        //automation variables
+        int height_index = 0;
+        int height_test_num = 0;
+        std::vector<double> test_heights;
+        bool test_active = false;
 
+        //test state_variables
+        bool test_collision = false;
+        bool test_goal = false;
+        double test_goal_event_time = 0;
+        double test_combined_effort = 0;
+        int test_tic = 0;
+        double prev_tic_time = 0;
+        bool test_goal_threshold = false;
+
+        //height level test variables
+        int height_goals = 0;
+        int height_collisions = 0;
+        double height_effort = 0;
+        int height_rejected_paths = 0;
+
+        //file path
+        std::string stat_filename;
+
+        //obstalce to check against
+        std::vector<RectPrism> obstacles;
 
 };
 

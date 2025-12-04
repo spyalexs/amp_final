@@ -95,11 +95,12 @@ run: CMakeFiles/run.dir/build.make
 run: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_object.a
 run: /home/hollis/cu/5254_final/install/amp_sim/lib/libomni_agent.a
 run: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_ball.a
+run: /home/hollis/cu/5254_final/install/amp_sim/lib/libcollision_checker.a
 run: libbackend.a
 run: libsst_tree.a
 run: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_object.a
 run: /home/hollis/cu/5254_final/install/amp_sim/lib/libomni_agent.a
-run: libcollision_checker.a
+run: /home/hollis/cu/5254_final/install/amp_sim/lib/libcollision_checker.a
 run: libomni_actor.a
 run: libtree_visualizer.a
 run: libbackend.a
@@ -134,10 +135,6 @@ run: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 run: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 run: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 run: libsst_tree.a
-run: /home/hollis/cu/5254_final/install/amp_sim/lib/libomni_agent.a
-run: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_ball.a
-run: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_object.a
-run: libcollision_checker.a
 run: /opt/ros/humble/lib/librclcpp.so
 run: /opt/ros/humble/lib/liblibstatistics_collector.so
 run: /opt/ros/humble/lib/librcl.so
@@ -172,6 +169,10 @@ run: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 run: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 run: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 run: /opt/ros/humble/lib/libtracetools.so
+run: /home/hollis/cu/5254_final/install/amp_sim/lib/libomni_agent.a
+run: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_ball.a
+run: /home/hollis/cu/5254_final/install/amp_sim/lib/libdynamic_object.a
+run: /home/hollis/cu/5254_final/install/amp_sim/lib/libcollision_checker.a
 run: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_c.so
 run: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_fastrtps_cpp.so
 run: /home/hollis/cu/5254_final/install/amp_msgs/lib/libamp_msgs__rosidl_typesupport_introspection_c.so

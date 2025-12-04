@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget amp_sim::dynamic_object amp_sim::omni_agent amp_sim::dynamic_ball)
+foreach(_expectedTarget amp_sim::dynamic_object amp_sim::omni_agent amp_sim::dynamic_ball amp_sim::collision_checker)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -69,6 +69,13 @@ add_library(amp_sim::dynamic_ball STATIC IMPORTED)
 
 set_target_properties(amp_sim::dynamic_ball PROPERTIES
   INTERFACE_LINK_LIBRARIES "amp_sim::dynamic_object"
+)
+
+# Create imported target amp_sim::collision_checker
+add_library(amp_sim::collision_checker STATIC IMPORTED)
+
+set_target_properties(amp_sim::collision_checker PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

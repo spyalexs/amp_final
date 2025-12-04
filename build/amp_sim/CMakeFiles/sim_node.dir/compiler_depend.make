@@ -452,10 +452,17 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_object.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp \
   /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/agent_properties.hpp \
+  /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/collision_checker.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -520,7 +527,6 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
-  /usr/include/c++/11/iostream \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
@@ -652,7 +658,6 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
   /usr/include/c++/11/codecvt \
-  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -894,6 +899,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
+  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
@@ -1037,6 +1044,10 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
+
+/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h:
+
+/opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
@@ -1510,6 +1521,24 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
+/opt/ros/humble/include/rcl/rcl/types.h:
+
+/opt/ros/humble/include/rcl/rcl/macros.h:
+
+/opt/ros/humble/include/rcl/rcl/log_level.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
+
+/opt/ros/humble/include/rcl/rcl/arguments.h:
+
+/opt/ros/humble/include/rmw/rmw/security_options.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+
+/opt/ros/humble/include/rmw/rmw/ret_types.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /usr/include/string.h:
@@ -1575,8 +1604,6 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/c++/11/debug/debug.h:
-
-/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -1653,8 +1680,6 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/opt/ros/humble/include/rmw/rmw/security_options.h:
 
 /usr/include/c++/11/cerrno:
 
@@ -2132,8 +2157,6 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/c++/11/bits/specfun.h:
 
-/opt/ros/humble/include/rcl/rcl/types.h:
-
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
@@ -2386,6 +2409,8 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
 
+/usr/include/c++/11/bits/fstream.tcc:
+
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
 /usr/include/c++/11/ctime:
@@ -2634,9 +2659,9 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
 
-/usr/include/c++/11/bits/codecvt.h:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
+
+/usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
 
@@ -2684,17 +2709,27 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
-
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/usr/include/c++/11/fstream:
+
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
 /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/dynamic_ball.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/EigenBase.h:
 
 /home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/omni_agent.hpp:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+
+/home/hollis/cu/5254_final/src/amp_sim/include/amp_sim/collision_checker.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
@@ -2723,12 +2758,6 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
-
-/opt/ros/humble/include/rcl/rcl/arguments.h:
 
 /opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
 
@@ -2865,11 +2894,3 @@ CMakeFiles/sim_node.dir/src/run_sim.cpp.o: /home/hollis/cu/5254_final/src/amp_si
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
-
-/opt/ros/humble/include/rmw/rmw/ret_types.h:
-
-/opt/ros/humble/include/rcl/rcl/log_level.h:
-
-/opt/ros/humble/include/rcl/rcl/macros.h:

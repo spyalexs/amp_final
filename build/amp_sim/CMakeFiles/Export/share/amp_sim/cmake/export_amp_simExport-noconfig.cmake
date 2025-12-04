@@ -35,5 +35,15 @@ set_target_properties(amp_sim::dynamic_ball PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS amp_sim::dynamic_ball )
 list(APPEND _IMPORT_CHECK_FILES_FOR_amp_sim::dynamic_ball "${_IMPORT_PREFIX}/lib/libdynamic_ball.a" )
 
+# Import target "amp_sim::collision_checker" for configuration ""
+set_property(TARGET amp_sim::collision_checker APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+set_target_properties(amp_sim::collision_checker PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libcollision_checker.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS amp_sim::collision_checker )
+list(APPEND _IMPORT_CHECK_FILES_FOR_amp_sim::collision_checker "${_IMPORT_PREFIX}/lib/libcollision_checker.a" )
+
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

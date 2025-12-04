@@ -30,6 +30,12 @@ target_include_directories(dynamic_object PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 
+add_library(collision_checker src/collision_checker.cpp)
+target_include_directories(collision_checker PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
 add_library(dynamic_ball src/dynamic_ball.cpp)
 target_link_libraries(dynamic_ball PUBLIC dynamic_object)
 
@@ -39,7 +45,7 @@ target_link_libraries(omni_agent PUBLIC dynamic_object)
 #create the executable 
 add_executable(sim_node src/run_sim.cpp)
 ament_target_dependencies(sim_node PUBLIC rclcpp geometry_msgs tf2 tf2_ros amp_msgs)
-target_link_libraries(sim_node PUBLIC dynamic_ball omni_agent)
+target_link_libraries(sim_node PUBLIC dynamic_ball omni_agent collision_checker)
 
 install(TARGETS sim_node
   DESTINATION lib/${PROJECT_NAME}
@@ -55,7 +61,7 @@ install(
 )
 
 install(
-  TARGETS dynamic_object omni_agent dynamic_ball
+  TARGETS dynamic_object omni_agent dynamic_ball collision_checker
   EXPORT export_amp_sim
   DESTINATION lib
 )

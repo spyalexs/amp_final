@@ -17,7 +17,7 @@
 //this is scuffed...
 #include "../../amp_sim/include/amp_sim/dynamic_object.hpp"
 #include "../../amp_sim/include/amp_sim/omni_agent.hpp"
-#include "collision_checker.hpp"
+#include "amp_sim/collision_checker.hpp"
 
 #include "amp_msgs/msg/ideal_path.hpp"
 #include "amp_msgs/msg/agent_control.hpp"
