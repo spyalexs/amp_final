@@ -30,7 +30,10 @@ OmniAgentActor::OmniAgentActor() : AgentBackend(){
     agent_tree.node_ptr = this;
 
     // //generate the tree
-    // generate_tree(250);
+    // generate_tree(2500);
+
+    // viz.displayTree((agent_tree.tree), agent_tree.neighborhoods);
+
 
     // //Help from gemni to get package path
     std::string package_name = "amp_agents";
@@ -49,7 +52,7 @@ OmniAgentActor::OmniAgentActor() : AgentBackend(){
     
     // RCLCPP_INFO(get_logger(), "Loaded in %d into the pile, %d in the top level\n", agent_tree.node_pile.size(), agent_tree.tree.size());
 
-    viz.displayTree((agent_tree.tree), agent_tree.neighborhoods);
+    //viz.displayTree((agent_tree.tree), agent_tree.neighborhoods);
 }
 
 void OmniAgentActor::selectPathForLanding(amp_msgs::msg::BallTrajectory msg){

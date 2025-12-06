@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdynamic_ball.a CMakeFiles/dynamic_ball.dir/src/dynamic_ball.cpp.o
-/usr/bin/ranlib libdynamic_ball.a

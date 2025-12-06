@@ -1,5 +1,0 @@
-[ 25%] Built target dynamic_object
-[ 50%] Built target omni_agent
-[ 75%] Built target dynamic_ball
-[35m[1mConsolidate compiler generated dependencies of target sim_node[0m
-[ 87%] [32mBuilding CXX object CMakeFiles/sim_node.dir/src/run_sim.cpp.o[0m

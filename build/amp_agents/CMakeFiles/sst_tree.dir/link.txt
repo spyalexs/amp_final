@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsst_tree.a CMakeFiles/sst_tree.dir/src/propagate_sst.cpp.o
-/usr/bin/ranlib libsst_tree.a

@@ -93,7 +93,7 @@ class SimNode : public rclcpp::Node
             obstacles.push_back(RectPrism(V3d(1.6, 1.6, 1.1), V3d(-0.1, 2.3, 0.0), -1.57, 0.00));
 
             //run automation
-            automation_timer = this->create_wall_timer(10ms, std::bind(&SimNode::run_automation, this));
+            //automation_timer = this->create_wall_timer(10ms, std::bind(&SimNode::run_automation, this));
         }
 
 

@@ -1,5 +1,0 @@
-[ 16%] Built target collision_checker
-[ 33%] Built target tree_visualizer
-[ 50%] Built target sst_tree
-[35m[1mConsolidate compiler generated dependencies of target backend[0m
-[ 58%] [32mBuilding CXX object CMakeFiles/backend.dir/src/agent_backend.cpp.o[0m
